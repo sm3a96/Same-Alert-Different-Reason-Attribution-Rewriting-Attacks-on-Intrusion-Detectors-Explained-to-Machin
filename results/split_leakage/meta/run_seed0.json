@@ -1,0 +1,196 @@
+{
+  "experiment": "split_leakage",
+  "seed": 0,
+  "git_commit": "6210e0b",
+  "timestamp_utc": "2026-08-10T05:13:51.705899+00:00",
+  "wall_clock_s": 557.434,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "datasets": [
+      "fiveg_nidd",
+      "ciciot2023",
+      "ciciomt2024"
+    ],
+    "rows": 200000,
+    "seed": 0,
+    "min_session_shift": 0.55
+  },
+  "summary": {
+    "fiveg_nidd": {
+      "dataset": "fiveg_nidd",
+      "rows": 200000,
+      "grouping": "201 row_block groups",
+      "grouping_kind": "row_block",
+      "n_groups": 201,
+      "arms": {
+        "random": {
+          "n_train": 160000,
+          "n_test": 40000,
+          "adversarial_auc": 0.5023,
+          "detector_accuracy": 0.9157,
+          "most_separating_features": [
+            [
+              "SrcTCPBase",
+              0.1241
+            ],
+            [
+              "SynAck",
+              0.11
+            ],
+            [
+              "DstTCPBase",
+              0.0802
+            ]
+          ]
+        },
+        "grouped": {
+          "n_train": 160051,
+          "n_test": 39949,
+          "adversarial_auc": 0.6954,
+          "detector_accuracy": 0.8599,
+          "most_separating_features": [
+            [
+              "Rate",
+              0.1848
+            ],
+            [
+              "TotBytes",
+              0.1071
+            ],
+            [
+              "Sum",
+              0.1003
+            ]
+          ]
+        }
+      },
+      "grouped_split_groups": {
+        "train": 113,
+        "calibration": 48,
+        "test": 40,
+        "honoured_provider_split": false
+      },
+      "accuracy_inflation": 0.0558,
+      "session_shift_auc": 0.6954,
+      "grouping_separated": true
+    },
+    "ciciot2023": {
+      "dataset": "ciciot2023",
+      "rows": 200000,
+      "grouping": "NO usable grouping -- the distributed corpus is pre-shuffled, so a session-aware split cannot be constructed and results are optimistic",
+      "grouping_kind": "none",
+      "n_groups": 1,
+      "arms": {
+        "random": {
+          "n_train": 160000,
+          "n_test": 40000,
+          "adversarial_auc": 0.4991,
+          "detector_accuracy": 0.8768,
+          "most_separating_features": [
+            [
+              "Duration",
+              0.1105
+            ],
+            [
+              "AVG",
+              0.0996
+            ],
+            [
+              "flow_duration",
+              0.094
+            ]
+          ]
+        },
+        "grouped": {
+          "n_train": 160000,
+          "n_test": 40000,
+          "adversarial_auc": 0.5007,
+          "detector_accuracy": 0.876,
+          "most_separating_features": [
+            [
+              "flow_duration",
+              0.1504
+            ],
+            [
+              "Rate",
+              0.1
+            ],
+            [
+              "Header_Length",
+              0.0983
+            ]
+          ]
+        }
+      },
+      "grouped_split_groups": {
+        "train": 0,
+        "calibration": 0,
+        "test": 0,
+        "honoured_provider_split": false,
+        "WARNING": "no usable grouping; random split, results optimistic"
+      },
+      "accuracy_inflation": 0.0008,
+      "session_shift_auc": 0.5007,
+      "grouping_separated": false
+    },
+    "ciciomt2024": {
+      "dataset": "ciciomt2024",
+      "rows": 200000,
+      "grouping": "72 capture_session groups; provider partition present (166,736 train / 33,264 test)",
+      "grouping_kind": "capture_session",
+      "n_groups": 72,
+      "arms": {
+        "random": {
+          "n_train": 160000,
+          "n_test": 40000,
+          "adversarial_auc": 0.5049,
+          "detector_accuracy": 0.841,
+          "most_separating_features": [
+            [
+              "Header_Length",
+              0.1745
+            ],
+            [
+              "Rate",
+              0.1179
+            ],
+            [
+              "Srate",
+              0.0801
+            ]
+          ]
+        },
+        "grouped": {
+          "n_train": 166736,
+          "n_test": 33264,
+          "adversarial_auc": 0.7517,
+          "detector_accuracy": 0.7944,
+          "most_separating_features": [
+            [
+              "Srate",
+              0.2361
+            ],
+            [
+              "Rate",
+              0.218
+            ],
+            [
+              "Header_Length",
+              0.1278
+            ]
+          ]
+        }
+      },
+      "grouped_split_groups": {
+        "train": 36,
+        "calibration": 15,
+        "test": 21,
+        "honoured_provider_split": true
+      },
+      "accuracy_inflation": 0.0466,
+      "session_shift_auc": 0.7517,
+      "grouping_separated": true
+    }
+  }
+}

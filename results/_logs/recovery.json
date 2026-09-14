@@ -1,0 +1,36 @@
+{
+ "by_judge": {
+  "Qwen3-8B": {
+   "n": 264,
+   "recovered": 68,
+   "rate": 0.2576
+  },
+  "phi-4": {
+   "n": 264,
+   "recovered": 41,
+   "rate": 0.1553
+  }
+ },
+ "by_dataset": {
+  "5G-NIDD": {
+   "n": 296,
+   "recovered": 28,
+   "rate": 0.0946
+  },
+  "CICIoT2023": {
+   "n": 132,
+   "recovered": 22,
+   "rate": 0.1667
+  },
+  "CICIoMT2024": {
+   "n": 100,
+   "recovered": 59,
+   "rate": 0.59
+  }
+ },
+ "pooled": {
+  "n": 528,
+  "recovered": 109,
+  "rate": 0.2064
+ }
+}

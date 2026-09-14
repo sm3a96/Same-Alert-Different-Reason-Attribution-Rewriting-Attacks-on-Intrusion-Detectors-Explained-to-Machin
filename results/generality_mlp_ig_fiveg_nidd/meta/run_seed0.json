@@ -1,0 +1,41 @@
+{
+  "experiment": "generality_mlp_ig_fiveg_nidd",
+  "seed": 0,
+  "git_commit": "5e0f151",
+  "timestamp_utc": "2026-09-09T03:18:15.043359+00:00",
+  "wall_clock_s": 553.813,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "dataset": "fiveg_nidd",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_test": 40,
+    "stab_n": 120,
+    "stab_sigma": 0.05
+  },
+  "summary": {
+    "dataset": "fiveg_nidd",
+    "detector": "MLP",
+    "attributor": "integrated_gradients",
+    "stab_n": 120,
+    "sigma": 0.05,
+    "ceiling": 0.098295,
+    "clean_at_zero": 0.365,
+    "clean_at_ceiling": 0.165,
+    "clean_informative": 0.47,
+    "displacement_auroc_mean": 0.5209,
+    "displacement_auroc_per_seed": [
+      0.5178,
+      0.4697,
+      0.5206,
+      0.5003,
+      0.5959
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Setting} & \textbf{clusters} & $\Delta$ \textbf{vs} $S(x)$, 95\% CI \\
+\midrule
+\multicolumn{3}{@{}l}{\emph{competence floor (clean accuracy)}} \\
+$\geq 0.0$ & 90 & $-0.111$ [-0.152, -0.073] \\
+$\geq 0.3$ & 70 & $-0.153$ [-0.201, -0.108] \\
+$\geq 0.5$ & 60 & $-0.175$ [-0.230, -0.125] \\
+$\geq 0.8$ & 46 & $-0.180$ [-0.247, -0.122] \\
+\multicolumn{3}{@{}l}{\emph{leave one out}} \\
+drop 5G-NIDD & 44 & $-0.097$ [-0.147, -0.055] \\
+drop CICIoMT2024 & 36 & $-0.256$ [-0.331, -0.183] \\
+drop CICIoT2023 & 40 & $-0.189$ [-0.254, -0.128] \\
+drop Qwen3-8B & 30 & $-0.173$ [-0.250, -0.104] \\
+drop phi-4 & 30 & $-0.177$ [-0.255, -0.107] \\
+\multicolumn{3}{@{}l}{\emph{shuffled order (picks first on clean: ranked $\to$ shuffled)}} \\
+Qwen3-8B, 0.99 $\to$ 0.10 & 29 & $-0.135$ [-0.231, -0.045] \\
+phi-4, 1.00 $\to$ 0.12 & 29 & $-0.099$ [-0.176, -0.030] \\
+\multicolumn{3}{@{}l}{\emph{ranking withheld, competent reader--cells}} \\
+Qwen3-8B & 30 & $-0.464$ [-0.592, -0.335] \\
+phi-4 & 30 & $-0.431$ [-0.540, -0.323] \\
+\bottomrule
+\end{tabular}

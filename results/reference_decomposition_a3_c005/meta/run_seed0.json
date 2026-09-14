@@ -1,0 +1,44 @@
+{
+  "experiment": "reference_decomposition_a3_c005",
+  "seed": 0,
+  "git_commit": "5e0f151",
+  "timestamp_utc": "2026-09-09T03:08:37.646916+00:00",
+  "wall_clock_s": 9.527,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "datasets": [],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reference": "mean",
+      "tau": 0.05,
+      "min_k": 3,
+      "attacks": [
+        "A3_scaffolding"
+      ],
+      "scaffold_contamination": 0.05,
+      "rescore_only": true
+    }
+  },
+  "summary": {
+    "instances": 1800,
+    "cells": 15,
+    "excluded_shown_mismatch": 54,
+    "clean_causal_mismatch": 1,
+    "effects_vs_Sxprime": {
+      "A3_scaffolding": -0.012987012987012988
+    },
+    "displacement_effect_vs_Sx": null,
+    "displacement_effect_vs_Sxprime": null,
+    "displacement_ci_vs_Sxprime": [
+      null,
+      null
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  If you use XInt-Bench, please cite the software entry below. Replace it with the paper
+  once that is published -- see `preferred-citation`, which is filled in at submission.
+title: "XInt-Bench: explanation-integrity attacks on network intrusion detection"
+abstract: >-
+  A benchmark of prediction-preserving attacks on the post-hoc feature attributions that
+  ML-based NIDS attach to their alerts, with per-instance detector-relative interventional
+  labels, a realizable-flow constraint over the extractor's own arithmetic, and a downstream
+  autonomous-consumer decision task. Ships the attacks, the integrity signals, the conformal
+  calibration, and a one-command reproduction of every number in the paper.
+type: software
+authors:
+  - family-names: Bibers
+    given-names: Ismail Mohammed I
+    affiliation: Purdue University
+    # orcid: TODO add before the Zenodo release
+license: MIT
+repository-code: "TODO set at release"     # GitHub URL, once the repo is pushed
+keywords:
+  - explainable AI
+  - intrusion detection
+  - adversarial machine learning
+  - attribution attacks
+  - conformal prediction
+  - agentic security operations

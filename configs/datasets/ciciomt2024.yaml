@@ -1,0 +1,20 @@
+# CICIoMT2024 (Internet of Medical Things, 2024). Kaggle: limamateus/cic-iomt-2024-wifi-mqtt.
+# Replaces CICIoV2024 — flow-based (not per-frame), high-stakes healthcare regime, current.
+# Train+test CSVs (~3.2M rows), 45 numeric features + `label` column (benign / DDoS / DoS /
+# Recon / MQTT / spoofing). MUST pass scripts/audit_data.py before use.
+name: ciciomt2024
+label_col: label
+# Strip the leaked split suffix AND the numbered capture-session suffix (UDP1..UDP8 are
+# the same DDoS-UDP attack captured 8 times) -> collapses to the standard ~19 attack types.
+label_strip: "[0-9]*_(train|test)$"
+extractor: cicflowmeter        # generated XInt-Bench traffic must use the same extractor
+calibration_frac: 0.3
+test_frac: 0.2
+license: "CIC academic use — record exact terms in data/PROVENANCE.md"
+# IAT dropped 2026-08-09. It is not an inter-arrival time: its values cluster around
+# 8.4e7 (84 seconds) and an exact-value lookup table built on one half of the rows
+# predicts the held-out half at 1.000 (CICIoT2023) / 0.999 (CICIoMT2024) with ~95%
+# value coverage. Each attack was captured in its own session, so the column is a
+# capture-clock fingerprint. Every other feature tops out near 0.6 on the same test.
+# This is the defect class Engelen et al. 2021 and Goldschmidt & Chuda 2025 describe.
+drop_cols: [IAT]

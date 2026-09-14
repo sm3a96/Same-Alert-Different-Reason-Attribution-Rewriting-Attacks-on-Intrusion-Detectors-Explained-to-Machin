@@ -1,0 +1,49 @@
+{
+ "_mediation": {
+  "corr_top1_vs_accuracy": 0.9966,
+  "mean_abs_gap": 0.0082,
+  "n_points": 6
+ },
+ "5G-NIDD": {
+  "clean": {
+   "top1_causal": 0.52,
+   "top3_causal": 0.665,
+   "any_causal_visible": 0.9533,
+   "mean_causal_set_size": 2.788
+  },
+  "attacked": {
+   "top1_causal": 0.3183,
+   "top3_causal": 0.71,
+   "any_causal_visible": 0.9033,
+   "mean_causal_set_size": 2.788
+  }
+ },
+ "CICIoT2023": {
+  "clean": {
+   "top1_causal": 0.6967,
+   "top3_causal": 0.9233,
+   "any_causal_visible": 1.0,
+   "mean_causal_set_size": 5.882
+  },
+  "attacked": {
+   "top1_causal": 0.6067,
+   "top3_causal": 0.9233,
+   "any_causal_visible": 0.98,
+   "mean_causal_set_size": 5.882
+  }
+ },
+ "CICIoMT2024": {
+  "clean": {
+   "top1_causal": 0.8017,
+   "top3_causal": 0.9983,
+   "any_causal_visible": 1.0,
+   "mean_causal_set_size": 7.678
+  },
+  "attacked": {
+   "top1_causal": 0.7217,
+   "top3_causal": 0.9883,
+   "any_causal_visible": 1.0,
+   "mean_causal_set_size": 7.678
+  }
+ }
+}

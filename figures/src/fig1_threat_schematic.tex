@@ -1,0 +1,25 @@
+% Fig1 — where a corrupted attribution enters an agentic SOC, and what it costs.
+%
+% Conceptual, so it is drawn rather than plotted, but the source lives in the repo like
+% every other float. The point of the figure is the asymmetry: the prediction path is
+% monitored and the explanation path is not, and the consumer at the end of the
+% explanation path is now a machine that acts in seconds.
+%
+%   pdflatex -output-directory=figures/out figures/src/fig1_threat_schematic.tex
+%
+% Colours are the Okabe-Ito steps used by figures/src/style.py, checked with
+% figures/src/check_palette.py.
+
+\documentclass[border=2pt]{standalone}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usetikzlibrary{arrows.meta, positioning, fit, backgrounds, calc}
+
+\definecolor{okblue}{HTML}{0072B2}
+\definecolor{okorange}{HTML}{D55E00}
+\definecolor{okgreen}{HTML}{009E73}
+\definecolor{inkmuted}{HTML}{595959}
+
+\begin{document}
+\input{fig1_threat_schematic_body}
+\end{document}

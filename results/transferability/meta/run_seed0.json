@@ -1,0 +1,169 @@
+{
+  "experiment": "transferability",
+  "seed": 0,
+  "git_commit": "978f4af",
+  "timestamp_utc": "2026-09-08T01:06:36.221300+00:00",
+  "wall_clock_s": 3380.426,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "datasets": [
+      "fiveg_nidd",
+      "ciciot2023",
+      "ciciomt2024"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "flows": 40,
+    "top_k": 5,
+    "n_train": 20000,
+    "eps": 0.15,
+    "attack": "A1_displacement",
+    "source_pipeline": "XGBoost + TreeSHAP"
+  },
+  "summary": {
+    "by_target": [
+      {
+        "dataset": "ciciomt2024",
+        "target": "white_box",
+        "seeds": 5,
+        "corrupt_mean": 0.8515,
+        "corrupt_ci_half": 0.0344,
+        "corrupt_per_seed": [
+          0.9014,
+          0.8535,
+          0.7917,
+          0.8507,
+          0.8604
+        ],
+        "valid_mean": 1.0
+      },
+      {
+        "dataset": "ciciomt2024",
+        "target": "cross_seed",
+        "seeds": 5,
+        "corrupt_mean": 0.6193,
+        "corrupt_ci_half": 0.0378,
+        "corrupt_per_seed": [
+          0.6825,
+          0.5755,
+          0.5938,
+          0.6017,
+          0.6429
+        ],
+        "valid_mean": 0.72
+      },
+      {
+        "dataset": "ciciomt2024",
+        "target": "cross_arch",
+        "seeds": 5,
+        "corrupt_mean": 0.1595,
+        "corrupt_ci_half": 0.1256,
+        "corrupt_per_seed": [
+          0.1952,
+          0.2,
+          0.3607,
+          0.0083,
+          0.0333
+        ],
+        "valid_mean": 0.9
+      },
+      {
+        "dataset": "ciciot2023",
+        "target": "white_box",
+        "seeds": 5,
+        "corrupt_mean": 0.8179,
+        "corrupt_ci_half": 0.0745,
+        "corrupt_per_seed": [
+          0.6955,
+          0.8611,
+          0.8812,
+          0.8889,
+          0.7629
+        ],
+        "valid_mean": 1.0
+      },
+      {
+        "dataset": "ciciot2023",
+        "target": "cross_seed",
+        "seeds": 5,
+        "corrupt_mean": 0.6064,
+        "corrupt_ci_half": 0.0242,
+        "corrupt_per_seed": [
+          0.5855,
+          0.6539,
+          0.6033,
+          0.5884,
+          0.6012
+        ],
+        "valid_mean": 0.445
+      },
+      {
+        "dataset": "ciciot2023",
+        "target": "cross_arch",
+        "seeds": 5,
+        "corrupt_mean": 0.2613,
+        "corrupt_ci_half": 0.0341,
+        "corrupt_per_seed": [
+          0.2083,
+          0.2607,
+          0.3077,
+          0.2878,
+          0.2417
+        ],
+        "valid_mean": 0.835
+      },
+      {
+        "dataset": "fiveg_nidd",
+        "target": "white_box",
+        "seeds": 5,
+        "corrupt_mean": 0.8259,
+        "corrupt_ci_half": 0.0551,
+        "corrupt_per_seed": [
+          0.8743,
+          0.8715,
+          0.8229,
+          0.7202,
+          0.8403
+        ],
+        "valid_mean": 1.0
+      },
+      {
+        "dataset": "fiveg_nidd",
+        "target": "cross_seed",
+        "seeds": 5,
+        "corrupt_mean": 0.6894,
+        "corrupt_ci_half": 0.0385,
+        "corrupt_per_seed": [
+          0.6871,
+          0.745,
+          0.6235,
+          0.7057,
+          0.6856
+        ],
+        "valid_mean": 0.8
+      },
+      {
+        "dataset": "fiveg_nidd",
+        "target": "cross_arch",
+        "seeds": 5,
+        "corrupt_mean": 0.5146,
+        "corrupt_ci_half": 0.0713,
+        "corrupt_per_seed": [
+          0.4265,
+          0.6182,
+          0.4565,
+          0.4929,
+          0.5788
+        ],
+        "valid_mean": 0.7
+      }
+    ],
+    "n_rows": 1800
+  }
+}

@@ -1,0 +1,630 @@
+{
+ "vs_S_x": {
+  "A1_displacement": {
+   "pooled": {
+    "n": 2400,
+    "n_clusters": 60,
+    "mean_delta": -0.17541666666666667,
+    "ci_lo": -0.22958333333333333,
+    "ci_hi": -0.12541666666666668,
+    "ci_half_width": 0.05208333333333333,
+    "ci_half_width_naive": 0.01661116810163453,
+    "ci_method": "cluster bootstrap",
+    "broke": 454,
+    "fixed": 33,
+    "discordant": 487,
+    "harms": true
+   },
+   "all_cells": {
+    "n": 3600,
+    "n_clusters": 90,
+    "mean_delta": -0.11138888888888888,
+    "ci_lo": -0.1525,
+    "ci_hi": -0.07277083333333344,
+    "ci_half_width": 0.03986458333333328,
+    "ci_half_width_naive": 0.012801253988105693,
+    "ci_method": "cluster bootstrap",
+    "broke": 499,
+    "fixed": 98,
+    "discordant": 597,
+    "harms": true
+   },
+   "per_judge": {
+    "Qwen3-8B": {
+     "n": 1200,
+     "n_clusters": 30,
+     "mean_delta": -0.1775,
+     "ci_lo": -0.255,
+     "ci_hi": -0.10666666666666667,
+     "ci_half_width": 0.07416666666666666,
+     "ci_half_width_naive": 0.02331526403732775,
+     "ci_method": "cluster bootstrap",
+     "broke": 227,
+     "fixed": 14,
+     "discordant": 241,
+     "harms": true
+    },
+    "phi-4": {
+     "n": 1200,
+     "n_clusters": 30,
+     "mean_delta": -0.17333333333333334,
+     "ci_lo": -0.25,
+     "ci_hi": -0.10416666666666667,
+     "ci_half_width": 0.07291666666666666,
+     "ci_half_width_naive": 0.023699598742381593,
+     "ci_method": "cluster bootstrap",
+     "broke": 227,
+     "fixed": 19,
+     "discordant": 246,
+     "harms": true
+    }
+   },
+   "per_dataset": {
+    "ciciomt2024": {
+     "n": 960,
+     "n_clusters": 24,
+     "mean_delta": -0.05416666666666667,
+     "ci_lo": -0.08541666666666667,
+     "ci_hi": -0.028125,
+     "ci_half_width": 0.028645833333333336,
+     "ci_half_width_naive": 0.015193421918050804,
+     "ci_method": "cluster bootstrap",
+     "broke": 55,
+     "fixed": 3,
+     "discordant": 58,
+     "harms": true
+    },
+    "ciciot2023": {
+     "n": 800,
+     "n_clusters": 20,
+     "mean_delta": -0.1475,
+     "ci_lo": -0.245,
+     "ci_hi": -0.06375,
+     "ci_half_width": 0.090625,
+     "ci_half_width_naive": 0.026052393711355124,
+     "ci_method": "cluster bootstrap",
+     "broke": 124,
+     "fixed": 6,
+     "discordant": 130,
+     "harms": true
+    },
+    "fiveg_nidd": {
+     "n": 640,
+     "n_clusters": 16,
+     "mean_delta": -0.3921875,
+     "ci_lo": -0.4734375,
+     "ci_hi": -0.309375,
+     "ci_half_width": 0.08203125,
+     "ci_half_width_naive": 0.04348647688453476,
+     "ci_method": "cluster bootstrap",
+     "broke": 275,
+     "fixed": 24,
+     "discordant": 299,
+     "harms": true
+    }
+   }
+  },
+  "A1_misdirection": {
+   "pooled": {
+    "n": 876,
+    "n_clusters": 54,
+    "mean_delta": -0.01598173515981735,
+    "ci_lo": -0.032012382854739875,
+    "ci_hi": -0.004300752503734858,
+    "ci_half_width": 0.013855815175502509,
+    "ci_half_width_naive": 0.008904204578535179,
+    "ci_method": "cluster bootstrap",
+    "broke": 15,
+    "fixed": 1,
+    "discordant": 16,
+    "harms": true
+   },
+   "all_cells": {
+    "n": 1518,
+    "n_clusters": 84,
+    "mean_delta": -0.014492753623188406,
+    "ci_lo": -0.025796687362922077,
+    "ci_hi": -0.005272874633930221,
+    "ci_half_width": 0.010261906364495928,
+    "ci_half_width_naive": 0.006290244671243361,
+    "ci_method": "cluster bootstrap",
+    "broke": 23,
+    "fixed": 1,
+    "discordant": 24,
+    "harms": true
+   },
+   "per_judge": {
+    "Qwen3-8B": {
+     "n": 438,
+     "n_clusters": 27,
+     "mean_delta": -0.01598173515981735,
+     "ci_lo": -0.03872457409605698,
+     "ci_hi": -0.002127659574468085,
+     "ci_half_width": 0.018298457260794446,
+     "ci_half_width_naive": 0.011790314729574217,
+     "ci_method": "cluster bootstrap",
+     "broke": 7,
+     "fixed": 0,
+     "discordant": 7,
+     "harms": true
+    },
+    "phi-4": {
+     "n": 438,
+     "n_clusters": 27,
+     "mean_delta": -0.01598173515981735,
+     "ci_lo": -0.042424644321196046,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.021212322160598023,
+     "ci_half_width_naive": 0.013393064027185164,
+     "ci_method": "cluster bootstrap",
+     "broke": 8,
+     "fixed": 1,
+     "discordant": 9,
+     "harms": false
+    }
+   },
+   "per_dataset": {
+    "ciciomt2024": {
+     "n": 80,
+     "n_clusters": 18,
+     "mean_delta": -0.025,
+     "ci_lo": -0.05747126436781609,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.028735632183908046,
+     "ci_half_width_naive": 0.03496311228599746,
+     "ci_method": "cluster bootstrap",
+     "broke": 2,
+     "fixed": 0,
+     "discordant": 2,
+     "harms": false
+    },
+    "ciciot2023": {
+     "n": 352,
+     "n_clusters": 20,
+     "mean_delta": -0.014204545454545454,
+     "ci_lo": -0.04,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.02,
+     "ci_half_width_naive": 0.01242229093757151,
+     "ci_method": "cluster bootstrap",
+     "broke": 5,
+     "fixed": 0,
+     "discordant": 5,
+     "harms": false
+    },
+    "fiveg_nidd": {
+     "n": 444,
+     "n_clusters": 16,
+     "mean_delta": -0.015765765765765764,
+     "ci_lo": -0.04395604395604396,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.02197802197802198,
+     "ci_half_width_naive": 0.013212498989653381,
+     "ci_method": "cluster bootstrap",
+     "broke": 8,
+     "fixed": 1,
+     "discordant": 9,
+     "harms": false
+    }
+   }
+  },
+  "A3_scaffolding": {
+   "pooled": {
+    "n": 2310,
+    "n_clusters": 60,
+    "mean_delta": 0.0,
+    "ci_lo": 0.0,
+    "ci_hi": 0.0,
+    "ci_half_width": 0.0,
+    "ci_half_width_naive": 0.0,
+    "ci_method": "cluster bootstrap",
+    "broke": 0,
+    "fixed": 0,
+    "discordant": 0,
+    "harms": false
+   },
+   "all_cells": {
+    "n": 3472,
+    "n_clusters": 90,
+    "mean_delta": 0.0,
+    "ci_lo": 0.0,
+    "ci_hi": 0.0,
+    "ci_half_width": 0.0,
+    "ci_half_width_naive": 0.0,
+    "ci_method": "cluster bootstrap",
+    "broke": 0,
+    "fixed": 0,
+    "discordant": 0,
+    "harms": false
+   },
+   "per_judge": {
+    "Qwen3-8B": {
+     "n": 1155,
+     "n_clusters": 30,
+     "mean_delta": 0.0,
+     "ci_lo": 0.0,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.0,
+     "ci_half_width_naive": 0.0,
+     "ci_method": "cluster bootstrap",
+     "broke": 0,
+     "fixed": 0,
+     "discordant": 0,
+     "harms": false
+    },
+    "phi-4": {
+     "n": 1155,
+     "n_clusters": 30,
+     "mean_delta": 0.0,
+     "ci_lo": 0.0,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.0,
+     "ci_half_width_naive": 0.0,
+     "ci_method": "cluster bootstrap",
+     "broke": 0,
+     "fixed": 0,
+     "discordant": 0,
+     "harms": false
+    }
+   },
+   "per_dataset": {
+    "ciciomt2024": {
+     "n": 872,
+     "n_clusters": 24,
+     "mean_delta": 0.0,
+     "ci_lo": 0.0,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.0,
+     "ci_half_width_naive": 0.0,
+     "ci_method": "cluster bootstrap",
+     "broke": 0,
+     "fixed": 0,
+     "discordant": 0,
+     "harms": false
+    },
+    "ciciot2023": {
+     "n": 798,
+     "n_clusters": 20,
+     "mean_delta": 0.0,
+     "ci_lo": 0.0,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.0,
+     "ci_half_width_naive": 0.0,
+     "ci_method": "cluster bootstrap",
+     "broke": 0,
+     "fixed": 0,
+     "discordant": 0,
+     "harms": false
+    },
+    "fiveg_nidd": {
+     "n": 640,
+     "n_clusters": 16,
+     "mean_delta": 0.0,
+     "ci_lo": 0.0,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.0,
+     "ci_half_width_naive": 0.0,
+     "ci_method": "cluster bootstrap",
+     "broke": 0,
+     "fixed": 0,
+     "discordant": 0,
+     "harms": false
+    }
+   }
+  }
+ },
+ "vs_S_xprime": {
+  "A1_displacement": {
+   "pooled": {
+    "n": 2400,
+    "n_clusters": 60,
+    "mean_delta": -0.19541666666666666,
+    "ci_lo": -0.2733333333333333,
+    "ci_hi": -0.12041666666666667,
+    "ci_half_width": 0.07645833333333332,
+    "ci_half_width_naive": 0.021394522116512976,
+    "ci_method": "cluster bootstrap",
+    "broke": 623,
+    "fixed": 154,
+    "discordant": 777,
+    "harms": true
+   },
+   "all_cells": {
+    "n": 3600,
+    "n_clusters": 90,
+    "mean_delta": 0.051666666666666666,
+    "ci_lo": -0.04083333333333333,
+    "ci_hi": 0.14527777777777778,
+    "ci_half_width": 0.09305555555555556,
+    "ci_half_width_naive": 0.02170853764050689,
+    "ci_method": "cluster bootstrap",
+    "broke": 706,
+    "fixed": 892,
+    "discordant": 1598,
+    "harms": false
+   },
+   "per_judge": {
+    "Qwen3-8B": {
+     "n": 1200,
+     "n_clusters": 30,
+     "mean_delta": -0.18416666666666667,
+     "ci_lo": -0.2975,
+     "ci_hi": -0.07833333333333334,
+     "ci_half_width": 0.10958333333333332,
+     "ci_half_width_naive": 0.03008409595222052,
+     "ci_method": "cluster bootstrap",
+     "broke": 300,
+     "fixed": 79,
+     "discordant": 379,
+     "harms": true
+    },
+    "phi-4": {
+     "n": 1200,
+     "n_clusters": 30,
+     "mean_delta": -0.20666666666666667,
+     "ci_lo": -0.31916666666666665,
+     "ci_hi": -0.10083333333333333,
+     "ci_half_width": 0.10916666666666666,
+     "ci_half_width_naive": 0.030457387489702132,
+     "ci_method": "cluster bootstrap",
+     "broke": 323,
+     "fixed": 75,
+     "discordant": 398,
+     "harms": true
+    }
+   },
+   "per_dataset": {
+    "ciciomt2024": {
+     "n": 960,
+     "n_clusters": 24,
+     "mean_delta": -0.13541666666666666,
+     "ci_lo": -0.23335937499999998,
+     "ci_hi": -0.04375,
+     "ci_half_width": 0.09480468749999998,
+     "ci_half_width_naive": 0.0271641296292176,
+     "ci_method": "cluster bootstrap",
+     "broke": 162,
+     "fixed": 32,
+     "discordant": 194,
+     "harms": true
+    },
+    "ciciot2023": {
+     "n": 800,
+     "n_clusters": 20,
+     "mean_delta": -0.2975,
+     "ci_lo": -0.46378125,
+     "ci_hi": -0.12621875000000046,
+     "ci_half_width": 0.16878124999999977,
+     "ci_half_width_naive": 0.03828823977495737,
+     "ci_method": "cluster bootstrap",
+     "broke": 276,
+     "fixed": 38,
+     "discordant": 314,
+     "harms": true
+    },
+    "fiveg_nidd": {
+     "n": 640,
+     "n_clusters": 16,
+     "mean_delta": -0.1578125,
+     "ci_lo": -0.2609375,
+     "ci_hi": -0.0578125,
+     "ci_half_width": 0.1015625,
+     "ci_half_width_naive": 0.048847642098451126,
+     "ci_method": "cluster bootstrap",
+     "broke": 185,
+     "fixed": 84,
+     "discordant": 269,
+     "harms": true
+    }
+   }
+  },
+  "A1_misdirection": {
+   "pooled": {
+    "n": 876,
+    "n_clusters": 54,
+    "mean_delta": -0.23858447488584475,
+    "ci_lo": -0.3348573287601421,
+    "ci_hi": -0.14912069838056682,
+    "ci_half_width": 0.09286831518978765,
+    "ci_half_width_naive": 0.03163500311051756,
+    "ci_method": "cluster bootstrap",
+    "broke": 229,
+    "fixed": 20,
+    "discordant": 249,
+    "harms": true
+   },
+   "all_cells": {
+    "n": 1518,
+    "n_clusters": 84,
+    "mean_delta": 0.04216073781291173,
+    "ci_lo": -0.07371494211208236,
+    "ci_hi": 0.16565696728718599,
+    "ci_half_width": 0.11968595469963417,
+    "ci_half_width_naive": 0.029682170045376113,
+    "ci_method": "cluster bootstrap",
+    "broke": 233,
+    "fixed": 297,
+    "discordant": 530,
+    "harms": false
+   },
+   "per_judge": {
+    "Qwen3-8B": {
+     "n": 438,
+     "n_clusters": 27,
+     "mean_delta": -0.2465753424657534,
+     "ci_lo": -0.38942676380368096,
+     "ci_hi": -0.11643713597761365,
+     "ci_half_width": 0.13649481391303364,
+     "ci_half_width_naive": 0.04478186165966523,
+     "ci_method": "cluster bootstrap",
+     "broke": 117,
+     "fixed": 9,
+     "discordant": 126,
+     "harms": true
+    },
+    "phi-4": {
+     "n": 438,
+     "n_clusters": 27,
+     "mean_delta": -0.23059360730593606,
+     "ci_lo": -0.36897848333158306,
+     "ci_hi": -0.10818713450292397,
+     "ci_half_width": 0.13039567441432953,
+     "ci_half_width_naive": 0.04485844924911956,
+     "ci_method": "cluster bootstrap",
+     "broke": 112,
+     "fixed": 11,
+     "discordant": 123,
+     "harms": true
+    }
+   },
+   "per_dataset": {
+    "ciciomt2024": {
+     "n": 80,
+     "n_clusters": 18,
+     "mean_delta": -0.075,
+     "ci_lo": -0.10869565217391304,
+     "ci_hi": -0.03125,
+     "ci_half_width": 0.03872282608695652,
+     "ci_half_width_naive": 0.05898468586568814,
+     "ci_method": "cluster bootstrap",
+     "broke": 6,
+     "fixed": 0,
+     "discordant": 6,
+     "harms": true
+    },
+    "ciciot2023": {
+     "n": 352,
+     "n_clusters": 20,
+     "mean_delta": -0.11931818181818182,
+     "ci_lo": -0.32,
+     "ci_hi": 0.0,
+     "ci_half_width": 0.16,
+     "ci_half_width_naive": 0.040730023465776165,
+     "ci_method": "cluster bootstrap",
+     "broke": 50,
+     "fixed": 8,
+     "discordant": 58,
+     "harms": false
+    },
+    "fiveg_nidd": {
+     "n": 444,
+     "n_clusters": 16,
+     "mean_delta": -0.36261261261261263,
+     "ci_lo": -0.44804098266858083,
+     "ci_hi": -0.2663890875417172,
+     "ci_half_width": 0.09082594756343182,
+     "ci_half_width_naive": 0.04986467146857681,
+     "ci_method": "cluster bootstrap",
+     "broke": 173,
+     "fixed": 12,
+     "discordant": 185,
+     "harms": true
+    }
+   }
+  },
+  "A3_scaffolding": {
+   "pooled": {
+    "n": 2310,
+    "n_clusters": 60,
+    "mean_delta": -0.42813852813852815,
+    "ci_lo": -0.5363476238664678,
+    "ci_hi": -0.32108902333621436,
+    "ci_half_width": 0.10762930026512674,
+    "ci_half_width_naive": 0.021971320705073002,
+    "ci_method": "cluster bootstrap",
+    "broke": 1041,
+    "fixed": 52,
+    "discordant": 1093,
+    "harms": true
+   },
+   "all_cells": {
+    "n": 3472,
+    "n_clusters": 90,
+    "mean_delta": -0.1742511520737327,
+    "ci_lo": -0.2873468807408837,
+    "ci_hi": -0.061612309505253114,
+    "ci_half_width": 0.1128672856178153,
+    "ci_half_width_naive": 0.021547661412297515,
+    "ci_method": "cluster bootstrap",
+    "broke": 1083,
+    "fixed": 478,
+    "discordant": 1561,
+    "harms": true
+   },
+   "per_judge": {
+    "Qwen3-8B": {
+     "n": 1155,
+     "n_clusters": 30,
+     "mean_delta": -0.4354978354978355,
+     "ci_lo": -0.5898386432612972,
+     "ci_hi": -0.28100411521713864,
+     "ci_half_width": 0.15441726402207928,
+     "ci_half_width_naive": 0.031148974772658527,
+     "ci_method": "cluster bootstrap",
+     "broke": 529,
+     "fixed": 26,
+     "discordant": 555,
+     "harms": true
+    },
+    "phi-4": {
+     "n": 1155,
+     "n_clusters": 30,
+     "mean_delta": -0.42077922077922075,
+     "ci_lo": -0.5690272835571508,
+     "ci_hi": -0.2710222855148121,
+     "ci_half_width": 0.14900249902116935,
+     "ci_half_width_naive": 0.03103549644067138,
+     "ci_method": "cluster bootstrap",
+     "broke": 512,
+     "fixed": 26,
+     "discordant": 538,
+     "harms": true
+    }
+   },
+   "per_dataset": {
+    "ciciomt2024": {
+     "n": 872,
+     "n_clusters": 24,
+     "mean_delta": -0.4288990825688073,
+     "ci_lo": -0.6063461109128122,
+     "ci_hi": -0.2573679584193228,
+     "ci_half_width": 0.1744890762467447,
+     "ci_half_width_naive": 0.03382566032099271,
+     "ci_method": "cluster bootstrap",
+     "broke": 380,
+     "fixed": 6,
+     "discordant": 386,
+     "harms": true
+    },
+    "ciciot2023": {
+     "n": 798,
+     "n_clusters": 20,
+     "mean_delta": -0.46115288220551376,
+     "ci_lo": -0.6842105263157895,
+     "ci_hi": -0.22807017543859648,
+     "ci_half_width": 0.2280701754385965,
+     "ci_half_width_naive": 0.04193704649594124,
+     "ci_method": "cluster bootstrap",
+     "broke": 414,
+     "fixed": 46,
+     "discordant": 460,
+     "harms": true
+    },
+    "fiveg_nidd": {
+     "n": 640,
+     "n_clusters": 16,
+     "mean_delta": -0.3859375,
+     "ci_lo": -0.5,
+     "ci_hi": -0.2625,
+     "ci_half_width": 0.11875,
+     "ci_half_width_naive": 0.037816890274768915,
+     "ci_method": "cluster bootstrap",
+     "broke": 247,
+     "fixed": 0,
+     "discordant": 247,
+     "harms": true
+    }
+   }
+  }
+ }
+}

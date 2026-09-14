@@ -1,0 +1,33 @@
+float_id,kind,paper_section,generating_experiment,path,claim_supported,status
+Fig6_conformal_calibration,figure,C3,c3_artifacts_fiveg_nidd,results/c3_artifacts_fiveg_nidd/raw/conformal.csv,empirical false-alarm rate stays within nominal alpha on clean held-out data,done
+Fig5_certified_radius,figure,C3,c3_artifacts_fiveg_nidd,results/c3_artifacts_fiveg_nidd/raw/radii.csv,most clean samples are not certifiable: the stability premise fails on tabular NIDS,done
+Fig2_interventional,figure,C3,c3_artifacts_fiveg_nidd,results/c3_artifacts_fiveg_nidd/raw/ablation.csv,ablating a ground-truth causal feature moves detection; a non-causal one does not,done
+Tab5_per_signal_auroc,table,C3,c3_artifacts_fiveg_nidd,results/c3_artifacts_fiveg_nidd/raw/signal_auroc.csv,"per-signal detectability per attack class, including where signals fail",done
+Fig6_conformal_calibration,figure,C3,c3_artifacts_ciciot2023,results/c3_artifacts_ciciot2023/raw/conformal.csv,empirical false-alarm rate stays within nominal alpha on clean held-out data,done
+Fig5_certified_radius,figure,C3,c3_artifacts_ciciot2023,results/c3_artifacts_ciciot2023/raw/radii.csv,most clean samples are not certifiable: the stability premise fails on tabular NIDS,done
+Fig2_interventional,figure,C3,c3_artifacts_ciciot2023,results/c3_artifacts_ciciot2023/raw/ablation.csv,ablating a ground-truth causal feature moves detection; a non-causal one does not,done
+Tab5_per_signal_auroc,table,C3,c3_artifacts_ciciot2023,results/c3_artifacts_ciciot2023/raw/signal_auroc.csv,"per-signal detectability per attack class, including where signals fail",done
+Fig3_Tab4_decision_utility,figure+table,C2,decision_utility,results/decision_utility/summary/decision_utility.md,prediction-preserving explanation attacks change the triage agent's decision,done
+Fig6_conformal_calibration,figure,C3,c3_artifacts_ciciomt2024,results/c3_artifacts_ciciomt2024/raw/conformal.csv,empirical false-alarm rate stays within nominal alpha on clean held-out data,done
+Fig5_certified_radius,figure,C3,c3_artifacts_ciciomt2024,results/c3_artifacts_ciciomt2024/raw/radii.csv,most clean samples are not certifiable: the stability premise fails on tabular NIDS,done
+Fig2_interventional,figure,C3,c3_artifacts_ciciomt2024,results/c3_artifacts_ciciomt2024/raw/ablation.csv,ablating a ground-truth causal feature moves detection; a non-causal one does not,done
+Tab5_per_signal_auroc,table,C3,c3_artifacts_ciciomt2024,results/c3_artifacts_ciciomt2024/raw/signal_auroc.csv,"per-signal detectability per attack class, including where signals fail",done
+generality_mlp_ig,table,C3,generality_mlp_ig_fiveg_nidd,results/generality_mlp_ig_fiveg_nidd/raw/auroc.csv,the C3 negatives are not an artifact of XGBoost+TreeSHAP,done
+generality_mlp_ig,table,C3,generality_mlp_ig_ciciomt2024,results/generality_mlp_ig_ciciomt2024/raw/auroc.csv,the C3 negatives are not an artifact of XGBoost+TreeSHAP,done
+generality_mlp_ig,table,C3,generality_mlp_ig_ciciot2023,results/generality_mlp_ig_ciciot2023/raw/auroc.csv,the C3 negatives are not an artifact of XGBoost+TreeSHAP,done
+Tab_reference_correction,table,C2,reference_decomposition_a3_c03,results/reference_decomposition_a3_c03/summary/effects.json,reader harm scored against the causal set of the flow shown,done
+Tab_decomposition,table,C2,reference_decomposition_a3_c03,results/reference_decomposition_a3_c03/summary/decomposition.json,top-1 corruption splits into infidelity and reliance shift,done
+Tab_reference_correction,table,C2,reference_decomposition_a3_c01,results/reference_decomposition_a3_c01/summary/effects.json,reader harm scored against the causal set of the flow shown,done
+Tab_decomposition,table,C2,reference_decomposition_a3_c01,results/reference_decomposition_a3_c01/summary/decomposition.json,top-1 corruption splits into infidelity and reliance shift,done
+Tab_reference_correction,table,C2,reference_decomposition_a3_c005,results/reference_decomposition_a3_c005/summary/effects.json,reader harm scored against the causal set of the flow shown,done
+Tab_decomposition,table,C2,reference_decomposition_a3_c005,results/reference_decomposition_a3_c005/summary/decomposition.json,top-1 corruption splits into infidelity and reliance shift,done
+Tab5_per_signal_auroc,table,C3,matrix,results/matrix/raw.json,per-signal detectability across attacks and datasets,done
+Fig4_efficacy_vs_detectability,figure,C3,matrix,results/matrix/raw.json,the attacks that do the most damage are the least detectable,done
+matrix_ci,summary,C1,matrix,results/matrix/matrix_ci.md,prediction-preserving attacks corrupt the explanation on every dataset,done
+Tab_reference_correction,table,C2,reference_decomposition,results/reference_decomposition/summary/effects.json,reader harm scored against the causal set of the flow shown,done
+Tab_decomposition,table,C2,reference_decomposition,results/reference_decomposition/summary/decomposition.json,top-1 corruption splits into infidelity and reliance shift,done
+Tab_reference_correction,table,C2,reference_decomposition_median,results/reference_decomposition_median/summary/effects.json,reader harm scored against the causal set of the flow shown,done
+Tab_decomposition,table,C2,reference_decomposition_median,results/reference_decomposition_median/summary/decomposition.json,top-1 corruption splits into infidelity and reliance shift,done
+Tab_reference_correction,table,C2,reference_decomposition_tau010,results/reference_decomposition_tau010/summary/effects.json,reader harm scored against the causal set of the flow shown,done
+Tab_decomposition,table,C2,reference_decomposition_tau010,results/reference_decomposition_tau010/summary/decomposition.json,top-1 corruption splits into infidelity and reliance shift,done
+Fig_motivating,figure,2,motivating_examples,results/motivating_examples/raw/examples.json,"three real flows: harm, reliance shift, scaffolding",done

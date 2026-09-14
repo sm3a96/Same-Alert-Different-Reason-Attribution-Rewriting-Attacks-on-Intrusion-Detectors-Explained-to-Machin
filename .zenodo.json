@@ -1,0 +1,22 @@
+{
+  "title": "XInt-Bench: explanation-integrity attacks on network intrusion detection",
+  "description": "<p>A benchmark of prediction-preserving attacks on the post-hoc feature attributions that ML-based NIDS attach to their alerts.</p><p>Ships: three attacks (attribution evasion in misdirection and fragility variants, and Slack-style scaffolding); per-instance detector-relative interventional labels; a realizable-flow constraint that enforces the arithmetic each flow extractor imposes on its own output; runtime integrity signals calibrated label-free by split conformal prediction; and a downstream decision task in which an autonomous triage agent reads the explanation and its decisions are scored objectively.</p><p>Datasets are not redistributed. The code is MIT-licensed; each corpus carries its own academic-use terms and is fetched from its original host.</p>",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Bibers, Ismail Mohammed I",
+      "affiliation": "Purdue University"
+    }
+  ],
+  "keywords": [
+    "explainable AI",
+    "intrusion detection",
+    "adversarial machine learning",
+    "attribution attacks",
+    "conformal prediction",
+    "agentic security operations"
+  ],
+  "related_identifiers": []
+}

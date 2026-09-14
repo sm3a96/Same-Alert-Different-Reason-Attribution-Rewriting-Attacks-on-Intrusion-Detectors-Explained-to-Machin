@@ -1,0 +1,95 @@
+{
+  "dataset": "fiveg_nidd",
+  "seed": 0,
+  "attack": "A1_displacement",
+  "tolerance": 0.001,
+  "cells": [
+    {
+      "class": "HTTPFlood",
+      "clean_residual": {
+        "n": 40,
+        "mean": 3.495239964444077e-08,
+        "n_exact_zero": 3,
+        "n_above_tol": 0,
+        "p0": 0.0,
+        "p50": 6.984919309616089e-10,
+        "p90": 1.1964170636144976e-07,
+        "p99": 4.016079270202081e-07,
+        "p100": 4.894951067813125e-07
+      },
+      "attacked_residual": {
+        "n": 40,
+        "mean": 0.0,
+        "n_exact_zero": 40,
+        "n_above_tol": 0,
+        "p0": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p99": 0.0,
+        "p100": 0.0
+      },
+      "auroc_raw": 0.037,
+      "auroc_thresholded": 0.5,
+      "max_residual_either_arm": 4.894951067813125e-07,
+      "verdict": "float-noise: neither arm violates a single constraint at the 1e-3 tolerance the signal itself uses, so the ordering AUROC sees is in bits no monitor can threshold"
+    },
+    {
+      "class": "SlowrateDoS",
+      "clean_residual": {
+        "n": 40,
+        "mean": 1.9677393542987448e-07,
+        "n_exact_zero": 0,
+        "n_above_tol": 0,
+        "p0": 2.3283064365386963e-10,
+        "p50": 1.885357982558016e-07,
+        "p90": 3.5145651228196684e-07,
+        "p99": 4.4269206514896475e-07,
+        "p100": 4.488462217455691e-07
+      },
+      "attacked_residual": {
+        "n": 40,
+        "mean": 1.8269572167610807e-08,
+        "n_exact_zero": 37,
+        "n_above_tol": 0,
+        "p0": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p99": 3.408827095242821e-07,
+        "p100": 4.3306633303632727e-07
+      },
+      "auroc_raw": 0.044,
+      "auroc_thresholded": 0.5,
+      "max_residual_either_arm": 4.488462217455691e-07,
+      "verdict": "float-noise: neither arm violates a single constraint at the 1e-3 tolerance the signal itself uses, so the ordering AUROC sees is in bits no monitor can threshold"
+    },
+    {
+      "class": "UDPFlood",
+      "clean_residual": {
+        "n": 40,
+        "mean": 2.7355519700983375e-07,
+        "n_exact_zero": 0,
+        "n_above_tol": 0,
+        "p0": 2.676335209006453e-09,
+        "p50": 2.8463941348366717e-07,
+        "p90": 4.766047823456798e-07,
+        "p99": 5.073501943336778e-07,
+        "p100": 5.182530969927157e-07
+      },
+      "attacked_residual": {
+        "n": 40,
+        "mean": 0.0,
+        "n_exact_zero": 40,
+        "n_above_tol": 0,
+        "p0": 0.0,
+        "p50": 0.0,
+        "p90": 0.0,
+        "p99": 0.0,
+        "p100": 0.0
+      },
+      "auroc_raw": 0.0,
+      "auroc_thresholded": 0.5,
+      "max_residual_either_arm": 5.182530969927157e-07,
+      "verdict": "float-noise: neither arm violates a single constraint at the 1e-3 tolerance the signal itself uses, so the ordering AUROC sees is in bits no monitor can threshold"
+    }
+  ]
+}

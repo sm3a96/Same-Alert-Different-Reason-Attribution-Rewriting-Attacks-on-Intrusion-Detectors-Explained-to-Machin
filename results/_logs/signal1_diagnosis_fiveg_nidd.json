@@ -1,0 +1,36 @@
+{
+ "dataset": "fiveg_nidd",
+ "n": 120,
+ "sigma": 0.05,
+ "ceiling": 0.09829472345071172,
+ "class": "UDPFlood",
+ "n_samples": 40,
+ "clean": {
+  "mean": 0.08113261895934863,
+  "median": 0.09829472345071172,
+  "frac_zero": 0.15,
+  "frac_at_ceiling": 0.825
+ },
+ "A1_misdirection": {
+  "mean": 0.08307111125460502,
+  "median": 0.09829472345071172,
+  "frac_zero": 0.1,
+  "frac_at_ceiling": 0.775,
+  "auroc": 0.5153
+ },
+ "A1_fragility": {
+  "mean": 0.0925550860262894,
+  "median": 0.09829472345071172,
+  "frac_zero": 0.0,
+  "frac_at_ceiling": 0.9,
+  "auroc": 0.4537
+ },
+ "A3_scaffolding": {
+  "mean": 0.08109314684683717,
+  "median": 0.09829472345071172,
+  "frac_zero": 0.175,
+  "frac_at_ceiling": 0.825,
+  "auroc": 0.5022
+ },
+ "verdict": "SATURATION \u2014 clean and attacked both pile at the ceiling, so the statistic is near-constant and cannot discriminate"
+}

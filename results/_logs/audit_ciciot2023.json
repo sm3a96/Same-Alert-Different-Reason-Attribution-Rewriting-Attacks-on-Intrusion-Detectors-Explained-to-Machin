@@ -1,0 +1,99 @@
+{
+ "dataset": "ciciot2023",
+ "rows": 1586682,
+ "features": 41,
+ "stored_rows_pre_dedup": 1867463,
+ "unique_rows": 1867463,
+ "duplicate_fraction": 0.0,
+ "class_counts": {
+  "DDoS-SYN_Flood": 139760,
+  "DDoS-ICMP_Fragmentation": 18054,
+  "DDoS-RSTFINFlood": 110001,
+  "Mirai-udpplain": 35656,
+  "DDoS-SynonymousIP_Flood": 136384,
+  "DDoS-TCP_Flood": 141909,
+  "BenignTraffic": 43549,
+  "DDoS-UDP_Flood": 216287,
+  "DDoS-PSHACK_Flood": 127894,
+  "DoS-TCP_Flood": 97465,
+  "DDoS-ICMP_Flood": 184179,
+  "DoS-SYN_Flood": 78236,
+  "DDoS-UDP_Fragmentation": 11438,
+  "DoS-UDP_Flood": 130710,
+  "DDoS-ACK_Fragmentation": 11229,
+  "MITM-ArpSpoofing": 12266,
+  "Mirai-greeth_flood": 36203,
+  "Recon-PingSweep": 94,
+  "Mirai-greip_flood": 27776,
+  "Recon-OSScan": 3866,
+  "Recon-HostDiscovery": 5376,
+  "DNS_Spoofing": 7087,
+  "Recon-PortScan": 3251,
+  "DoS-HTTP_Flood": 2897,
+  "DDoS-HTTP_Flood": 1212,
+  "SqlInjection": 225,
+  "VulnerabilityScan": 1502,
+  "DDoS-SlowLoris": 924,
+  "DictionaryBruteForce": 520,
+  "CommandInjection": 226,
+  "Backdoor_Malware": 97,
+  "BrowserHijacking": 220,
+  "XSS": 138,
+  "Uploading_Attack": 51
+ },
+ "constant_features": [
+  "ece_flag_number",
+  "DHCP"
+ ],
+ "identifier_like": [],
+ "row_index_like": [],
+ "session_fingerprints": [],
+ "leakage_suspects": [
+  {
+   "feature": "Header_Length",
+   "depth1_heldout": 0.25,
+   "depth8_heldout": 0.462
+  },
+  {
+   "feature": "Tot size",
+   "depth1_heldout": 0.251,
+   "depth8_heldout": 0.453
+  },
+  {
+   "feature": "AVG",
+   "depth1_heldout": 0.251,
+   "depth8_heldout": 0.449
+  },
+  {
+   "feature": "Magnitue",
+   "depth1_heldout": 0.252,
+   "depth8_heldout": 0.448
+  },
+  {
+   "feature": "Tot sum",
+   "depth1_heldout": 0.251,
+   "depth8_heldout": 0.444
+  },
+  {
+   "feature": "Max",
+   "depth1_heldout": 0.244,
+   "depth8_heldout": 0.432
+  },
+  {
+   "feature": "Min",
+   "depth1_heldout": 0.252,
+   "depth8_heldout": 0.43
+  },
+  {
+   "feature": "Protocol Type",
+   "depth1_heldout": 0.251,
+   "depth8_heldout": 0.389
+  },
+  {
+   "feature": "flow_duration",
+   "depth1_heldout": 0.242,
+   "depth8_heldout": 0.339
+  }
+ ],
+ "majority_baseline": 0.1363
+}

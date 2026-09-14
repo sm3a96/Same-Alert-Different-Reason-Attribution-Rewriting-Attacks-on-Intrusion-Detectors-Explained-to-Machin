@@ -1,0 +1,77 @@
+{
+ "dataset": "ciciov2024",
+ "rows": 3588,
+ "features": 9,
+ "stored_rows_pre_dedup": 1408219,
+ "unique_rows": 3588,
+ "duplicate_fraction": 0.997452,
+ "class_counts": {
+  "DoS": 21,
+  "BENIGN": 3547,
+  "GAS": 2,
+  "RPM": 10,
+  "SPEED": 5,
+  "STEERING_WHEEL": 3
+ },
+ "constant_features": [],
+ "identifier_like": [],
+ "row_index_like": [],
+ "session_fingerprints": [
+  {
+   "feature": "ID",
+   "value_coverage": 0.983,
+   "lookup_acc": 0.998,
+   "cardinality": 48
+  },
+  {
+   "feature": "DATA_0",
+   "value_coverage": 0.988,
+   "lookup_acc": 0.995,
+   "cardinality": 40
+  },
+  {
+   "feature": "DATA_1",
+   "value_coverage": 0.989,
+   "lookup_acc": 0.995,
+   "cardinality": 50
+  },
+  {
+   "feature": "DATA_7",
+   "value_coverage": 0.989,
+   "lookup_acc": 0.995,
+   "cardinality": 45
+  },
+  {
+   "feature": "DATA_4",
+   "value_coverage": 0.992,
+   "lookup_acc": 0.994,
+   "cardinality": 47
+  },
+  {
+   "feature": "DATA_6",
+   "value_coverage": 0.994,
+   "lookup_acc": 0.993,
+   "cardinality": 89
+  },
+  {
+   "feature": "DATA_2",
+   "value_coverage": 0.992,
+   "lookup_acc": 0.991,
+   "cardinality": 94
+  },
+  {
+   "feature": "DATA_5",
+   "value_coverage": 0.997,
+   "lookup_acc": 0.99,
+   "cardinality": 68
+  },
+  {
+   "feature": "DATA_3",
+   "value_coverage": 0.963,
+   "lookup_acc": 0.986,
+   "cardinality": 236
+  }
+ ],
+ "leakage_suspects": [],
+ "majority_baseline": 0.9886
+}

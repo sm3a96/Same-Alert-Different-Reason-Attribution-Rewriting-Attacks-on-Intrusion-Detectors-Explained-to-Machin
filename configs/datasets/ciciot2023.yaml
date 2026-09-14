@@ -1,0 +1,16 @@
+# CICIoT2023 (IoT). Kaggle: akashdogra/ciciot23csv. Combined CSV is 13.7 GB (~46M rows),
+# so we chunk-subsample to keep memory bounded; parquet cache makes it a one-time cost.
+name: ciciot2023
+label_col: label
+sample_frac: 0.04            # ~1.8M rows from 46M; raise for the full run
+extractor: cicflowmeter      # generated XInt-Bench traffic must use the same extractor
+calibration_frac: 0.3
+test_frac: 0.2
+license: "CIC academic use — record exact terms in data/PROVENANCE.md"
+# IAT dropped 2026-08-09. It is not an inter-arrival time: its values cluster around
+# 8.4e7 (84 seconds) and an exact-value lookup table built on one half of the rows
+# predicts the held-out half at 1.000 (CICIoT2023) / 0.999 (CICIoMT2024) with ~95%
+# value coverage. Each attack was captured in its own session, so the column is a
+# capture-clock fingerprint. Every other feature tops out near 0.6 on the same test.
+# This is the defect class Engelen et al. 2021 and Goldschmidt & Chuda 2025 describe.
+drop_cols: [IAT]

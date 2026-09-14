@@ -1,0 +1,17 @@
+# !! EXCLUDED FROM RESULTS (June 14 2026 audit) !!
+# Per-frame CAN data is 99.5% duplicate rows; after dedup only ~3,588 unique rows remain,
+# 98.9% benign (~40 unique attack rows). Not viable for ML in this per-frame form. The
+# 1.00 accuracy seen before dedup was a duplicate-leakage artifact. For the IoV regime,
+# replace with a windowed/aggregated-feature CAN dataset (stretch tier).
+#
+# CICIoV2024 (IoV / CAN bus). Kaggle: tusharchauhan1898/ciciov2024.
+# The decimal/ CSVs carry numeric features (ID + DATA_0..DATA_7) and three label columns;
+# we use the fine-grained `specific_class` (6 classes) and drop the others.
+name: ciciov2024
+subdir: decimal
+label_col: specific_class
+drop_cols: [label, category]
+extractor: native_can          # CAN frames; generated XInt-Bench traffic uses the same
+calibration_frac: 0.3
+test_frac: 0.2
+license: "CIC academic use — record exact terms in data/PROVENANCE.md"

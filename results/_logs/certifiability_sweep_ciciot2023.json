@@ -1,0 +1,78 @@
+{
+ "dataset": "ciciot2023",
+ "n_samples": 40,
+ "conf": 0.05,
+ "class": "DDoS-UDP_Flood",
+ "rows": [
+  {
+   "sigma": 0.05,
+   "n": 30,
+   "certifiable_frac": 0.15,
+   "mean_radius": 0.0062,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.05,
+   "n": 60,
+   "certifiable_frac": 0.2,
+   "mean_radius": 0.00686,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.05,
+   "n": 120,
+   "certifiable_frac": 0.175,
+   "mean_radius": 0.0081,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.05,
+   "n": 250,
+   "certifiable_frac": 0.2,
+   "mean_radius": 0.00909,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.05,
+   "n": 500,
+   "certifiable_frac": 0.225,
+   "mean_radius": 0.01005,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 30,
+   "certifiable_frac": 0.125,
+   "mean_radius": 0.00599,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 60,
+   "certifiable_frac": 0.125,
+   "mean_radius": 0.00561,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 120,
+   "certifiable_frac": 0.125,
+   "mean_radius": 0.00602,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 250,
+   "certifiable_frac": 0.125,
+   "mean_radius": 0.00819,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 500,
+   "certifiable_frac": 0.125,
+   "mean_radius": 0.00858,
+   "median_radius": 0.0
+  }
+ ]
+}

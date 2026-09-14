@@ -1,0 +1,75 @@
+{
+  "experiment": "motivating_examples",
+  "seed": 0,
+  "git_commit": "01c2057",
+  "timestamp_utc": "2026-09-11T02:43:16.271775+00:00",
+  "wall_clock_s": 29.526,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "dataset": "fiveg_nidd",
+    "class": "HTTPFlood",
+    "seed": 0,
+    "examples": [
+      [
+        "harm",
+        "A1_displacement",
+        "s305325"
+      ],
+      [
+        "reliance_shift",
+        "A1_displacement",
+        "s316302"
+      ],
+      [
+        "scaffolding",
+        "A3_scaffolding",
+        "s129551"
+      ]
+    ]
+  },
+  "summary": {
+    "harm": {
+      "sample_id": "s305325",
+      "p_clean": 0.9999687671661377,
+      "p_attacked": 0.9905530214309692,
+      "S_x": [
+        "sTtl",
+        "SrcWin"
+      ],
+      "S_a": [
+        "sTtl",
+        "DstWin",
+        "TcpRtt",
+        "AckDat"
+      ]
+    },
+    "reliance_shift": {
+      "sample_id": "s316302",
+      "p_clean": 0.9999083280563354,
+      "p_attacked": 0.9830029606819153,
+      "S_x": [
+        "SrcWin"
+      ],
+      "S_a": [
+        "sTtl",
+        "SrcWin",
+        "SynAck",
+        "AckDat"
+      ]
+    },
+    "scaffolding": {
+      "sample_id": "s129551",
+      "p_clean": 0.9998818635940552,
+      "p_attacked": 0.9995965361595154,
+      "S_x": [
+        "sTtl",
+        "AckDat"
+      ],
+      "S_a": [
+        "dTtl",
+        "TcpRtt"
+      ]
+    }
+  }
+}

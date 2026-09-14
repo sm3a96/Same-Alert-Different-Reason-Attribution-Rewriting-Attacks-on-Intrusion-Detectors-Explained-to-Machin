@@ -1,0 +1,39 @@
+{
+  "experiment": "c3_artifacts_ciciomt2024",
+  "seed": 0,
+  "git_commit": "fa07f9e",
+  "timestamp_utc": "2026-08-16T05:59:00.547773+00:00",
+  "wall_clock_s": 5068.902,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "dataset": "ciciomt2024",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_test": 60,
+    "stab_n": 120,
+    "stab_sigma": 0.05
+  },
+  "summary": {
+    "dataset": "ciciomt2024",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_clean": 300,
+    "smoothing_n": 120,
+    "sigma": 0.05,
+    "radius_ceiling": 0.098295,
+    "clean_frac_at_ceiling": 0.0,
+    "clean_certifiable_frac": 0.21,
+    "empirical_fa_at_0.05": 0.0533
+  }
+}

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avert"
+version = "0.0.1"
+description = "XInt-Bench — explanation-integrity attacks on network intrusion detection"
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Core stack already present in the dev venv. Pin exactly via the lockfile after the
+# first clean install (make lock); these floors document known-good majors.
+dependencies = [
+    "numpy>=1.26,<2.0",
+    "pandas>=2.2",
+    "scipy>=1.11",
+    "scikit-learn>=1.5",
+    "pyyaml>=6.0",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+# Detectors + attribution (Phase 1-2). FT-Transformer is implemented NATIVELY in torch
+# (detectors/real.py); the legacy `rtdl` package pins old torch and is deliberately NOT
+# used. TabPFN (stretch-tier tabular foundation model) is installed in isolation later.
+# Always install with `-c constraints.txt` so torch is never downgraded.
+models = ["xgboost>=2.1", "shap>=0.46", "captum>=0.9"]
+# Datasets via the Kaggle API (token at ~/.config/kaggle/kaggle.json).
+data = ["kaggle>=1.7", "pandas>=2.2", "pyarrow"]
+# Agentic verifier + triage judges (Phase 2, 5). sglang optional alt to vllm —
+# prefix caching suits the shared-context retrieval+debate workload.
+llm = ["transformers>=4.39", "vllm", "peft", "datasets", "accelerate"]
+# Conformal / anytime-valid machinery (Phase 3). mapie + crepes work out of the box and
+# cover current needs alongside the in-house split-conformal core (fusion/conformal.py).
+conformal = ["mapie", "crepes"]
+# Optional GPU/online CP — torchcp needs `torchsort`, a CUDA C++ build (compiler toolchain).
+conformal-gpu = ["torchcp", "torchsort"]
+dev = ["pytest>=7.4", "ruff", "ipython"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

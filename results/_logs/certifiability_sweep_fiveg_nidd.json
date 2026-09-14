@@ -1,0 +1,78 @@
+{
+ "dataset": "fiveg_nidd",
+ "n_samples": 40,
+ "conf": 0.05,
+ "class": "HTTPFlood",
+ "rows": [
+  {
+   "sigma": 0.05,
+   "n": 30,
+   "certifiable_frac": 0.025,
+   "mean_radius": 0.00034,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.05,
+   "n": 60,
+   "certifiable_frac": 0.0,
+   "mean_radius": 0.0,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.05,
+   "n": 120,
+   "certifiable_frac": 0.0,
+   "mean_radius": 0.0,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.05,
+   "n": 250,
+   "certifiable_frac": 0.0,
+   "mean_radius": 0.0,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.05,
+   "n": 500,
+   "certifiable_frac": 0.025,
+   "mean_radius": 1e-05,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 30,
+   "certifiable_frac": 0.025,
+   "mean_radius": 0.00067,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 60,
+   "certifiable_frac": 0.0,
+   "mean_radius": 0.0,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 120,
+   "certifiable_frac": 0.0,
+   "mean_radius": 0.0,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 250,
+   "certifiable_frac": 0.0,
+   "mean_radius": 0.0,
+   "median_radius": 0.0
+  },
+  {
+   "sigma": 0.1,
+   "n": 500,
+   "certifiable_frac": 0.0,
+   "mean_radius": 0.0,
+   "median_radius": 0.0
+  }
+ ]
+}

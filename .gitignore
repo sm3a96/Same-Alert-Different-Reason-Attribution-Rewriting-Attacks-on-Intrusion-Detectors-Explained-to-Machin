@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+.ipynb_checkpoints/
+
+# Raw datasets and model weights are never committed. Fetch them with scripts/download_data.py.
+/data/
+artifacts/models/*
+!artifacts/models/manifest.json
+artifacts/benchmark/*
+!artifacts/benchmark/croissant.json
+*.parquet
+*.pcap
+*.pt
+*.bin
+*.safetensors
+
+# Bulk per-run outputs stay local. results/_packed/ carries gzipped copies of every artifact
+# the figure and table scripts read, so `make unpack && make floats` rebuilds them without
+# the datasets.
+results/*/raw/
+!results/motivating_examples/raw/
+results/*/logs/
+results/_logs/*.log
+results/MANIFEST.lock
+!results/_packed/
+!results/_packed/**
+
+# Caches
+.pytest_cache/
+.ruff_cache/
+*.log

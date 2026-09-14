@@ -1,0 +1,41 @@
+{
+  "experiment": "generality_mlp_ig_ciciot2023",
+  "seed": 0,
+  "git_commit": "7f63686",
+  "timestamp_utc": "2026-09-09T03:30:29.199205+00:00",
+  "wall_clock_s": 721.296,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "dataset": "ciciot2023",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_test": 40,
+    "stab_n": 120,
+    "stab_sigma": 0.05
+  },
+  "summary": {
+    "dataset": "ciciot2023",
+    "detector": "MLP",
+    "attributor": "integrated_gradients",
+    "stab_n": 120,
+    "sigma": 0.05,
+    "ceiling": 0.098295,
+    "clean_at_zero": 0.125,
+    "clean_at_ceiling": 0.295,
+    "clean_informative": 0.58,
+    "displacement_auroc_mean": 0.693,
+    "displacement_auroc_per_seed": [
+      0.5272,
+      0.6256,
+      0.8325,
+      0.8109,
+      0.6687
+    ]
+  }
+}

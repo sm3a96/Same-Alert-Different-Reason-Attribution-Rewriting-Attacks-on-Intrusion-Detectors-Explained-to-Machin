@@ -1,0 +1,20 @@
+# Base config merged into every experiment. Keep constants here, not in code.
+seed: 0
+alpha: 0.05            # conformal false-alarm budget
+top_k: 5              # analyst acts on the top-k ranked features
+
+certified_stability:
+  n: 100              # smoothing draws (raise on GPU)
+  sigma: 0.1
+
+consensus:
+  top_k: 5
+
+verifier:
+  model: to-select-in-phase-2   # Qwen3 / Gemma 3 / Phi-4 class, chosen empirically
+  serve: vllm
+  schema_constrained: true
+
+eval:
+  n_seeds: 5
+  ci: 0.95

@@ -1,0 +1,17 @@
+# 5G-NIDD (5G core). Kaggle: humera11/5g-nidd-dataset. Single Combined.csv (~1.2M flows).
+# Label columns: Label (binary), Attack Type (multiclass), Attack Tool. Use Attack Type.
+name: fiveg_nidd
+label_col: Attack Type
+# Drop the other label columns + every audit-confirmed identifier. Constant columns are
+# auto-dropped by the loader.
+#   Offset      packet index, not a flow feature (found in the June audit)
+#   Unnamed: 0  the CSV row counter. Found 2026-08-09: a depth-8 tree on this column ALONE
+#               reaches 0.806 held-out against a 0.393 majority baseline, because the corpus
+#               is ordered by attack class. Every 5G-NIDD number computed before this date
+#               was produced by a detector that could see it.
+#   Seq         Argus record sequence number, the same failure one column over (0.652).
+drop_cols: [Label, "Attack Tool", Offset, "Unnamed: 0", Seq]   # quote names containing a colon
+extractor: argus              # 5G-NIDD flows; generated XInt-Bench traffic uses the same
+calibration_frac: 0.3
+test_frac: 0.2
+license: "5G-NIDD academic use — record exact terms in data/PROVENANCE.md"

@@ -1,0 +1,42 @@
+{
+  "experiment": "decision_utility",
+  "seed": 0,
+  "git_commit": "7a2aec3",
+  "timestamp_utc": "2026-08-13T07:17:31.972908+00:00",
+  "wall_clock_s": 4960.755,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "datasets": [
+      "fiveg_nidd",
+      "ciciot2023",
+      "ciciomt2024"
+    ],
+    "judges": [
+      "Qwen/Qwen3-8B",
+      "microsoft/phi-4"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_test": 40,
+    "n_shown": 10,
+    "temperature": 0.7,
+    "competence_floor": 0.5
+  },
+  "summary": {
+    "n_decisions": 43200,
+    "n_sensitivity": 4800,
+    "n_shuffled": 4800,
+    "n_cells": 270,
+    "judges": [
+      "Qwen/Qwen3-8B",
+      "microsoft/phi-4"
+    ],
+    "competence_floor": 0.5
+  }
+}

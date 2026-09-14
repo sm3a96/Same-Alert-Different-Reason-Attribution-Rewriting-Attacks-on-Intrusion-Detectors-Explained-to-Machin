@@ -1,0 +1,51 @@
+{
+  "experiment": "matrix_v2",
+  "seed": 0,
+  "git_commit": "035aa1a",
+  "timestamp_utc": "2026-09-08T05:51:08.006327+00:00",
+  "wall_clock_s": 19466.087,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "datasets": [
+      "fiveg_nidd",
+      "ciciot2023",
+      "ciciomt2024"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_classes": 3,
+    "n_cal": 100,
+    "n_test": 40,
+    "top_k": 5,
+    "perm_samples": 10,
+    "stability_n": 30
+  },
+  "summary": {
+    "rows": 135,
+    "cells": 45,
+    "datasets": [
+      "fiveg_nidd",
+      "ciciot2023",
+      "ciciomt2024"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "classes_per_dataset": 3,
+    "attacks": [
+      "A1_displacement",
+      "A1_misdirection",
+      "A3_scaffolding"
+    ]
+  }
+}
