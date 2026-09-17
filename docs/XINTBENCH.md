@@ -79,7 +79,7 @@ under each attack) — it does not exercise `avert.repair`, and no repair result
 than merely impressive: the same clean case decided twice, which is the judge's own noise
 floor, and the same decisions re-scored under alternative prompt wordings.
 
-## What we have learned (honest)
+## What we have learned 
 
 - **A1 displacement is severe and largely undetectable by statistics**: it rewrites a large
   fraction of the shown explanation while preserving the prediction, at AUROC ≈ 0.5 on
