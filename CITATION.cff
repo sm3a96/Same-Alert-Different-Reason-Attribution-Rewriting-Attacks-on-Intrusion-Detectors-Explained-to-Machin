@@ -16,7 +16,7 @@ authors:
     affiliation: Purdue University
     # orcid: TODO add before the Zenodo release
 license: MIT
-repository-code: "TODO set at release"     # GitHub URL, once the repo is pushed
+repository-code: "https://github.com/sm3a96/Same-Alert-Different-Reason-Attribution-Rewriting-Attacks-on-Intrusion-Detectors-Explained-to-Machin"
 keywords:
   - explainable AI
   - intrusion detection
