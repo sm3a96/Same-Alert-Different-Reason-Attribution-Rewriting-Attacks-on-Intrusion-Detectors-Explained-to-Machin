@@ -1,7 +1,7 @@
 # Same Alert, Different Reason: Attribution Rewriting Attacks on Intrusion Detectors Explained to Machines
 
-Code and results for the paper. The benchmark it releases is the Explanation Integrity
-Benchmark (EIB). The code name XIntBench in the source is the paper's Explanation Integrity Benchmark.
+Code and results for the paper. The paper calls this benchmark the Explanation Integrity
+Benchmark (EIB); the source keeps the code name XIntBench.
 
 ML-based NIDS attach a *why* to every alert, a feature-attribution explanation. In agentic
 security operations that explanation is read and acted on by an automated reader rather than
