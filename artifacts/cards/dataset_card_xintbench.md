@@ -1,4 +1,4 @@
-# Dataset card — XInt-Bench
+# Dataset card — Explanation Integrity Benchmark (EIB)
 
 Explanation-integrity attacks on flow-based network intrusion detection, with
 ground-truth feature attributions established interventionally.

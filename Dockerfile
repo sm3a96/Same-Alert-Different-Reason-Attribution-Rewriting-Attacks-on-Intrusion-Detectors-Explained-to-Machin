@@ -1,4 +1,4 @@
-# Reproduction container for XInt-Bench.
+# Reproduction container for EIB.
 #
 # Scope, stated up front so nobody is surprised. This image reproduces everything that runs on
 # CPU: the attack suite, the integrity signals, the conformal calibration, the C3 matrix, and

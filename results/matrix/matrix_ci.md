@@ -1,4 +1,4 @@
-# XInt-Bench paper-final matrix (mean +/- 95% CI over SEED MEANS)
+# EIB paper-final matrix (mean +/- 95% CI over SEED MEANS)
 
 Classes within a seed share one bit-identical fitted detector, so the interval is
 over seed means rather than over all class x seed cells.

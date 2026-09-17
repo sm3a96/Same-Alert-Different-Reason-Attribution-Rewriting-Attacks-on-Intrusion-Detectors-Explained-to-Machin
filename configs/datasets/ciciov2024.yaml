@@ -11,7 +11,7 @@ name: ciciov2024
 subdir: decimal
 label_col: specific_class
 drop_cols: [label, category]
-extractor: native_can          # CAN frames; generated XInt-Bench traffic uses the same
+extractor: native_can          # CAN frames; generated EIB traffic uses the same
 calibration_frac: 0.3
 test_frac: 0.2
 license: "CIC academic use — record exact terms in data/PROVENANCE.md"

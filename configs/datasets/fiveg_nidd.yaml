@@ -11,7 +11,7 @@ label_col: Attack Type
 #               was produced by a detector that could see it.
 #   Seq         Argus record sequence number, the same failure one column over (0.652).
 drop_cols: [Label, "Attack Tool", Offset, "Unnamed: 0", Seq]   # quote names containing a colon
-extractor: argus              # 5G-NIDD flows; generated XInt-Bench traffic uses the same
+extractor: argus              # 5G-NIDD flows; generated EIB traffic uses the same
 calibration_frac: 0.3
 test_frac: 0.2
 license: "5G-NIDD academic use — record exact terms in data/PROVENANCE.md"

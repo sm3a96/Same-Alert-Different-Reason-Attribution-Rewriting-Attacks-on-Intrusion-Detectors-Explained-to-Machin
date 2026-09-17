@@ -17,7 +17,7 @@ slice:
 	python scripts/run_walking_skeleton.py
 
 lint:
-	ruff check src tests scripts figures tables
+	ruff check src tests scripts tables
 
 clean:
 	rm -rf .pytest_cache .ruff_cache **/__pycache__ src/*.egg-info
@@ -40,27 +40,10 @@ results:
 	python scripts/export_motivating_examples.py
 
 # ---------------------------------------------------------------- figures and tables
-# Everything a reader sees, rebuilt from the saved artifacts. `make unpack` first on a fresh
+# Every table the paper shows, rebuilt from the saved artifacts; figures ship as PDFs. `make unpack` first on a fresh
 # clone; no dataset is needed for this step.
-.PHONY: floats figures tables cards fig1
-floats: figures tables cards
-
-# Fig1 of the first draft is TikZ and needs tectonic on PATH; it is skipped, not failed, without it.
-fig1:
-	@command -v tectonic >/dev/null 2>&1 \
-	  && (cd figures/src && tectonic -o ../out fig1_threat_schematic.tex) \
-	  || echo "  fig1 SKIPPED: tectonic not on PATH (figures/out/fig1_threat_schematic.pdf unchanged)"
-
-figures: fig1
-	cd figures/src && python fig2_interventional.py
-	cd figures/src && python fig3_decision_utility.py
-	cd figures/src && python fig4_efficacy_vs_detectability.py
-	cd figures/src && python fig5_certified_radius.py
-	cd figures/src && python fig6_conformal_calibration.py
-	cd figures/src && python np_fig3_harm.py
-	cd figures/src && python np_fig4_detectability.py
-	cd figures/src && python np_fig5_decomposition.py
-	cd figures/src && python np_fig_motivating.py
+.PHONY: floats tables cards
+floats: tables
 
 # Dependency order, not alphabetical: summarize_signal1.py writes the summary the later
 # generators read.
@@ -71,7 +54,6 @@ tables:
 	python scripts/make_c2_report.py
 	python scripts/check_explainer_faithfulness.py
 	python scripts/check_recovery.py
-	python tables/src/make_tables.py
 	python tables/src/make_new_paper_tables.py
 	python scripts/make_results_doc.py
 	python scripts/check_seed_variance.py
@@ -82,7 +64,7 @@ cards:
 	python scripts/make_artifact_cards.py
 
 # ---------------------------------------------------------------- checks
-.PHONY: determinism identities verify-clone pack unpack palette
+.PHONY: determinism identities verify-clone pack unpack
 determinism:
 	python scripts/check_determinism.py
 
@@ -99,7 +81,3 @@ pack:
 
 unpack:
 	python scripts/pack_artifacts.py --unpack
-
-# Colourblind-safety check for the shared palette.
-palette:
-	cd figures/src && python check_palette.py

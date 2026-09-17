@@ -1,4 +1,4 @@
-"""XInt-Bench A1 evaluation on real data (Plan Phase 1 P1-4 + the start of the
+"""EIB A1 evaluation on real data (Plan Phase 1 P1-4 + the start of the
 detection evaluation). For one target attack class we:
 
   1. establish interventional ground-truth causal features per attack flow,
@@ -103,7 +103,7 @@ def experiment(ctx) -> RunResult:
         "causal_topk_overlap_clean": round(float(np.mean(overlap_clean)), 2),
         "causal_topk_overlap_attacked": round(float(np.mean(overlap_atk)), 2),
     }
-    print("\n=== XInt-Bench A1 evaluation ===")
+    print("\n=== EIB A1 evaluation ===")
     for k, v in summary.items():
         print(f"  {k:28s} {v}")
     print("================================\n")

@@ -1,6 +1,7 @@
-# XInt-Bench: explanation-integrity attacks on network intrusion detection
+# Same Alert, Different Reason: Attribution Rewriting Attacks on Intrusion Detectors Explained to Machines
 
-Code and results for the paper *Same Alert, Different Reason*.
+Code and results for the paper. The benchmark it releases is the Explanation Integrity
+Benchmark (EIB). The code name XIntBench in the source is the paper's Explanation Integrity Benchmark.
 
 ML-based NIDS attach a *why* to every alert, a feature-attribution explanation. In agentic
 security operations that explanation is read and acted on by an automated reader rather than
@@ -31,11 +32,13 @@ make test
 Python 3.10. torch is pinned to 2.4.0 by `constraints.txt`; keep the `-c` flag on every
 install or a transitive dependency will downgrade it.
 
-## Rebuild the figures and tables (no datasets needed)
+## Rebuild the tables (no datasets needed)
+
+Figures ship as PDFs in `figures/out/`; only the tables rebuild.
 
 ```bash
 make unpack     # inflate results/_packed/ into the paths the generators read
-make floats     # every figure into figures/out/, every table into tables/out/
+make floats     # every table into tables/out/
 ```
 
 `make verify-clone` does this in a fresh clone and compares each generated table byte for byte
@@ -79,13 +82,14 @@ src/avert/
                   erasure faithfulness, PASA; agentic verifier and temporal are stubs
   fusion/         split-conformal calibration and signal aggregation
   repair/         stub, not exercised by any result
-  benchmark/      XInt-Bench: attacks, scaffolding, interventional ground truth, harness
+  benchmark/      EIB: attacks, scaffolding, interventional ground truth, harness
   eval/           experiment runner, metrics, decision utility
   pipeline.py     end-to-end orchestration
 configs/          declarative experiment configs (one run = config + seed)
 scripts/          every experiment, audit and export script
 results/          per-experiment summary and meta, MANIFEST.csv, and _packed/ raw artifacts
-figures/ tables/  generators under src/, outputs under out/
+figures/out/      the paper's figures, shipped as PDFs
+tables/           generator under src/, output under out/
 docs/             benchmark description, threat-framework mapping, cross-dataset results map
 artifacts/        Croissant metadata, dataset and model cards
 tests/            conformal-coverage gate, pipeline smoke tests, phase gates

@@ -8,7 +8,7 @@
 # not a diff.
 #
 # So this clones into a temporary directory, unpacks `results/_packed/`, rebuilds the tables
-# and figures from those artifacts alone, and compares every generated table byte for byte
+# from those artifacts alone, and compares every generated table byte for byte
 # against the working tree. The datasets are never touched: `_packed` is the only input.
 #
 #   bash scripts/verify_clean_clone.sh          # clone HEAD as committed
@@ -33,15 +33,11 @@ cd "$TMP/clone"
 echo "unpacking release artifacts (no datasets present)"
 python scripts/pack_artifacts.py --unpack
 
-echo "rebuilding floats from the unpacked artifacts alone"
+echo "rebuilding the tables from the unpacked artifacts alone"
 python scripts/summarize_signal1.py >/dev/null
 python scripts/classify_regimes.py >/dev/null
 python scripts/make_c2_report.py >/dev/null
-python tables/src/make_tables.py >/dev/null
-for f in fig2_interventional fig3_decision_utility fig4_efficacy_vs_detectability \
-         fig5_certified_radius fig6_conformal_calibration; do
-    (cd figures/src && python "$f.py" >/dev/null)
-done
+python tables/src/make_new_paper_tables.py >/dev/null
 
 echo
 fail=0
@@ -53,13 +49,10 @@ for f in tables/out/*.tex; do
         fail=1
     fi
 done
-for f in figures/out/fig*.pdf; do
-    [[ -s "$f" ]] || { echo "  MISSING $(basename "$f")"; fail=1; }
-done
 
 echo
 if [[ $fail -eq 0 ]]; then
-    echo "CLEAN CLONE REPRODUCES: every table byte-identical, every figure built, no datasets used."
+    echo "CLEAN CLONE REPRODUCES: every table byte-identical, no datasets used."
 else
     echo "CLEAN CLONE DIVERGES -- run 'make pack' if the working tree is the correct one." >&2
 fi

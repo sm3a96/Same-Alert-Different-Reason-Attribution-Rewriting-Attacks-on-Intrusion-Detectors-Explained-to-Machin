@@ -1,7 +1,7 @@
-# XInt-Bench — threat-framework mapping
+# Explanation Integrity Benchmark (EIB): threat-framework mapping
 
 Maps each explanation-integrity attack to **MITRE ATLAS** (v5.4.0, Feb 2026 — 16 tactics,
-84 techniques) and **NIST AI 100-2 E2025**, so industrial red teams can place XInt-Bench in
+84 techniques) and **NIST AI 100-2 E2025**, so industrial red teams can place EIB in
 the vocabulary they already use. Only verified ATLAS technique IDs are used.
 
 | XInt attack | Threat class | Closest MITRE ATLAS | NIST AI 100-2 | Coverage gap |
@@ -15,9 +15,9 @@ the vocabulary they already use. Only verified ATLAS technique IDs are used.
 
 Current AI threat taxonomies (MITRE ATLAS, NIST AI 100-2) enumerate attacks on model
 **predictions**. Attacks that corrupt the **explanation** while preserving the prediction
-are not represented in either framework. XInt-Bench is, to our knowledge, the first to
+are not represented in either framework. EIB is, to our knowledge, the first to
 operationalize this class for NIDS — and these mappings show precisely where it **extends**
-the existing frameworks rather than duplicating them. A red team can run XInt-Bench and
+the existing frameworks rather than duplicating them. A red team can run EIB and
 report results under the ATLAS techniques above, with the explanation-integrity dimension
 flagged as the novel axis.
 

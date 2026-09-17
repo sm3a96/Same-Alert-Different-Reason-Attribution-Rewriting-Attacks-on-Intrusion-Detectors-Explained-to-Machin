@@ -1,4 +1,4 @@
-"""XInt-Bench A3 (scaffolding) evaluation. Signal 3 (cross-method consensus) is built to
+"""EIB A3 (scaffolding) evaluation. Signal 3 (cross-method consensus) is built to
 catch this: a perturbation-based attributor (permutation) is fooled by the scaffold's
 probe-routing while TreeSHAP reads the real model, so they diverge. We calibrate the
 consensus null on the CLEAN detector and measure:
@@ -90,7 +90,7 @@ def experiment(ctx) -> RunResult:
         "mean_disagreement_clean": round(float(np.mean(clean_dis)), 3),
         "mean_disagreement_scaffold": round(float(np.mean(a3_dis)), 3),
     }
-    print("\n=== XInt-Bench A3 (scaffolding) evaluation ===")
+    print("\n=== EIB A3 (scaffolding) evaluation ===")
     for k, v in summary.items():
         print(f"  {k:28s} {v}")
     print("=============================================\n")

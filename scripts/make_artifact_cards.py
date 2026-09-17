@@ -75,7 +75,7 @@ def matrix_stats():
 
 def dataset_card() -> None:
     stats = matrix_stats()
-    L = ["# Dataset card — XInt-Bench", "",
+    L = ["# Dataset card — Explanation Integrity Benchmark (EIB)", "",
          "Explanation-integrity attacks on flow-based network intrusion detection, with",
          "ground-truth feature attributions established interventionally.", "",
          "## What this is", "",
@@ -176,15 +176,15 @@ def croissant() -> None:
     meta = {
         "@context": {"@vocab": "https://schema.org/", "cr": "http://mlcommons.org/croissant/"},
         "@type": "sc:Dataset",
-        "name": "XInt-Bench",
+        "name": "Explanation Integrity Benchmark (EIB)",
         "description": ("Explanation-integrity attacks on flow-based network intrusion "
                         "detection, with ground-truth feature attributions known by "
                         "the detector under test."),
         "conformsTo": "http://mlcommons.org/croissant/1.0",
         "license": "See artifacts/cards/dataset_card_xintbench.md; source datasets carry "
                    "their own academic licences.",
-        "citeAs": "TODO: fill in once the paper has a DOI",
-        "url": "TODO: fill in at release",
+        "citeAs": "I. Bibers and M. Abdallah, Same Alert, Different Reason: Attribution Rewriting Attacks on Intrusion Detectors Explained to Machines, under review",
+        "url": "https://github.com/sm3a96/Same-Alert-Different-Reason-Attribution-Rewriting-Attacks-on-Intrusion-Detectors-Explained-to-Machin",
         "keywords": ["network intrusion detection", "explainable AI", "adversarial machine "
                      "learning", "attribution", "benchmark"],
         "recordSet": [
@@ -195,8 +195,7 @@ def croissant() -> None:
     }
     BENCH.mkdir(parents=True, exist_ok=True)
     (BENCH / "croissant.json").write_text(json.dumps(meta, indent=2) + "\n")
-    print(f"  wrote {BENCH / 'croissant.json'}  (two TODOs left: citeAs and url, both need "
-          f"the Zenodo DOI)")
+    print(f"  wrote {BENCH / 'croissant.json'}")
 
 
 def main() -> None:

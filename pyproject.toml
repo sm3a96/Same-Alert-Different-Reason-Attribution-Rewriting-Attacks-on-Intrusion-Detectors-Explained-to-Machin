@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "avert"
 version = "0.0.1"
-description = "XInt-Bench — explanation-integrity attacks on network intrusion detection"
+description = "Explanation Integrity Benchmark (EIB): attribution rewriting attacks on intrusion detectors explained to machines"
 readme = "README.md"
 requires-python = ">=3.10"
 

@@ -7,7 +7,7 @@ label_col: label
 # Strip the leaked split suffix AND the numbered capture-session suffix (UDP1..UDP8 are
 # the same DDoS-UDP attack captured 8 times) -> collapses to the standard ~19 attack types.
 label_strip: "[0-9]*_(train|test)$"
-extractor: cicflowmeter        # generated XInt-Bench traffic must use the same extractor
+extractor: cicflowmeter        # generated EIB traffic must use the same extractor
 calibration_frac: 0.3
 test_frac: 0.2
 license: "CIC academic use — record exact terms in data/PROVENANCE.md"

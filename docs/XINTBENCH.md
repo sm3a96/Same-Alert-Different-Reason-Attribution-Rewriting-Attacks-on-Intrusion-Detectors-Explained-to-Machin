@@ -1,11 +1,11 @@
-# XInt-Bench — explanation-integrity benchmark for NIDS
+# Explanation Integrity Benchmark (EIB) for NIDS
 
 **Test whether your network-intrusion-detection explanations can be attacked.**
 
 ML-based NIDS increasingly show analysts (and, in agentic SOCs, autonomous agents) a
 *why* alongside each alert — a feature-attribution explanation. Those explanations are
 consumed as trusted ground truth with no integrity checking, yet an adversary can corrupt
-them **without changing the prediction**. XInt-Bench is the first benchmark that lets you
+them **without changing the prediction**. EIB is the first benchmark that lets you
 measure that exposure on your own pipeline, against ground truth established interventionally
 against your own detector.
 

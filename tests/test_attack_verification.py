@@ -1,4 +1,4 @@
-"""P1-4 gate: XInt-Bench ground truth must be interventionally valid — the features it
+"""P1-4 gate: EIB ground truth must be interventionally valid — the features it
 labels causal are the ones the detector actually relies on. We verify the property on the
 synthetic dataset (known causal features f0..f3): ablating the interventionally-identified
 causal features toward benign drops the predicted-class probability much more than ablating

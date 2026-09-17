@@ -1,4 +1,4 @@
-"""Paper-final XInt-Bench matrix: sweep the top attack classes x seeds per dataset and
+"""Paper-final EIB matrix: sweep the top attack classes x seeds per dataset and
 aggregate each (dataset, attack) cell to mean +/- 95% CI. Saves incrementally to
 results/matrix/ so a single failed cell never loses the run.
 
@@ -60,7 +60,7 @@ def aggregate(rows):
     # mean, fused row excluded -- see eval.metrics.best_single_auroc for why not per cell.
     for k, b in best_single_auroc(rows).items():
         agg[k]["auroc"] = b["per_cell"]
-    lines = ["# XInt-Bench paper-final matrix (mean +/- 95% CI over SEED MEANS)", "",
+    lines = ["# EIB paper-final matrix (mean +/- 95% CI over SEED MEANS)", "",
              "Classes within a seed share one bit-identical fitted detector, so the interval is",
              "over seed means rather than over all class x seed cells.", "",
              "| Dataset | Attack | valid | corrupt | best AUROC | detect@a | FA | n |",

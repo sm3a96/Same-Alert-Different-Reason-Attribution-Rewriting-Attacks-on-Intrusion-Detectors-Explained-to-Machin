@@ -4,7 +4,7 @@ Run:  python scripts/run_walking_skeleton.py
 
 It loads data, trains a detector, calibrates AVERT on clean traffic only, measures
 the clean false-alarm rate against the conformal target, attacks test samples,
-measures detection, runs diagnose+repair, and checks XInt-Bench interventional
+measures detection, runs diagnose+repair, and checks EIB interventional
 ground truth. None of this is a research result; it is a smoke test of the wiring.
 """
 from __future__ import annotations
@@ -60,7 +60,7 @@ def experiment(ctx) -> RunResult:
     # Diagnose + repair one attacked sample.
     verdict, repair_res = avert.assess_and_repair(attacked[0])
 
-    # XInt-Bench interventional ground-truth check on one sample.
+    # EIB interventional ground-truth check on one sample.
     s0 = clean_test[0]
     s0.ground_truth_causal = ds.causal_features
     iv = interventional_check(s0, detector, benign_reference=mean_vec, delta_threshold=0.02)

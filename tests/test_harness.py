@@ -1,4 +1,4 @@
-"""Smoke test for the XInt-Bench product harness: the full evaluate_pipeline path runs
+"""Smoke test for the EIB product harness: the full evaluate_pipeline path runs
 end to end and returns a well-formed vulnerability report. Small sizes keep it fast.
 """
 from avert.benchmark import XIntBench

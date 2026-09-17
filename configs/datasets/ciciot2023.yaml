@@ -3,7 +3,7 @@
 name: ciciot2023
 label_col: label
 sample_frac: 0.04            # ~1.8M rows from 46M; raise for the full run
-extractor: cicflowmeter      # generated XInt-Bench traffic must use the same extractor
+extractor: cicflowmeter      # generated EIB traffic must use the same extractor
 calibration_frac: 0.3
 test_frac: 0.2
 license: "CIC academic use — record exact terms in data/PROVENANCE.md"
