@@ -56,53 +56,8 @@ corrupted while the prediction is preserved, and how well integrity signals catc
 A high `corrupt` with a low `AUROC` is the danger zone: the attacker rewrote your
 explanation and no signal noticed.
 
-## Does it matter? Ask the agent, not the top-k
+## Results
 
-`corrupt` says how much of the shown explanation changed. That is legible inside the
-explainability literature and nowhere else — no security team budgets against a rank
-overlap. So the benchmark also measures the thing that does matter: what a downstream
-autonomous triage agent decides after reading the corrupted explanation.
-
-```bash
-python scripts/run_decision_utility.py --judge Qwen/Qwen3-8B --judge microsoft/phi-4
-```
-
-The agent is shown the alert and the ranked attribution list and must name the feature the
-containment action should target. Because the causal features are established interventionally, the
-decision is scored objectively — no human label anywhere. Four conditions: clean, attacked,
-ranking-withheld, and a re-derivation arm. The re-derivation arm re-runs the same explainer on
-the same attacked flow, so it is an identity by construction (3,600/3,600 paired decisions equal
-under each attack) — no repair step is exercised, and no repair result is claimed. <!-- retired-ok: states that no repair is claimed --> Plus two arms that make the result interpretable rather
-than merely impressive: the same clean case decided twice, which is the judge's own noise
-floor, and the same decisions re-scored under alternative prompt wordings.
-
-## What we have learned 
-
-- **A1 displacement is severe and largely undetectable by statistics**: it rewrites a large
-  fraction of the shown explanation while preserving the prediction, at AUROC ≈ 0.5 on
-  some datasets. Detectability is dataset-dependent.
-- **A3 scaffolding only bites perturbation-based explainers.** If you show exact TreeSHAP,
-  scaffolding does not corrupt your explanation. This is the one mitigation here that needs
-  no monitor, no calibration and no latency budget — actionable guidance for vendors.
-- **Certified attribution stability cannot be deployed, and our first two explanations of
-  why were both wrong.** The first said clean attributions are inherently unstable; the second
-  overturned it by measuring 86–94% of clean flows certifying <!-- retired-ok: names the withdrawn figure in order to withdraw it -->
-  — on corpora still carrying a row counter and a capture clock. On the cleaned feature sets only 1.7–21.0% certify and the mass
-  sitting on the estimator ceiling is essentially zero, so the first account pointed the right
-  way for a reason nobody had identified. Saturation is not the mechanism either: the radius
-  *is* capped by the Clopper–Pearson bound at `sigma * Phi^-1(conf^(1/n))`, and on the leaked
-  corpora most clean and attacked samples sat on that cap — but a gradient pipeline on the same
-  data does not saturate and the signal still fails there.
-
-  What rules it out is measured across datasets, detector/attributor pairs and seeds: the
-  AUROC ranges **0.025 to 0.747** across datasets, pipelines and seeds — and only 1 of 3 datasets keeps its regime across pipelines — sometimes detecting, sometimes blind, and sometimes
-  pointing backwards hard enough that inverting it would be the better policy. Calibration is
-  label-free by design, so nothing tells you which regime you are in before you deploy. The
-  claim is *not deployable*, never *broken* — the difference matters, because "broken" is
-  refuted by pointing at the cell where it reaches 0.707.
-- **Fusing a dead signal into a working one makes it worse.** Naive max-z aggregation scores
-  below the best single signal. Reliability-aware, label-free combination is open.
-- **The conformal false-alarm guarantee holds** across datasets, verified with exact
-  binomial intervals rather than a normal approximation.
-
-Full cross-dataset numbers come from the run scripts under `scripts/` and `make floats`, and are recorded in `results/MANIFEST.csv`.
+The measurements, their populations and intervals are in the paper (Bibers and
+Abdallah, under review at IEEE TIFS). `make floats` rebuilds every table in it from
+`results/`; `results/MANIFEST.csv` maps each table and figure to the run behind it.
