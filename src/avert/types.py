@@ -30,10 +30,8 @@ class AttackClass(str, Enum):
 class SignalName(str, Enum):
     """The integrity signals and the temporal channel."""
     CERTIFIED_STABILITY = "certified_stability"          # Signal 1
-    AGENTIC_VERIFIER = "agentic_verifier"                # Signal 2
     CROSS_METHOD_CONSENSUS = "cross_method_consensus"    # Signal 3
     FEATURE_CONSISTENCY = "feature_consistency"          # Signal 4 -- the cheapest defender
-    TEMPORAL = "temporal"                                # temporal channel
     # Panel additions, September 2026:
     CERTIFIED_STABILITY_FREE = "certified_stability_free"  # Signal 1 smoothed on free coords only
     PASA_RANGE = "pasa_range"                            # Bhusal et al. 2024, their tabular spread

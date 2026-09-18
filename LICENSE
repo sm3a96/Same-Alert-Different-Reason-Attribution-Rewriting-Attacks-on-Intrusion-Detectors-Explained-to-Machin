@@ -32,8 +32,7 @@ download. Each dataset carries its own terms, all of them academic-use:
   CICIoT2023    Canadian Institute for Cybersecurity -- academic use
   CICIoMT2024   Canadian Institute for Cybersecurity -- academic use
   CICIoV2024    Canadian Institute for Cybersecurity -- academic use (EXCLUDED from
-                all results; see docs/RESULTS_MATRIX.md for why)
+                all results; see results/_logs/audit_ciciov2024.json)
 
 Read and accept those terms with the provider before running anything that
-downloads them. The scaffolded model artifacts under `artifacts/models/` are
-derived from these datasets and inherit their restrictions.
+downloads them.

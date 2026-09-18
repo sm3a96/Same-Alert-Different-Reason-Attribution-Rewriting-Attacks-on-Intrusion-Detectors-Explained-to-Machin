@@ -95,7 +95,7 @@ class FeatureConsistencySignal(IntegritySignal):
         arithmetic at the 1e-7 level, and the projection writes exact values, so the raw
         residual orders the two arms almost perfectly on bits no monitor could threshold --
         AUROC 0.022 on 5G-NIDD A1 displacement, measured, with every value in both arms three
-        orders of magnitude below TOL (`scripts/diagnose_feature_consistency.py`). Worse, the
+        orders of magnitude below TOL. Worse, the
         fuser z-scores each signal against its clean spread, and a spread of 1e-7 divides that
         noise up to z=+3.5 on clean flows against a flat -0.56 on attacked ones, so a signal
         with no information was pushing the fused score the wrong way and inflating the false

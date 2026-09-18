@@ -75,7 +75,7 @@ containment action should target. Because the causal features are established in
 decision is scored objectively — no human label anywhere. Four conditions: clean, attacked,
 ranking-withheld, and a re-derivation arm. The re-derivation arm re-runs the same explainer on
 the same attacked flow, so it is an identity by construction (3,600/3,600 paired decisions equal
-under each attack) — it does not exercise `avert.repair`, and no repair result is claimed. <!-- retired-ok: states that no repair is claimed --> Plus two arms that make the result interpretable rather
+under each attack) — no repair step is exercised, and no repair result is claimed. <!-- retired-ok: states that no repair is claimed --> Plus two arms that make the result interpretable rather
 than merely impressive: the same clean case decided twice, which is the judge's own noise
 floor, and the same decisions re-scored under alternative prompt wordings.
 

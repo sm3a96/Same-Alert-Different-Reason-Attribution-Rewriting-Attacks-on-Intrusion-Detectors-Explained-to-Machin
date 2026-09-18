@@ -315,7 +315,7 @@ class XIntBench:
         and describing a mechanism the code does not implement is how a wrong result gets
         believed.
 
-        `avert.repair` -- trusted-channel re-derivation conditioned on a diagnosed
+        Trusted-channel re-derivation conditioned on a diagnosed
         violation -- is NOT called from here and no repair result is claimed anywhere in
         the paper. The arm is kept because dropping it would change the cached case ids,
         and reported as a design note.

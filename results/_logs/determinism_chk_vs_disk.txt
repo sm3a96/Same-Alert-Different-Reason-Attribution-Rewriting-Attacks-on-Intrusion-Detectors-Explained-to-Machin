@@ -1,4 +1,0 @@
-135 cells compared against raw.json
-
-all 135 unaffected cells reproduce bit-for-bit. Determinism holds and the seed is doing its job.
-per-signal AUROC agrees with the recorded best signal in every cell.

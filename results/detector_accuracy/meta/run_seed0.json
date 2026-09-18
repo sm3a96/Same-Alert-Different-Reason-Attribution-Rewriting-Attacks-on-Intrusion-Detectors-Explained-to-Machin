@@ -1,0 +1,29 @@
+{
+  "experiment": "detector_accuracy",
+  "seed": 0,
+  "git_commit": "fe138f2",
+  "timestamp_utc": "2026-09-18T02:46:08.440125+00:00",
+  "wall_clock_s": 668.464,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "datasets": [
+      "fiveg_nidd",
+      "ciciot2023",
+      "ciciomt2024"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "n_classes": 3
+  },
+  "summary": {
+    "fiveg_nidd": 0.8600325372988549,
+    "ciciot2023": 0.8743754254165932,
+    "ciciomt2024": 0.742412509073258
+  }
+}

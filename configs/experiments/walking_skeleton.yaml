@@ -1,7 +1,0 @@
-defaults: [default]
-experiment: walking_skeleton
-dataset: synthetic
-synthetic:
-  n: 600
-  d: 12
-  n_causal: 4
