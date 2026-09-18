@@ -94,7 +94,7 @@ results/
   c3_artifacts_<corpus>/           per-flow check scores, conformal calibration, certified radii and ablations
   decision_utility/                every decision of both judges on clean and attacked explanations, plus the shuffled control
   detector_accuracy/               test accuracy of the tree detector in each matrix cell
-  generality_mlp_ig_<corpus>/      the same checks on the MLP + integrated-gradients pipeline
+  generality_mlp_ig_<corpus>/      certified stability on the MLP + integrated-gradients pipeline
   matrix/                          the detectability map over corpora, attacks, classes and seeds
   motivating_examples/             the three flows of the motivating figure
   reference_decomposition/         the reader scored against the erasure-causal set of the shown flow, and the corruption decomposition
