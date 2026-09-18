@@ -125,7 +125,7 @@ def rebuild_cell(bench, data, target, cached_cell, tau, min_k, ref_kind):
     return rows
 
 
-def rescore(decisions, inst, competent):
+def rescore(decisions, inst, competent, cluster="reader_cell"):
     """Rescore cached decisions against S(x') and return both paired effects."""
     # The threat model requires the predicted class to survive the attack. The A1 searches
     # enforce that by rejection; scaffolding only measures it, and on CICIoMT2024 the router
@@ -157,12 +157,12 @@ def rescore(decisions, inst, competent):
         out[label] = {}
         for atk in ATTACKS:
             out[label][atk] = {
-                "pooled": paired_effect(rows, "attacked", attack=atk, competent_cells=competent),
-                "all_cells": paired_effect(rows, "attacked", attack=atk),
-                "per_judge": {j: paired_effect(rows, "attacked", judge=j, attack=atk, competent_cells=competent)
+                "pooled": paired_effect(rows, "attacked", attack=atk, competent_cells=competent, cluster=cluster),
+                "all_cells": paired_effect(rows, "attacked", attack=atk, cluster=cluster),
+                "per_judge": {j: paired_effect(rows, "attacked", judge=j, attack=atk, competent_cells=competent, cluster=cluster)
                               for j in sorted({r["judge"] for r in rows})},
                 "per_dataset": {d: paired_effect([r for r in rows if r["dataset"] == d], "attacked",
-                                                 attack=atk, competent_cells=competent)
+                                                 attack=atk, competent_cells=competent, cluster=cluster)
                                 for d in sorted({r["dataset"] for r in rows})},
             }
     return out
@@ -266,8 +266,13 @@ def sweep(ctx) -> RunResult:
                 log.info("done %s class=%s seed=%s (%d instances so far)", ds, cname, seed, len(inst))
 
     effects = rescore(decisions, inst, competent)
+    # Same point estimates, resampled by cell with both readers inside one cluster
+    # (30 clusters on the competent search-attack scope instead of 60). Written beside the
+    # reader-cell file so both intervals stay quotable.
+    effects_cell = rescore(decisions, inst, competent, cluster="cell")
     cells, summary = decompose(inst)
     (ctx.run_dir / "summary" / "effects.json").write_text(json.dumps(effects, indent=1))
+    (ctx.run_dir / "summary" / "effects_cell.json").write_text(json.dumps(effects_cell, indent=1))
     (ctx.run_dir / "summary" / "decomposition_cells.json").write_text(json.dumps(cells, indent=1, default=float))
     (ctx.run_dir / "summary" / "decomposition.json").write_text(json.dumps(summary, indent=1))
     md = markdown(effects, summary, argparse.Namespace(**args), inst)

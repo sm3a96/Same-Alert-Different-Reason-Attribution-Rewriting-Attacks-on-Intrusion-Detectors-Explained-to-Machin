@@ -453,7 +453,7 @@ def summarize_cells(rows):
 
 
 def paired_effect(rows, condition="attacked", judge=None, attack=None,
-                  competent_cells=None, n_boot=8000, seed=0):
+                  competent_cells=None, n_boot=8000, seed=0, cluster="reader_cell"):
     """Paired per-instance effect of a condition against its matched clean decision.
 
     The pre-registration asks for an effect size paired across matched clean/attacked
@@ -474,12 +474,27 @@ def paired_effect(rows, condition="attacked", judge=None, attack=None,
 
     `broke` and `fixed` are reported separately because a mean of zero can mean nothing
     happened, or that the attack broke as many decisions as it accidentally fixed.
+
+    `cluster` names the resampling unit. "reader_cell" (the default, and what every run
+    before 2026-09-17 reported) resamples (judge, dataset, class, attack, seed), so the two
+    readers' decisions on one cell sit in different clusters. "cell" drops the judge, so both
+    readers' decisions on one cell are resampled together: 30 clusters instead of 60 on the
+    competent search-attack scope. The competence floor is still applied per reader-cell,
+    and the point estimate is identical under both.
     """
     def key(r):
         return (r["judge"], r["dataset"], r["class"], r["seed"], r["attack"], r["sample_id"])
 
-    def cell(r):
+    def reader_cell(r):
         return (r["judge"], r["dataset"], r["class"], r["attack"], r["seed"])
+
+    if cluster == "reader_cell":
+        cell = reader_cell
+    elif cluster == "cell":
+        def cell(r):
+            return (r["dataset"], r["class"], r["attack"], r["seed"])
+    else:
+        raise ValueError(f"unknown cluster unit {cluster!r}")
     clean = {key(r): r for r in rows if r["condition"] == "clean"}
 
     clusters, broke, fixed = defaultdict(list), 0, 0
@@ -490,7 +505,7 @@ def paired_effect(rows, condition="attacked", judge=None, attack=None,
             continue
         if attack is not None and r["attack"] != attack:
             continue
-        if competent_cells is not None and cell(r) not in competent_cells:
+        if competent_cells is not None and reader_cell(r) not in competent_cells:
             continue
         c = clean.get(key(r))
         if c is None:

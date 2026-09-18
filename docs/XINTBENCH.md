@@ -5,9 +5,8 @@
 ML-based NIDS increasingly show analysts (and, in agentic SOCs, autonomous agents) a
 *why* alongside each alert — a feature-attribution explanation. Those explanations are
 consumed as trusted ground truth with no integrity checking, yet an adversary can corrupt
-them **without changing the prediction**. EIB is the first benchmark that lets you
-measure that exposure on your own pipeline, against ground truth established interventionally
-against your own detector.
+them **without changing the prediction**. EIB measures that exposure on your own pipeline, against ground truth established
+interventionally against your own detector.
 
 ## Quickstart
 
@@ -40,21 +39,19 @@ corrupted while the prediction is preserved, and how well integrity signals catc
 
 | ID | Attack | What it does | Who it fools |
 |----|--------|--------------|--------------|
-| A1 misdirection | promote non-causal features into the top-k | hides the true cause; explanation stays *locally faithful* | any explainer; only domain knowledge catches it |
-| A1 displacement | tiny, prediction-preserving perturbation maximising attribution change | makes the shown explanation hypersensitive | any explainer |
-| A3 scaffolding | Slack-style model routing explainer probes to a benign surrogate | corrupts the explanation for **perturbation-based** explainers (LIME/KernelSHAP) | NOT exact TreeSHAP |
-
-Planned: A2 explainer poisoning, A4 drift-masquerade, A5 monitor-targeting.
+| Rank promotion (code: A1_misdirection) | promote non-causal features into the top-k | hides the true cause; explanation stays *locally faithful* | any explainer |
+| Cause displacement (code: A1_displacement) | tiny, prediction-preserving perturbation maximising attribution change | makes the shown explanation hypersensitive | any explainer |
+| Explainer scaffolding (code: A3_scaffolding) | Slack-style model routing explainer probes to a benign surrogate | corrupts the explanation for **perturbation-based** explainers (LIME/KernelSHAP) | NOT exact TreeSHAP |
 
 ## Reading the report
 
 | Column | Meaning |
 |--------|---------|
 | `valid` | fraction with the prediction preserved (attack validity; ~1.0 by construction) |
-| `corrupt` | top-k **Jaccard distance** between the clean and attacked explanations. NOT the fraction of shown features replaced: at J the replaced fraction is (k−m)/k with m = 2k(1−J)/(2−J), so J = 0.66–0.81 is 49–68% of the shown top-5, averaged per dataset (per cell, 25%–91%) |
+| `corrupt` | top-k **Jaccard distance** between the clean and attacked explanations |
 | `AUROC` | best integrity signal separating clean vs attacked explanations |
 | `detect` | fused detection rate at the conformal budget alpha |
-| `FA` | false-alarm rate on clean traffic (conformal guarantee: ≤ alpha) |
+| `FA` | false-alarm rate on clean traffic (nominal level alpha; the paper reports the empirical rate) |
 
 A high `corrupt` with a low `AUROC` is the danger zone: the attacker rewrote your
 explanation and no signal noticed.
@@ -108,4 +105,4 @@ floor, and the same decisions re-scored under alternative prompt wordings.
 - **The conformal false-alarm guarantee holds** across datasets, verified with exact
   binomial intervals rather than a normal approximation.
 
-Full cross-dataset numbers come from `make results` and `make floats` and are recorded in the results MANIFEST.
+Full cross-dataset numbers come from the run scripts under `scripts/` and `make floats`, and are recorded in `results/MANIFEST.csv`.

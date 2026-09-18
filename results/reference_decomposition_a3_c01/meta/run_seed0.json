@@ -1,9 +1,9 @@
 {
   "experiment": "reference_decomposition_a3_c01",
   "seed": 0,
-  "git_commit": "5e0f151",
-  "timestamp_utc": "2026-09-09T03:08:25.995723+00:00",
-  "wall_clock_s": 9.504,
+  "git_commit": "fe138f2",
+  "timestamp_utc": "2026-09-18T03:02:36.010288+00:00",
+  "wall_clock_s": 17.727,
   "python": "3.10.12",
   "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
   "config": {
@@ -22,7 +22,7 @@
       "attacks": [
         "A3_scaffolding"
       ],
-      "scaffold_contamination": 0.1,
+      "scaffold_contamination": 0.3,
       "rescore_only": true
     }
   },

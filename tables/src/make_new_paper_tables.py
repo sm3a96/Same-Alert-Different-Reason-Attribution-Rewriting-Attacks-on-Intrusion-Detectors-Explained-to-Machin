@@ -69,12 +69,13 @@ def write(name: str, body: str) -> None:
 
 
 def ci(e, key="mean_delta", lo="ci_lo", hi="ci_hi", bold=False) -> str:
-    s = f"${e[key]:+.3f}$ [{e[lo]:+.3f}, {e[hi]:+.3f}]"
+    # The interval is set in math mode so its minus signs print as minus, not hyphen.
+    s = f"${e[key]:+.3f}$ $[{e[lo]:+.3f}, {e[hi]:+.3f}]$"
     return r"{\bfseries\boldmath " + s + "}" if bold else s
 
 
 def ci_m(m) -> str:
-    return f"${m['mean']:+.3f}$ [{m['ci_lo']:+.3f}, {m['ci_hi']:+.3f}]"
+    return f"${m['mean']:+.3f}$ $[{m['ci_lo']:+.3f}, {m['ci_hi']:+.3f}]$"
 
 
 # ------------------------------------------------------------------ harm
@@ -83,10 +84,12 @@ def group(label, ncols):
 
 
 def tab_harm() -> None:
-    eff = json.loads((RD / "summary" / "effects.json").read_text())
+    # Point estimates and broke/fixed counts are identical in both files; the intervals
+    # come from effects_cell.json, which resamples cells with both readers inside one cluster.
+    eff = json.loads((RD / "summary" / "effects_cell.json").read_text())
     body = [r"\begin{tabular}{@{}lrrr@{}}", r"\toprule",
-            r"\textbf{Scope} & $\Delta$ \textbf{vs} $S(x)$ & "
-            r"$\Delta$ \textbf{vs} $S(x')$, 95\% CI & \textbf{broke/fixed} \\",
+            r"\textbf{Scope} & $\delta$ \textbf{vs} $S(x)$ & "
+            r"$\delta$ \textbf{vs} $S(x')$, 95\% CI & \textbf{broke/fixed} \\",
             r"\midrule"]
     for atk in ("A1_displacement", "A1_misdirection"):
         a, b = eff["vs_S_x"][atk], eff["vs_S_xprime"][atk]
@@ -100,13 +103,13 @@ def tab_harm() -> None:
         body.append(r"\addlinespace")
     # Scaffolding: one block per contamination setting, the routing rate measured on the
     # same prediction-preserved population the harm is scored on.
-    body.append(group(ATTACK_MACRO["A3_scaffolding"] + ", contamination $c$", 4))
+    body.append(group(ATTACK_MACRO["A3_scaffolding"] + ", contamination $\\kappa$", 4))
     for c, run in sorted(RD_A3.items(), reverse=True):
-        e = json.loads((run / "summary" / "effects.json").read_text())
+        e = json.loads((run / "summary" / "effects_cell.json").read_text())
         d = json.loads((run / "summary" / "decomposition.json").read_text())
         a, b = e["vs_S_x"]["A3_scaffolding"], e["vs_S_xprime"]["A3_scaffolding"]
         routed = d["A3_scaffolding"]["pooled"]["routed_rate"]["mean"]
-        body.append(f"$c = {c:g}$ ({routed:.3f}) & ${a['pooled']['mean_delta']:+.3f}$ & "
+        body.append(f"$\\kappa = {c:g}$ ({routed:.3f}) & ${a['pooled']['mean_delta']:+.3f}$ & "
                     f"{ci(b['pooled'], bold=True)} & {b['pooled']['broke']} / {b['pooled']['fixed']} \\\\")
         if c == 0.3:
             for ds in DATASETS:
@@ -171,7 +174,7 @@ def tab_controls() -> None:
                if (r["dataset"], r["class"], r["seed"], r["attack"], r["sample_id"]) in ids]
 
     body = [r"\begin{tabular}{@{}lrr@{}}", r"\toprule",
-            r"\textbf{Setting} & \textbf{clusters} & $\Delta$ \textbf{vs} $S(x)$, 95\% CI \\",
+            r"\textbf{Setting} & \textbf{clusters} & $\delta$ \textbf{vs} $S(x)$, 95\% CI \\",
             r"\midrule", group("competence floor (clean accuracy)", 3)]
     for r_ in floor_sweep(rows, cells, floors=(0.0, 0.3, 0.5, 0.8)):
         body.append(f"$\\geq {r_['floor']:.1f}$ & {r_['n_clusters']} & {ci(r_)} \\\\")

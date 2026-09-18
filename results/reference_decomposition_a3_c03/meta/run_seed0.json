@@ -1,9 +1,9 @@
 {
   "experiment": "reference_decomposition_a3_c03",
   "seed": 0,
-  "git_commit": "5e0f151",
-  "timestamp_utc": "2026-09-09T03:08:14.341004+00:00",
-  "wall_clock_s": 9.557,
+  "git_commit": "fe138f2",
+  "timestamp_utc": "2026-09-18T03:04:27.243106+00:00",
+  "wall_clock_s": 17.578,
   "python": "3.10.12",
   "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
   "config": {

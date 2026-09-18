@@ -11,7 +11,7 @@
 # `python scripts/download_data.py` inside the container after accepting each provider's terms.
 #
 #   docker build -t xintbench .
-#   docker run --rm -v "$PWD/data:/work/data" -v "$PWD/results:/work/results" xintbench make paper
+#   docker run --rm -v "$PWD/data:/work/data" -v "$PWD/results:/work/results" xintbench make floats
 #
 # torch is pinned to 2.4.0 by constraints.txt and must stay there: `rtdl` and `tabpfn` drag it
 # back to 1.13.1, and transformers v5 imports a symbol 2.4.0 does not have.
@@ -28,7 +28,8 @@ WORKDIR /work
 
 # Dependencies first, so a source edit does not invalidate the pip layer.
 COPY pyproject.toml constraints.txt requirements.lock.txt ./
-RUN pip install --no-cache-dir -r requirements.lock.txt -c constraints.txt
+RUN pip install --no-cache-dir -r requirements.lock.txt -c constraints.txt \
+        --extra-index-url https://download.pytorch.org/whl/cu124
 
 COPY . .
 RUN pip install --no-cache-dir -e . -c constraints.txt
@@ -40,4 +41,4 @@ re-resolved it and the FT-Transformer and judge paths will not behave')"
 
 RUN python -m pytest -q
 
-CMD ["make", "paper"]
+CMD ["make", "floats"]

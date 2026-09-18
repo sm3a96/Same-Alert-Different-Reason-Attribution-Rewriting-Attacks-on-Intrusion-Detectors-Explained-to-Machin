@@ -1,14 +1,12 @@
 cff-version: 1.2.0
-message: >-
-  If you use the Explanation Integrity Benchmark (EIB), please cite the software entry below. Replace it with the paper
-  once that is published -- see `preferred-citation`, which is filled in at submission.
+message: "If you use this code, please cite the paper below."
 title: "Explanation Integrity Benchmark (EIB): attribution rewriting attacks on intrusion detectors explained to machines"
 abstract: >-
   A benchmark of prediction-preserving attacks on the post-hoc feature attributions that
   ML-based NIDS attach to their alerts, with per-instance detector-relative interventional
   labels, a realizable-flow constraint over the extractor's own arithmetic, and a downstream
-  autonomous-consumer decision task. Ships the attacks, the integrity signals, the conformal
-  calibration, and a one-command reproduction of every number in the paper.
+  autonomous-consumer decision task. Ships the attacks, the integrity signals and the conformal
+  calibration.
 type: software
 authors:
   - family-names: Bibers
@@ -28,3 +26,18 @@ keywords:
   - attribution attacks
   - conformal prediction
   - agentic security operations
+preferred-citation:
+  type: article
+  title: "Same Alert, Different Reason: Attribution Rewriting Attacks on Intrusion Detectors Explained to Machines"
+  authors:
+    - family-names: Bibers
+      given-names: Ismail Mohammed I
+      affiliation: Purdue University
+      orcid: "https://orcid.org/0009-0003-8597-4647"
+    - family-names: Abdallah
+      given-names: Mustafa
+      affiliation: Purdue University
+      orcid: "https://orcid.org/0000-0002-9554-9260"
+  year: 2026
+  journal: "IEEE Transactions on Information Forensics and Security"
+  notes: "under review"

@@ -1,4 +1,4 @@
-# Reference correction and decomposition (reference=mean, tau=0.05, min_k=3, scaffold contamination=0.1, attacks=A3_scaffolding)
+# Reference correction and decomposition (reference=mean, tau=0.05, min_k=3, scaffold contamination=0.3, attacks=A3_scaffolding)
 
 Rebuilt instances: 1800. Shown case differs from the 13 August cache on 49 (excluded from the rescoring, kept in the decomposition); clean causal set differs on 1. The paper's arm uses the cached causal set so it reproduces the published number exactly.
 
