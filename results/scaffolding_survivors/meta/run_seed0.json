@@ -1,0 +1,32 @@
+{
+  "experiment": "scaffolding_survivors",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-23T12:51:58.894116+00:00",
+  "wall_clock_s": 2.234,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "source": "results/matrix_a3_survivors/raw/per_flow.json"
+  },
+  "summary": {
+    "cells": 45,
+    "reproduces_published_matrix": true,
+    "values_checked": 1080,
+    "mismatched": 0,
+    "scaffolding_flows_kept": {
+      "fiveg_nidd": [
+        600,
+        600
+      ],
+      "ciciot2023": [
+        599,
+        600
+      ],
+      "ciciomt2024": [
+        537,
+        600
+      ]
+    }
+  }
+}

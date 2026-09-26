@@ -1,0 +1,14 @@
+# Base configuration. These are the values the experiments were designed around; each script
+# also takes them on the command line, and the command line is what the runs in results/ used
+# (every run records its own resolved configuration in meta/run_seed*.json).
+#
+# Removed 2026-09-22: a `verifier:` block naming a model still "to select", a vLLM serving
+# stack and schema-constrained decoding. None of the three describes what ships. The readers
+# are Qwen3-8B and phi-4, served through transformers, and their answer is read as an argmax
+# over the candidate letters in one forward pass with nothing generated (docs/prompt.md).
+# Also removed: a smoothing sigma of 0.1 that contradicted the 0.05 the artifact and neural
+# runs use, and duplicate top_k / n_seeds / ci keys that only restated a default.
+
+seed: 0
+alpha: 0.05            # conformal false-alarm budget
+top_k: 5               # the shown set the attacks target

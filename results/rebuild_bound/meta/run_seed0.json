@@ -1,0 +1,20 @@
+{
+  "experiment": "rebuild_bound",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-25T23:37:03.634696+00:00",
+  "wall_clock_s": 14.939,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "floor": 0.5,
+      "n_boot": 8000,
+      "seed": 0
+    }
+  },
+  "summary": {
+    "instances_S_x_differs": 2,
+    "displacement_all_cells_difference": 0.0
+  }
+}

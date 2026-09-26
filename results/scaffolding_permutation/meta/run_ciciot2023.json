@@ -1,0 +1,35 @@
+{
+  "experiment": "scaffolding_permutation",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-26T01:11:17.233175+00:00",
+  "wall_clock_s": 4676.88,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "datasets": [
+        "ciciot2023"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "attributor": "permutation",
+      "attack": "A3_scaffolding",
+      "n_cal": 100,
+      "n_test": 40,
+      "tau": 0.05,
+      "min_k": 3
+    }
+  },
+  "summary": {
+    "dataset": "ciciot2023",
+    "cells": 15,
+    "case_sets": 600,
+    "shown_mismatch": 0
+  }
+}

@@ -1,0 +1,158 @@
+{
+ "dataset": "fiveg_nidd",
+ "rows": 394580,
+ "features": 41,
+ "stored_rows_pre_dedup": 1215890,
+ "unique_rows": 1215889,
+ "duplicate_fraction": 1e-06,
+ "class_counts": {
+  "Benign": 82234,
+  "SYNScan": 1342,
+  "TCPConnectScan": 20040,
+  "UDPScan": 329,
+  "ICMPFlood": 619,
+  "UDPFlood": 67283,
+  "SYNFlood": 9721,
+  "HTTPFlood": 140011,
+  "SlowrateDoS": 73001
+ },
+ "constant_features": [
+  "SrcGap"
+ ],
+ "identifier_like": [],
+ "row_index_like": [],
+ "session_fingerprints": [],
+ "leakage_suspects": [
+  {
+   "feature": "TotBytes",
+   "depth1_heldout": 0.407,
+   "depth8_heldout": 0.861
+  },
+  {
+   "feature": "SrcBytes",
+   "depth1_heldout": 0.417,
+   "depth8_heldout": 0.825
+  },
+  {
+   "feature": "sMeanPktSz",
+   "depth1_heldout": 0.446,
+   "depth8_heldout": 0.815
+  },
+  {
+   "feature": "DstBytes",
+   "depth1_heldout": 0.488,
+   "depth8_heldout": 0.77
+  },
+  {
+   "feature": "Load",
+   "depth1_heldout": 0.392,
+   "depth8_heldout": 0.75
+  },
+  {
+   "feature": "Rate",
+   "depth1_heldout": 0.404,
+   "depth8_heldout": 0.714
+  },
+  {
+   "feature": "dMeanPktSz",
+   "depth1_heldout": 0.488,
+   "depth8_heldout": 0.704
+  },
+  {
+   "feature": "SrcLoad",
+   "depth1_heldout": 0.394,
+   "depth8_heldout": 0.703
+  },
+  {
+   "feature": "TcpRtt",
+   "depth1_heldout": 0.549,
+   "depth8_heldout": 0.692
+  },
+  {
+   "feature": "SrcRate",
+   "depth1_heldout": 0.395,
+   "depth8_heldout": 0.667
+  },
+  {
+   "feature": "AckDat",
+   "depth1_heldout": 0.549,
+   "depth8_heldout": 0.666
+  },
+  {
+   "feature": "SrcWin",
+   "depth1_heldout": 0.507,
+   "depth8_heldout": 0.663
+  },
+  {
+   "feature": "Dur",
+   "depth1_heldout": 0.405,
+   "depth8_heldout": 0.651
+  },
+  {
+   "feature": "RunTime",
+   "depth1_heldout": 0.405,
+   "depth8_heldout": 0.651
+  },
+  {
+   "feature": "Mean",
+   "depth1_heldout": 0.405,
+   "depth8_heldout": 0.651
+  },
+  {
+   "feature": "Sum",
+   "depth1_heldout": 0.405,
+   "depth8_heldout": 0.651
+  },
+  {
+   "feature": "Min",
+   "depth1_heldout": 0.405,
+   "depth8_heldout": 0.651
+  },
+  {
+   "feature": "Max",
+   "depth1_heldout": 0.405,
+   "depth8_heldout": 0.651
+  },
+  {
+   "feature": "DstPkts",
+   "depth1_heldout": 0.488,
+   "depth8_heldout": 0.641
+  },
+  {
+   "feature": "dTtl",
+   "depth1_heldout": 0.528,
+   "depth8_heldout": 0.636
+  },
+  {
+   "feature": "dHops",
+   "depth1_heldout": 0.528,
+   "depth8_heldout": 0.591
+  },
+  {
+   "feature": "SrcPkts",
+   "depth1_heldout": 0.394,
+   "depth8_heldout": 0.586
+  },
+  {
+   "feature": "TotPkts",
+   "depth1_heldout": 0.377,
+   "depth8_heldout": 0.585
+  },
+  {
+   "feature": "DstWin",
+   "depth1_heldout": 0.434,
+   "depth8_heldout": 0.571
+  },
+  {
+   "feature": "SynAck",
+   "depth1_heldout": 0.549,
+   "depth8_heldout": 0.557
+  },
+  {
+   "feature": "DstLoad",
+   "depth1_heldout": 0.386,
+   "depth8_heldout": 0.556
+  }
+ ],
+ "majority_baseline": 0.3548
+}

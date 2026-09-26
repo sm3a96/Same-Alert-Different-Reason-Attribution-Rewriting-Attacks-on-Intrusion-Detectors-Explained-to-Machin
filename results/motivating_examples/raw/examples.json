@@ -1,0 +1,767 @@
+[
+ {
+  "label": "harm",
+  "attack": "A1_displacement",
+  "sample_id": "s305325",
+  "dataset": "fiveg_nidd",
+  "class": "HTTPFlood",
+  "seed": 0,
+  "p_clean": 0.9999687671661377,
+  "p_attacked": 0.9905530214309692,
+  "routed_to_surrogate": false,
+  "p_attacked_real_model": null,
+  "p_attacked_surrogate": null,
+  "S_x": [
+   "sTtl",
+   "SrcWin"
+  ],
+  "S_a": [
+   "sTtl",
+   "DstWin",
+   "TcpRtt",
+   "AckDat"
+  ],
+  "delta_x": {
+   "Dur": 5.0067901611328125e-06,
+   "RunTime": 0.0,
+   "Mean": 0.0,
+   "Sum": 0.0,
+   "Min": 0.0,
+   "Max": 0.0,
+   "sTos": 0.0,
+   "dTos": 0.0,
+   "sTtl": 0.08251422643661499,
+   "dTtl": 9.72747802734375e-05,
+   "sHops": 0.0,
+   "dHops": 0.0,
+   "TotPkts": 2.2649765014648438e-06,
+   "SrcPkts": 5.245208740234375e-06,
+   "DstPkts": 0.0,
+   "TotBytes": 2.2649765014648438e-06,
+   "SrcBytes": 2.6226043701171875e-06,
+   "DstBytes": 5.960464477539062e-07,
+   "sMeanPktSz": 8.237361907958984e-05,
+   "dMeanPktSz": 0.0,
+   "Load": 1.1920928955078125e-07,
+   "SrcLoad": 3.933906555175781e-06,
+   "DstLoad": 1.0728836059570312e-06,
+   "Loss": 0.0,
+   "SrcLoss": 0.0,
+   "DstLoss": 0.0,
+   "pLoss": 0.0,
+   "SrcGap": 0.0,
+   "DstGap": 0.0,
+   "Rate": 2.6702880859375e-05,
+   "SrcRate": 0.00016111135482788086,
+   "DstRate": 0.00014102458953857422,
+   "SrcWin": 0.8946785926818848,
+   "DstWin": 1.6450881958007812e-05,
+   "sVid": 0.0,
+   "dVid": 0.0,
+   "SrcTCPBase": -3.337860107421875e-06,
+   "DstTCPBase": 8.52346420288086e-05,
+   "TcpRtt": 0.00016933679580688477,
+   "SynAck": -4.291534423828125e-06,
+   "AckDat": 0.002248227596282959
+  },
+  "delta_a": {
+   "Dur": -0.0004748702049255371,
+   "RunTime": 0.0,
+   "Mean": 0.0,
+   "Sum": 0.0,
+   "Min": 0.0,
+   "Max": 0.0,
+   "sTos": 0.0,
+   "dTos": 0.0,
+   "sTtl": 0.916723370552063,
+   "dTtl": 0.003540933132171631,
+   "sHops": 0.0,
+   "dHops": 0.0,
+   "TotPkts": 0.0,
+   "SrcPkts": 0.0,
+   "DstPkts": 0.001181185245513916,
+   "TotBytes": 0.0,
+   "SrcBytes": 0.0,
+   "DstBytes": 0.013698220252990723,
+   "sMeanPktSz": 0.0,
+   "dMeanPktSz": -0.0076923370361328125,
+   "Load": 0.0,
+   "SrcLoad": 0.0,
+   "DstLoad": 0.0,
+   "Loss": 0.0,
+   "SrcLoss": 0.0,
+   "DstLoss": 0.0,
+   "pLoss": 0.0,
+   "SrcGap": 0.0,
+   "DstGap": 0.0,
+   "Rate": 0.00039893388748168945,
+   "SrcRate": 0.0007876157760620117,
+   "DstRate": 0.0,
+   "SrcWin": 0.0,
+   "DstWin": 0.5963562726974487,
+   "sVid": 0.0,
+   "dVid": 0.0,
+   "SrcTCPBase": -0.0003224611282348633,
+   "DstTCPBase": 0.0033679604530334473,
+   "TcpRtt": 0.05526548624038696,
+   "SynAck": 0.0,
+   "AckDat": 0.7820585370063782
+  },
+  "shown_clean": [
+   {
+    "feature": "SrcWin",
+    "value": 62848.0,
+    "score": 2.5187454223632812
+   },
+   {
+    "feature": "AckDat",
+    "value": 0.03372399881482124,
+    "score": 1.483311653137207
+   },
+   {
+    "feature": "TcpRtt",
+    "value": 0.03502599895000458,
+    "score": 0.40204137563705444
+   },
+   {
+    "feature": "SrcBytes",
+    "value": 66.0,
+    "score": 0.3831939995288849
+   },
+   {
+    "feature": "DstWin",
+    "value": 64768.0,
+    "score": 0.33215221762657166
+   },
+   {
+    "feature": "DstTCPBase",
+    "value": 3697681408.0,
+    "score": 0.31660354137420654
+   },
+   {
+    "feature": "TotBytes",
+    "value": 132.0,
+    "score": -0.13978968560695648
+   },
+   {
+    "feature": "sMeanPktSz",
+    "value": 66.0,
+    "score": -0.11704685539007187
+   },
+   {
+    "feature": "dMeanPktSz",
+    "value": 66.0,
+    "score": -0.055095236748456955
+   },
+   {
+    "feature": "SrcPkts",
+    "value": 1.0,
+    "score": 0.04098106920719147
+   }
+  ],
+  "shown_attacked": [
+   {
+    "feature": "sMeanPktSz",
+    "value": 1286.8,
+    "score": 2.019882917404175
+   },
+   {
+    "feature": "AckDat",
+    "value": 0.036151761828445275,
+    "score": 1.897240161895752
+   },
+   {
+    "feature": "SrcWin",
+    "value": 680092.0,
+    "score": -1.0454460382461548
+   },
+   {
+    "feature": "dMeanPktSz",
+    "value": 66.0,
+    "score": -0.800578236579895
+   },
+   {
+    "feature": "SynAck",
+    "value": 0.001185756646226736,
+    "score": 0.5447332262992859
+   },
+   {
+    "feature": "DstWin",
+    "value": 76792.0,
+    "score": -0.4474613666534424
+   },
+   {
+    "feature": "TcpRtt",
+    "value": 0.03733751847467201,
+    "score": 0.3214036822319031
+   },
+   {
+    "feature": "Rate",
+    "value": 41.43671848447684,
+    "score": -0.17691947519779205
+   },
+   {
+    "feature": "TotBytes",
+    "value": 6434.0,
+    "score": -0.11516104638576508
+   },
+   {
+    "feature": "DstTCPBase",
+    "value": 3779672019.0,
+    "score": 0.09394274652004242
+   }
+  ],
+  "clean_value_of_attacked_shown": {
+   "sMeanPktSz": 66.0,
+   "AckDat": 0.03372399881482124,
+   "SrcWin": 62848.0,
+   "dMeanPktSz": 66.0,
+   "SynAck": 0.0013020000187680125,
+   "DstWin": 64768.0,
+   "TcpRtt": 0.03502599895000458,
+   "Rate": 0.0,
+   "TotBytes": 132.0,
+   "DstTCPBase": 3697681408.0
+  },
+  "top5_jaccard": 0.75,
+  "reader": {
+   "Qwen3-8B": {
+    "clean": {
+     "choice": "SrcWin",
+     "rank": 1,
+     "in_S_x": true,
+     "in_S_a": false
+    },
+    "attacked": {
+     "choice": "sMeanPktSz",
+     "rank": 1,
+     "in_S_x": false,
+     "in_S_a": false
+    }
+   },
+   "phi-4": {
+    "clean": {
+     "choice": "SrcWin",
+     "rank": 1,
+     "in_S_x": true,
+     "in_S_a": false
+    },
+    "attacked": {
+     "choice": "sMeanPktSz",
+     "rank": 1,
+     "in_S_x": false,
+     "in_S_a": false
+    }
+   }
+  }
+ },
+ {
+  "label": "reliance_shift",
+  "attack": "A1_displacement",
+  "sample_id": "s316302",
+  "dataset": "fiveg_nidd",
+  "class": "HTTPFlood",
+  "seed": 0,
+  "p_clean": 0.9999083280563354,
+  "p_attacked": 0.9830029606819153,
+  "routed_to_surrogate": false,
+  "p_attacked_real_model": null,
+  "p_attacked_surrogate": null,
+  "S_x": [
+   "SrcWin"
+  ],
+  "S_a": [
+   "sTtl",
+   "SrcWin",
+   "SynAck",
+   "AckDat"
+  ],
+  "delta_x": {
+   "Dur": 1.8835067749023438e-05,
+   "RunTime": 0.0,
+   "Mean": 0.0,
+   "Sum": 0.0,
+   "Min": 0.0,
+   "Max": 0.0,
+   "sTos": 0.0,
+   "dTos": 0.0,
+   "sTtl": 0.01889932155609131,
+   "dTtl": 0.00015968084335327148,
+   "sHops": 0.0,
+   "dHops": 0.0,
+   "TotPkts": 6.67572021484375e-06,
+   "SrcPkts": 8.463859558105469e-06,
+   "DstPkts": 0.0,
+   "TotBytes": 6.794929504394531e-06,
+   "SrcBytes": 7.867813110351562e-06,
+   "DstBytes": 1.430511474609375e-06,
+   "sMeanPktSz": 0.00016945600509643555,
+   "dMeanPktSz": 0.0,
+   "Load": 3.5762786865234375e-07,
+   "SrcLoad": 4.649162292480469e-06,
+   "DstLoad": 0.0,
+   "Loss": 0.0,
+   "SrcLoss": 0.0,
+   "DstLoss": 0.0,
+   "pLoss": 0.0,
+   "SrcGap": 0.0,
+   "DstGap": 0.0,
+   "Rate": 6.42538070678711e-05,
+   "SrcRate": 0.0003775358200073242,
+   "DstRate": 0.00038564205169677734,
+   "SrcWin": 0.9998117089271545,
+   "DstWin": -1.5020370483398438e-05,
+   "sVid": 0.0,
+   "dVid": 0.0,
+   "SrcTCPBase": -1.9311904907226562e-05,
+   "DstTCPBase": 2.4437904357910156e-05,
+   "TcpRtt": 0.0001887679100036621,
+   "SynAck": -5.91278076171875e-05,
+   "AckDat": 0.002303779125213623
+  },
+  "delta_a": {
+   "Dur": 0.013533055782318115,
+   "RunTime": 0.0,
+   "Mean": 0.0,
+   "Sum": 0.0,
+   "Min": 0.0,
+   "Max": 0.0,
+   "sTos": 0.0,
+   "dTos": 0.0,
+   "sTtl": 0.9555012583732605,
+   "dTtl": 0.0,
+   "sHops": -0.002959728240966797,
+   "dHops": 0.0,
+   "TotPkts": 0.0,
+   "SrcPkts": -0.008575022220611572,
+   "DstPkts": 0.0,
+   "TotBytes": 0.0,
+   "SrcBytes": 0.0,
+   "DstBytes": 0.0,
+   "sMeanPktSz": 0.00019282102584838867,
+   "dMeanPktSz": 0.0,
+   "Load": 0.0,
+   "SrcLoad": -0.0008090734481811523,
+   "DstLoad": 0.0,
+   "Loss": 0.0,
+   "SrcLoss": 0.0,
+   "DstLoss": 0.0,
+   "pLoss": 0.0,
+   "SrcGap": 0.0,
+   "DstGap": 0.0,
+   "Rate": 0.001251816749572754,
+   "SrcRate": 0.0005872845649719238,
+   "DstRate": -0.0035425424575805664,
+   "SrcWin": 0.9492303133010864,
+   "DstWin": 0.0,
+   "sVid": 0.0,
+   "dVid": 0.0,
+   "SrcTCPBase": 0.016816139221191406,
+   "DstTCPBase": 0.004419088363647461,
+   "TcpRtt": 0.03036642074584961,
+   "SynAck": 0.15321475267410278,
+   "AckDat": 0.8652277588844299
+  },
+  "shown_clean": [
+   {
+    "feature": "SrcWin",
+    "value": 56704.0,
+    "score": 3.7644686698913574
+   },
+   {
+    "feature": "AckDat",
+    "value": 0.01642799936234951,
+    "score": 1.1174591779708862
+   },
+   {
+    "feature": "DstWin",
+    "value": 65024.0,
+    "score": -0.8756245374679565
+   },
+   {
+    "feature": "SrcBytes",
+    "value": 66.0,
+    "score": 0.3837341368198395
+   },
+   {
+    "feature": "TcpRtt",
+    "value": 0.018120000138878822,
+    "score": 0.22081217169761658
+   },
+   {
+    "feature": "sMeanPktSz",
+    "value": 66.0,
+    "score": -0.1356983184814453
+   },
+   {
+    "feature": "TotBytes",
+    "value": 132.0,
+    "score": -0.13491404056549072
+   },
+   {
+    "feature": "SrcTCPBase",
+    "value": 4195161088.0,
+    "score": -0.12712854146957397
+   },
+   {
+    "feature": "SynAck",
+    "value": 0.0016919999616220593,
+    "score": 0.04967312514781952
+   },
+   {
+    "feature": "dMeanPktSz",
+    "value": 66.0,
+    "score": -0.045996155589818954
+   }
+  ],
+  "shown_attacked": [
+   {
+    "feature": "AckDat",
+    "value": 0.01983301918579769,
+    "score": 1.6771200895309448
+   },
+   {
+    "feature": "dTtl",
+    "value": 53.0,
+    "score": -0.7871317863464355
+   },
+   {
+    "feature": "SynAck",
+    "value": 0.0034518659180076015,
+    "score": 0.5252517461776733
+   },
+   {
+    "feature": "SrcTCPBase",
+    "value": 4290469063.0,
+    "score": 0.3414634168148041
+   },
+   {
+    "feature": "TotBytes",
+    "value": 5777.0,
+    "score": -0.2511070668697357
+   },
+   {
+    "feature": "SrcWin",
+    "value": 0.0,
+    "score": -0.14023935794830322
+   },
+   {
+    "feature": "sMeanPktSz",
+    "value": 66.0,
+    "score": -0.11432952433824539
+   },
+   {
+    "feature": "TcpRtt",
+    "value": 0.023284885103805292,
+    "score": 0.08502630889415741
+   },
+   {
+    "feature": "DstTCPBase",
+    "value": 3956114164.0,
+    "score": 0.07028117030858994
+   },
+   {
+    "feature": "Load",
+    "value": 167828234.16709214,
+    "score": -0.06382378190755844
+   }
+  ],
+  "clean_value_of_attacked_shown": {
+   "AckDat": 0.01642799936234951,
+   "dTtl": 59.0,
+   "SynAck": 0.0016919999616220593,
+   "SrcTCPBase": 4195161088.0,
+   "TotBytes": 132.0,
+   "SrcWin": 56704.0,
+   "sMeanPktSz": 66.0,
+   "TcpRtt": 0.018120000138878822,
+   "DstTCPBase": 3926707200.0,
+   "Load": 0.0
+  },
+  "top5_jaccard": 0.8888888888888888,
+  "reader": {
+   "Qwen3-8B": {
+    "clean": {
+     "choice": "SrcWin",
+     "rank": 1,
+     "in_S_x": true,
+     "in_S_a": true
+    },
+    "attacked": {
+     "choice": "AckDat",
+     "rank": 1,
+     "in_S_x": false,
+     "in_S_a": true
+    }
+   },
+   "phi-4": {
+    "clean": {
+     "choice": "SrcWin",
+     "rank": 1,
+     "in_S_x": true,
+     "in_S_a": true
+    },
+    "attacked": {
+     "choice": "AckDat",
+     "rank": 1,
+     "in_S_x": false,
+     "in_S_a": true
+    }
+   }
+  }
+ },
+ {
+  "label": "scaffolding",
+  "attack": "A3_scaffolding",
+  "sample_id": "s129551",
+  "dataset": "fiveg_nidd",
+  "class": "HTTPFlood",
+  "seed": 0,
+  "p_clean": 0.9998818635940552,
+  "p_attacked": 0.9995965361595154,
+  "routed_to_surrogate": true,
+  "p_attacked_real_model": 0.9998818635940552,
+  "p_attacked_surrogate": 0.9995965361595154,
+  "S_x": [
+   "sTtl",
+   "AckDat"
+  ],
+  "S_a": [
+   "dTtl",
+   "TcpRtt"
+  ],
+  "delta_x": {
+   "Dur": -2.1219253540039062e-05,
+   "RunTime": 0.0,
+   "Mean": 0.0,
+   "Sum": 0.0,
+   "Min": 0.0,
+   "Max": 0.0,
+   "sTos": 0.0,
+   "dTos": 0.0,
+   "sTtl": 0.7768759727478027,
+   "dTtl": 0.00010019540786743164,
+   "sHops": 0.0,
+   "dHops": 0.0,
+   "TotPkts": 0.0,
+   "SrcPkts": 9.5367431640625e-07,
+   "DstPkts": 1.6808509826660156e-05,
+   "TotBytes": -1.3947486877441406e-05,
+   "SrcBytes": 0.0,
+   "DstBytes": 0.00013428926467895508,
+   "sMeanPktSz": 0.0,
+   "dMeanPktSz": 0.0,
+   "Load": 0.0,
+   "SrcLoad": 0.0,
+   "DstLoad": 2.8848648071289062e-05,
+   "Loss": 0.0,
+   "SrcLoss": 0.0,
+   "DstLoss": 0.0,
+   "pLoss": 0.0,
+   "SrcGap": 0.0,
+   "DstGap": 0.0,
+   "Rate": 7.480382919311523e-05,
+   "SrcRate": 3.62396240234375e-05,
+   "DstRate": 4.0531158447265625e-05,
+   "SrcWin": 0.0003046393394470215,
+   "DstWin": 0.0002665519714355469,
+   "sVid": 0.0,
+   "dVid": 0.0,
+   "SrcTCPBase": 4.649162292480469e-06,
+   "DstTCPBase": -1.633167266845703e-05,
+   "TcpRtt": 0.0006955265998840332,
+   "SynAck": 8.112192153930664e-05,
+   "AckDat": 0.1742348074913025
+  },
+  "delta_a": {
+   "Dur": -4.464387893676758e-05,
+   "RunTime": 3.898143768310547e-05,
+   "Mean": 0.0,
+   "Sum": 0.0,
+   "Min": 0.0,
+   "Max": 0.0,
+   "sTos": 0.0,
+   "dTos": 0.0,
+   "sTtl": 0.00025010108947753906,
+   "dTtl": 0.08241003751754761,
+   "sHops": 0.00015807151794433594,
+   "dHops": 7.730722427368164e-05,
+   "TotPkts": 0.0,
+   "SrcPkts": -0.00010693073272705078,
+   "DstPkts": 0.001627802848815918,
+   "TotBytes": 8.684396743774414e-05,
+   "SrcBytes": -8.970499038696289e-05,
+   "DstBytes": -0.0002383589744567871,
+   "sMeanPktSz": 0.0,
+   "dMeanPktSz": 1.0967254638671875e-05,
+   "Load": 0.0,
+   "SrcLoad": -4.0471553802490234e-05,
+   "DstLoad": 5.525350570678711e-05,
+   "Loss": 0.0,
+   "SrcLoss": 0.0,
+   "DstLoss": 0.0,
+   "pLoss": 0.0,
+   "SrcGap": 0.0,
+   "DstGap": 0.0,
+   "Rate": 0.0030851364135742188,
+   "SrcRate": 1.9431114196777344e-05,
+   "DstRate": 0.00028246641159057617,
+   "SrcWin": 3.337860107421875e-06,
+   "DstWin": -6.0617923736572266e-05,
+   "sVid": 0.0,
+   "dVid": 0.0,
+   "SrcTCPBase": -6.35981559753418e-05,
+   "DstTCPBase": 0.0,
+   "TcpRtt": 0.9373895525932312,
+   "SynAck": -4.4405460357666016e-05,
+   "AckDat": -4.011392593383789e-05
+  },
+  "shown_clean": [
+   {
+    "feature": "AckDat",
+    "value": 0.032944001257419586,
+    "score": 1.72775399684906
+   },
+   {
+    "feature": "sMeanPktSz",
+    "value": 231.3333282470703,
+    "score": 1.4302948713302612
+   },
+   {
+    "feature": "TcpRtt",
+    "value": 0.034853000193834305,
+    "score": 0.4040524363517761
+   },
+   {
+    "feature": "DstWin",
+    "value": 64768.0,
+    "score": 0.34358131885528564
+   },
+   {
+    "feature": "Rate",
+    "value": 95.33116149902344,
+    "score": -0.1636848896741867
+   },
+   {
+    "feature": "TotBytes",
+    "value": 834.0,
+    "score": -0.14364220201969147
+   },
+   {
+    "feature": "SrcWin",
+    "value": 64256.0,
+    "score": 0.1371258944272995
+   },
+   {
+    "feature": "dMeanPktSz",
+    "value": 70.0,
+    "score": 0.10502668470144272
+   },
+   {
+    "feature": "sTtl",
+    "value": 63.0,
+    "score": 0.10232200473546982
+   },
+   {
+    "feature": "SynAck",
+    "value": 0.001908999984152615,
+    "score": 0.10038858652114868
+   }
+  ],
+  "shown_attacked": [
+   {
+    "feature": "AckDat",
+    "value": 0.032944001257419586,
+    "score": 1.72775399684906
+   },
+   {
+    "feature": "sMeanPktSz",
+    "value": 231.3333282470703,
+    "score": 1.4302948713302612
+   },
+   {
+    "feature": "TcpRtt",
+    "value": 0.034853000193834305,
+    "score": 0.4040524363517761
+   },
+   {
+    "feature": "DstWin",
+    "value": 64768.0,
+    "score": 0.34358131885528564
+   },
+   {
+    "feature": "Rate",
+    "value": 95.33116149902344,
+    "score": -0.1636848896741867
+   },
+   {
+    "feature": "TotBytes",
+    "value": 834.0,
+    "score": -0.14364220201969147
+   },
+   {
+    "feature": "SrcWin",
+    "value": 64256.0,
+    "score": 0.1371258944272995
+   },
+   {
+    "feature": "dMeanPktSz",
+    "value": 70.0,
+    "score": 0.10502668470144272
+   },
+   {
+    "feature": "sTtl",
+    "value": 63.0,
+    "score": 0.10232200473546982
+   },
+   {
+    "feature": "SynAck",
+    "value": 0.001908999984152615,
+    "score": 0.10038858652114868
+   }
+  ],
+  "clean_value_of_attacked_shown": {
+   "AckDat": 0.032944001257419586,
+   "sMeanPktSz": 231.3333282470703,
+   "TcpRtt": 0.034853000193834305,
+   "DstWin": 64768.0,
+   "Rate": 95.33116149902344,
+   "TotBytes": 834.0,
+   "SrcWin": 64256.0,
+   "dMeanPktSz": 70.0,
+   "sTtl": 63.0,
+   "SynAck": 0.001908999984152615
+  },
+  "top5_jaccard": 0.0,
+  "reader": {
+   "Qwen3-8B": {
+    "clean": {
+     "choice": "AckDat",
+     "rank": 1,
+     "in_S_x": true,
+     "in_S_a": false
+    },
+    "attacked": {
+     "choice": "AckDat",
+     "rank": 1,
+     "in_S_x": true,
+     "in_S_a": false
+    }
+   },
+   "phi-4": {
+    "clean": {
+     "choice": "AckDat",
+     "rank": 1,
+     "in_S_x": true,
+     "in_S_a": false
+    },
+    "attacked": {
+     "choice": "AckDat",
+     "rank": 1,
+     "in_S_x": true,
+     "in_S_a": false
+    }
+   }
+  }
+ }
+]

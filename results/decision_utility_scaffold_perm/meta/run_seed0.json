@@ -1,0 +1,48 @@
+{
+  "experiment": "decision_utility_scaffold_perm",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-26T01:23:58.027461+00:00",
+  "wall_clock_s": 731.571,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "datasets": [
+      "fiveg_nidd",
+      "ciciot2023",
+      "ciciomt2024"
+    ],
+    "judges": [
+      "Qwen/Qwen3-8B",
+      "microsoft/phi-4"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "cases": "results/scaffolding_permutation/raw/cases.json",
+    "conditions": [
+      "clean",
+      "attacked"
+    ],
+    "preserved_only": true,
+    "n_test": 40,
+    "n_shown": 10,
+    "temperature": 0.7,
+    "competence_floor": 0.5
+  },
+  "summary": {
+    "n_decisions": 6944,
+    "n_sensitivity": 0,
+    "n_shuffled": 0,
+    "n_cells": 90,
+    "judges": [
+      "Qwen/Qwen3-8B",
+      "microsoft/phi-4"
+    ],
+    "competence_floor": 0.5
+  }
+}

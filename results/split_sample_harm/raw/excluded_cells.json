@@ -1,0 +1,229 @@
+{
+ "n_excluded": 30,
+ "by_corpus": {
+  "fiveg_nidd": 14,
+  "ciciot2023": 10,
+  "ciciomt2024": 6
+ },
+ "by_class": {
+  "fiveg_nidd/SlowrateDoS": 10,
+  "fiveg_nidd/UDPFlood": 4,
+  "ciciot2023/DDoS-UDP_Flood": 6,
+  "ciciot2023/DDoS-ICMP_Flood": 4,
+  "ciciomt2024/TCP_IP-DDoS-ICMP": 4,
+  "ciciomt2024/TCP_IP-DoS-ICMP": 2
+ },
+ "cells": [
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 1,
+   "clean_acc": 0.3
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 1,
+   "clean_acc": 0.3
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 4,
+   "clean_acc": 0.025
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 4,
+   "clean_acc": 0.025
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 0,
+   "clean_acc": 0.225
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 0,
+   "clean_acc": 0.225
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 0,
+   "clean_acc": 0.0
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 0,
+   "clean_acc": 0.0
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 3,
+   "clean_acc": 0.0
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 3,
+   "clean_acc": 0.0
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 1,
+   "clean_acc": 0.45
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 1,
+   "clean_acc": 0.45
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 2,
+   "clean_acc": 0.425
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 2,
+   "clean_acc": 0.425
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 4,
+   "clean_acc": 0.175
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 4,
+   "clean_acc": 0.175
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 0,
+   "clean_acc": 0.075
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 0,
+   "clean_acc": 0.075
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 1,
+   "clean_acc": 0.05
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 1,
+   "clean_acc": 0.05
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 2,
+   "clean_acc": 0.2
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 2,
+   "clean_acc": 0.2
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 3,
+   "clean_acc": 0.05
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 3,
+   "clean_acc": 0.05
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 4,
+   "clean_acc": 0.1
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 4,
+   "clean_acc": 0.1
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 1,
+   "clean_acc": 0.4
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 1,
+   "clean_acc": 0.4
+  },
+  {
+   "judge": "Qwen3-8B",
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 4,
+   "clean_acc": 0.45
+  },
+  {
+   "judge": "phi-4",
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 4,
+   "clean_acc": 0.45
+  }
+ ],
+ "mean_clean_acc": 0.19499999999999998
+}

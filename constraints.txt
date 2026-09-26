@@ -1,0 +1,5 @@
+# Pin the known-good CUDA core. ALWAYS install with: pip install -c constraints.txt ...
+# This prevents old packages (e.g. legacy rtdl/tabpfn) from silently downgrading torch.
+torch==2.4.0
+torchvision==0.19.0
+numpy<2.0

@@ -1,0 +1,35 @@
+{
+  "experiment": "baseline_cases_export",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-26T00:37:53.746271+00:00",
+  "wall_clock_s": 3692.387,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "datasets": [
+        "fiveg_nidd",
+        "ciciot2023",
+        "ciciomt2024"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "tau": 0.05,
+      "min_k": 3,
+      "first_valid_draw": true
+    }
+  },
+  "summary": {
+    "case_sets": 1800,
+    "differ_from_baseline_run": 0,
+    "clean_differs_from_cache": 0,
+    "prediction_preserved": 1800,
+    "returned_unchanged": 10
+  }
+}

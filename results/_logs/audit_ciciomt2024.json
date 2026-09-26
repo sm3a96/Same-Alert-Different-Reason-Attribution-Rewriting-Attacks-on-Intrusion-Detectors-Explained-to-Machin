@@ -1,0 +1,89 @@
+{
+ "dataset": "ciciomt2024",
+ "rows": 5386143,
+ "features": 43,
+ "stored_rows_pre_dedup": 8775013,
+ "unique_rows": 5407707,
+ "duplicate_fraction": 0.383738,
+ "class_counts": {
+  "TCP_IP-DoS-UDP": 704447,
+  "TCP_IP-DDoS-TCP": 255624,
+  "MQTT-DDoS-Publish_Flood": 36039,
+  "TCP_IP-DoS-ICMP": 152870,
+  "TCP_IP-DDoS-UDP": 1998021,
+  "Recon-Port_Scan": 85772,
+  "TCP_IP-DoS-SYN": 443943,
+  "TCP_IP-DoS-TCP": 260912,
+  "Recon-OS_Scan": 15133,
+  "MQTT-DDoS-Connect_Flood": 214952,
+  "ARP_Spoofing": 17700,
+  "MQTT-Malformed_Data": 6877,
+  "Recon-Ping_Sweep": 747,
+  "MQTT-DoS-Publish_Flood": 52881,
+  "Benign": 230339,
+  "Recon-VulScan": 2899,
+  "TCP_IP-DDoS-ICMP": 225918,
+  "TCP_IP-DDoS-SYN": 665165,
+  "MQTT-DoS-Connect_Flood": 15904
+ },
+ "constant_features": [],
+ "identifier_like": [
+  "Rate",
+  "Srate"
+ ],
+ "row_index_like": [],
+ "session_fingerprints": [],
+ "leakage_suspects": [
+  {
+   "feature": "Rate",
+   "depth1_heldout": 0.493,
+   "depth8_heldout": 0.647
+  },
+  {
+   "feature": "Srate",
+   "depth1_heldout": 0.493,
+   "depth8_heldout": 0.647
+  },
+  {
+   "feature": "Header_Length",
+   "depth1_heldout": 0.492,
+   "depth8_heldout": 0.645
+  },
+  {
+   "feature": "Tot size",
+   "depth1_heldout": 0.49,
+   "depth8_heldout": 0.624
+  },
+  {
+   "feature": "Min",
+   "depth1_heldout": 0.494,
+   "depth8_heldout": 0.617
+  },
+  {
+   "feature": "Tot sum",
+   "depth1_heldout": 0.491,
+   "depth8_heldout": 0.616
+  },
+  {
+   "feature": "Magnitue",
+   "depth1_heldout": 0.491,
+   "depth8_heldout": 0.614
+  },
+  {
+   "feature": "AVG",
+   "depth1_heldout": 0.491,
+   "depth8_heldout": 0.613
+  },
+  {
+   "feature": "Max",
+   "depth1_heldout": 0.476,
+   "depth8_heldout": 0.593
+  },
+  {
+   "feature": "rst_count",
+   "depth1_heldout": 0.462,
+   "depth8_heldout": 0.585
+  }
+ ],
+ "majority_baseline": 0.371
+}

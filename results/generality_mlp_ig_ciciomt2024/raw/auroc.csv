@@ -1,0 +1,11 @@
+seed,attack,auroc
+0,A1_misdirection,0.3794
+0,A1_displacement,0.7156
+1,A1_misdirection,0.1728
+1,A1_displacement,0.7272
+2,A1_misdirection,0.4188
+2,A1_displacement,0.8428
+3,A1_misdirection,0.1519
+3,A1_displacement,0.7087
+4,A1_misdirection,0.1803
+4,A1_displacement,0.6481

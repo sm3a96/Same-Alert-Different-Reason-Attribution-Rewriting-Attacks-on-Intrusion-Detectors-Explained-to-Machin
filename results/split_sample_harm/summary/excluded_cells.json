@@ -1,0 +1,17 @@
+{
+ "n_excluded": 30,
+ "by_corpus": {
+  "fiveg_nidd": 14,
+  "ciciot2023": 10,
+  "ciciomt2024": 6
+ },
+ "by_class": {
+  "fiveg_nidd/SlowrateDoS": 10,
+  "fiveg_nidd/UDPFlood": 4,
+  "ciciot2023/DDoS-UDP_Flood": 6,
+  "ciciot2023/DDoS-ICMP_Flood": 4,
+  "ciciomt2024/TCP_IP-DDoS-ICMP": 4,
+  "ciciomt2024/TCP_IP-DoS-ICMP": 2
+ },
+ "mean_clean_acc": 0.19499999999999998
+}

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+.ipynb_checkpoints/
+
+# Raw datasets are never committed. Fetch them with scripts/download_data.py.
+/data/
+*.parquet
+*.pcap
+*.pt
+*.bin
+*.safetensors
+
+# Model weights are not committed either: they are derived from corpora distributed under
+# academic-use terms, and they are large. scripts/export_model_artifacts.py regenerates every
+# one of them from the corpora, and artifacts/models/manifest.json IS committed, so a reader
+# can check what they regenerated against the feature order, class mapping, training rows,
+# held-out accuracy and sha256 recorded for each file.
+artifacts/models/*
+!artifacts/models/manifest.json
+
+# Per-run logs stay local; raw and summary artifacts are committed in place.
+results/*/logs/
+results/_logs/*.log
+results/MANIFEST.lock
+
+# Caches
+.pytest_cache/
+.ruff_cache/
+*.log
+results/MANIFEST.csv

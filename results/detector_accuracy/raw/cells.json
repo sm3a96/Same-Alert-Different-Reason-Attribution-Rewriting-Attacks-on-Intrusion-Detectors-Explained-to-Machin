@@ -1,0 +1,317 @@
+[
+ {
+  "dataset": "fiveg_nidd",
+  "class": "HTTPFlood",
+  "seed": 0,
+  "n_test_side": 78880,
+  "accuracy": 0.8939021298174442
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "HTTPFlood",
+  "seed": 1,
+  "n_test_side": 78880,
+  "accuracy": 0.9222870182555781
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "HTTPFlood",
+  "seed": 2,
+  "n_test_side": 78880,
+  "accuracy": 0.8234787018255578
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "HTTPFlood",
+  "seed": 3,
+  "n_test_side": 78880,
+  "accuracy": 0.8419497971602434
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "HTTPFlood",
+  "seed": 4,
+  "n_test_side": 77088,
+  "accuracy": 0.8185450394354504
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "SlowrateDoS",
+  "seed": 0,
+  "n_test_side": 78880,
+  "accuracy": 0.8939021298174442
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "SlowrateDoS",
+  "seed": 1,
+  "n_test_side": 78880,
+  "accuracy": 0.9222870182555781
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "SlowrateDoS",
+  "seed": 2,
+  "n_test_side": 78880,
+  "accuracy": 0.8234787018255578
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "SlowrateDoS",
+  "seed": 3,
+  "n_test_side": 78880,
+  "accuracy": 0.8419497971602434
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "SlowrateDoS",
+  "seed": 4,
+  "n_test_side": 77088,
+  "accuracy": 0.8185450394354504
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "UDPFlood",
+  "seed": 0,
+  "n_test_side": 78880,
+  "accuracy": 0.8939021298174442
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "UDPFlood",
+  "seed": 1,
+  "n_test_side": 78880,
+  "accuracy": 0.9222870182555781
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "UDPFlood",
+  "seed": 2,
+  "n_test_side": 78880,
+  "accuracy": 0.8234787018255578
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "UDPFlood",
+  "seed": 3,
+  "n_test_side": 78880,
+  "accuracy": 0.8419497971602434
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "class": "UDPFlood",
+  "seed": 4,
+  "n_test_side": 77088,
+  "accuracy": 0.8185450394354504
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-UDP_Flood",
+  "seed": 0,
+  "n_test_side": 317336,
+  "accuracy": 0.8746596667254897
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-UDP_Flood",
+  "seed": 1,
+  "n_test_side": 317336,
+  "accuracy": 0.87430042604684
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-UDP_Flood",
+  "seed": 2,
+  "n_test_side": 317336,
+  "accuracy": 0.8747069352358383
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-UDP_Flood",
+  "seed": 3,
+  "n_test_side": 317336,
+  "accuracy": 0.8744233241737465
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-UDP_Flood",
+  "seed": 4,
+  "n_test_side": 317336,
+  "accuracy": 0.8737867749010513
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-ICMP_Flood",
+  "seed": 0,
+  "n_test_side": 317336,
+  "accuracy": 0.8746596667254897
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-ICMP_Flood",
+  "seed": 1,
+  "n_test_side": 317336,
+  "accuracy": 0.87430042604684
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-ICMP_Flood",
+  "seed": 2,
+  "n_test_side": 317336,
+  "accuracy": 0.8747069352358383
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-ICMP_Flood",
+  "seed": 3,
+  "n_test_side": 317336,
+  "accuracy": 0.8744233241737465
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-ICMP_Flood",
+  "seed": 4,
+  "n_test_side": 317336,
+  "accuracy": 0.8737867749010513
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-TCP_Flood",
+  "seed": 0,
+  "n_test_side": 317336,
+  "accuracy": 0.8746596667254897
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-TCP_Flood",
+  "seed": 1,
+  "n_test_side": 317336,
+  "accuracy": 0.87430042604684
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-TCP_Flood",
+  "seed": 2,
+  "n_test_side": 317336,
+  "accuracy": 0.8747069352358383
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-TCP_Flood",
+  "seed": 3,
+  "n_test_side": 317336,
+  "accuracy": 0.8744233241737465
+ },
+ {
+  "dataset": "ciciot2023",
+  "class": "DDoS-TCP_Flood",
+  "seed": 4,
+  "n_test_side": 317336,
+  "accuracy": 0.8737867749010513
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-UDP",
+  "seed": 0,
+  "n_test_side": 889978,
+  "accuracy": 0.7336552139491088
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-UDP",
+  "seed": 1,
+  "n_test_side": 889978,
+  "accuracy": 0.7440678308902018
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-UDP",
+  "seed": 2,
+  "n_test_side": 889978,
+  "accuracy": 0.6989251419698015
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-UDP",
+  "seed": 3,
+  "n_test_side": 889978,
+  "accuracy": 0.7411295560114969
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-UDP",
+  "seed": 4,
+  "n_test_side": 889978,
+  "accuracy": 0.7942848025456809
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-ICMP",
+  "seed": 0,
+  "n_test_side": 889978,
+  "accuracy": 0.7336552139491088
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-ICMP",
+  "seed": 1,
+  "n_test_side": 889978,
+  "accuracy": 0.7440678308902018
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-ICMP",
+  "seed": 2,
+  "n_test_side": 889978,
+  "accuracy": 0.6989251419698015
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-ICMP",
+  "seed": 3,
+  "n_test_side": 889978,
+  "accuracy": 0.7411295560114969
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DDoS-ICMP",
+  "seed": 4,
+  "n_test_side": 889978,
+  "accuracy": 0.7942848025456809
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DoS-ICMP",
+  "seed": 0,
+  "n_test_side": 889978,
+  "accuracy": 0.7336552139491088
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DoS-ICMP",
+  "seed": 1,
+  "n_test_side": 889978,
+  "accuracy": 0.7440678308902018
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DoS-ICMP",
+  "seed": 2,
+  "n_test_side": 889978,
+  "accuracy": 0.6989251419698015
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DoS-ICMP",
+  "seed": 3,
+  "n_test_side": 889978,
+  "accuracy": 0.7411295560114969
+ },
+ {
+  "dataset": "ciciomt2024",
+  "class": "TCP_IP-DoS-ICMP",
+  "seed": 4,
+  "n_test_side": 889978,
+  "accuracy": 0.7942848025456809
+ }
+]

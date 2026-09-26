@@ -1,0 +1,32 @@
+{
+ "n_case_sets_changed": 1042,
+ "class_survival_on_changed": 1.0,
+ "vs_S_x": {
+  "n": 2080,
+  "n_clusters": 40,
+  "mean_delta": -0.15384615384615385,
+  "ci_lo": -0.22427328166117314,
+  "ci_hi": -0.08649973132036848,
+  "ci_half_width": 0.06888677517040233,
+  "ci_half_width_naive": 0.01751081420637876,
+  "ci_method": "cluster bootstrap",
+  "broke": 357,
+  "fixed": 37,
+  "discordant": 394,
+  "harms": true
+ },
+ "vs_S_xprime": {
+  "n": 2080,
+  "n_clusters": 40,
+  "mean_delta": -0.05,
+  "ci_lo": -0.16295254866139952,
+  "ci_hi": 0.07936018924339781,
+  "ci_half_width": 0.12115636895239867,
+  "ci_half_width_naive": 0.0241321727482043,
+  "ci_method": "cluster bootstrap",
+  "broke": 382,
+  "fixed": 278,
+  "discordant": 660,
+  "harms": false
+ }
+}

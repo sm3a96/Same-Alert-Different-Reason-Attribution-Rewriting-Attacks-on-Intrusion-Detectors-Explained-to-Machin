@@ -1,0 +1,52 @@
+{
+ "pooled": {
+  "reliance": {
+   "A1_displacement": {
+    "mean": -0.0761111111111111,
+    "n_seeds": 5,
+    "t": -5.633044637231099,
+    "p": 0.004886857196176128,
+    "p_holm": 0.004886857196176128,
+    "reject_holm": true,
+    "verdict": "excludes zero"
+   }
+  },
+  "infidelity": {
+   "A1_displacement": {
+    "mean": -0.0011111111111111152,
+    "n_seeds": 5,
+    "t": -0.07776157913597423,
+    "p": 0.9417521700959182,
+    "p_holm": 0.9417521700959182,
+    "reject_holm": false,
+    "verdict": "not established"
+   }
+  }
+ },
+ "reliance_per_corpus": {
+  "A1_displacement": {
+   "ciciomt2024": {
+    "mean": -0.06166666666666665,
+    "ci_lo": -0.224219828218393,
+    "ci_hi": 0.10088649488505971,
+    "contains_zero": true
+   },
+   "ciciot2023": {
+    "mean": -0.06333333333333331,
+    "ci_lo": -0.25850906443547905,
+    "ci_hi": 0.13184239776881246,
+    "contains_zero": true
+   },
+   "fiveg_nidd": {
+    "mean": -0.10333333333333332,
+    "ci_lo": -0.1714207397170333,
+    "ci_hi": -0.03524592694963331,
+    "contains_zero": false
+   },
+   "n_contains_zero": 2,
+   "n_corpora": 3
+  }
+ },
+ "alpha": 0.05,
+ "method": "Holm-Bonferroni over the three attacks, within each term"
+}

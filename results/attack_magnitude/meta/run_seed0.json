@@ -1,0 +1,68 @@
+{
+  "experiment": "attack_magnitude",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-24T02:13:30.423495+00:00",
+  "wall_clock_s": 834.727,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "datasets": [
+        "fiveg_nidd",
+        "ciciot2023",
+        "ciciomt2024"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "attack": "A1_displacement",
+      "sigma_matrix": 0.1,
+      "n_matrix": 30,
+      "sigma_artifact": 0.05,
+      "n_artifact": 120
+    }
+  },
+  "summary": {
+    "pooled": {
+      "median": 1165.8648706750985,
+      "ci_lo": -3.15072320952504,
+      "ci_hi": 2334.880464559722,
+      "mean": 5455.128750211461,
+      "l2_sigma_train_mean": 0.6211969338958018
+    },
+    "per_corpus": {
+      "ciciomt2024": {
+        "median": 1015.8166886088969,
+        "ci_lo": -1275.0832616314574,
+        "ci_hi": 3306.7166388492515
+      },
+      "ciciot2023": {
+        "median": 2055.31494755971,
+        "ci_lo": 448.25543731718335,
+        "ci_hi": 3662.374457802237
+      },
+      "fiveg_nidd": {
+        "median": 426.4629758566892,
+        "ci_lo": -4.1642834425529145,
+        "ci_hi": 857.0902351559313
+      }
+    },
+    "ceilings_sigma_cal": {
+      "matrix": 0.13103788475750042,
+      "artifact": 0.09829472345071172
+    },
+    "ratio_to_matrix_ceiling": 8897.158808940298,
+    "cells": 45,
+    "free_coords_constant_on_calibration": {
+      "total": 794,
+      "of_free": 1635,
+      "per_cell_mean": 17.644444444444446
+    },
+    "median_sigma_cal_over_sigma_train": 0.025769733702693608
+  }
+}

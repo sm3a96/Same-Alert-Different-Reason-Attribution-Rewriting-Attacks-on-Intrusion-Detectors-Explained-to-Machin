@@ -1,0 +1,226 @@
+{
+ "threshold": 0.999,
+ "datasets": {
+  "fiveg_nidd": {
+   "dataset": "fiveg_nidd",
+   "extractor": "argus",
+   "rows": 200000,
+   "rtol": 0.001,
+   "threshold": 0.999,
+   "constraints": [
+    {
+     "kind": "identity",
+     "expr": "TotPkts = SrcPkts + DstPkts",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "TotBytes = SrcBytes + DstBytes",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "Loss = SrcLoss + DstLoss",
+     "defined_rows": 200000,
+     "hold_rate": 0.999995,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "TcpRtt = SynAck + AckDat",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "Load = SrcLoad + DstLoad",
+     "defined_rows": 200000,
+     "hold_rate": 0.999995,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "sMeanPktSz = SrcBytes / SrcPkts",
+     "defined_rows": 181601,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "dMeanPktSz = DstBytes / DstPkts",
+     "defined_rows": 126621,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "Rate = (TotPkts - 1) / Dur",
+     "defined_rows": 144100,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "SrcRate = (SrcPkts - 1) / Dur",
+     "defined_rows": 144100,
+     "hold_rate": 0.999695,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "RunTime = Dur",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "Sum = Dur",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "Mean = Dur",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "Min = Dur",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "identity",
+     "expr": "Max = Dur",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    }
+   ],
+   "all_passed": true,
+   "derived_features": [
+    "TotPkts",
+    "TotBytes",
+    "Loss",
+    "TcpRtt",
+    "Load",
+    "sMeanPktSz",
+    "dMeanPktSz",
+    "Rate",
+    "SrcRate",
+    "RunTime",
+    "Sum",
+    "Mean",
+    "Min",
+    "Max"
+   ],
+   "n_free": 27,
+   "sampled_rows": 200000,
+   "total_rows": 394580,
+   "n_features": 41,
+   "notes": "DstRate does not follow (DstPkts-1)/Dur (9.4%) and pLoss misses the threshold (99.784%); both are left free rather than declared on a relation that does not hold."
+  },
+  "ciciot2023": {
+   "dataset": "ciciot2023",
+   "extractor": "cicflowmeter",
+   "rows": 200000,
+   "rtol": 0.001,
+   "threshold": 0.999,
+   "constraints": [
+    {
+     "kind": "identity",
+     "expr": "Rate = Srate + Drate",
+     "defined_rows": 200000,
+     "hold_rate": 0.9999,
+     "passed": true
+    },
+    {
+     "kind": "ordering",
+     "expr": "Min <= AVG <= Max",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "ordering",
+     "expr": "Std <= Max - Min",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "ordering",
+     "expr": "Header_Length >= 0",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    }
+   ],
+   "all_passed": true,
+   "derived_features": [
+    "Rate"
+   ],
+   "n_free": 40,
+   "sampled_rows": 200000,
+   "total_rows": 1586682,
+   "n_features": 41,
+   "notes": "Variance = Std^2 holds on only 67% and Magnitue = sqrt(2*AVG) on 90%; neither is declared. Tot size, Number and Weight follow no relation we could establish."
+  },
+  "ciciomt2024": {
+   "dataset": "ciciomt2024",
+   "extractor": "cicflowmeter",
+   "rows": 200000,
+   "rtol": 0.001,
+   "threshold": 0.999,
+   "constraints": [
+    {
+     "kind": "identity",
+     "expr": "Rate = Srate",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "ordering",
+     "expr": "Min <= AVG <= Max",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "ordering",
+     "expr": "Std <= Max - Min",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    },
+    {
+     "kind": "ordering",
+     "expr": "Header_Length >= 0",
+     "defined_rows": 200000,
+     "hold_rate": 1.0,
+     "passed": true
+    }
+   ],
+   "all_passed": true,
+   "derived_features": [
+    "Rate"
+   ],
+   "n_free": 42,
+   "sampled_rows": 200000,
+   "total_rows": 5386143,
+   "n_features": 43,
+   "notes": "Drate is constant here and dropped by the loader, so Rate collapses onto Srate."
+  }
+ }
+}

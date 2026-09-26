@@ -1,0 +1,25 @@
+{
+  "experiment": "decision_utility_scaffold_perm",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-26T01:26:56.352349+00:00",
+  "wall_clock_s": 10.871,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "floor": 0.5,
+      "split_seed": 0,
+      "n_boot": 8000,
+      "seed": 0
+    }
+  },
+  "summary": {
+    "case_sets_preserved": 1736,
+    "all_cells_vs_Sxprime": -0.07258064516129033,
+    "ci": [
+      -0.132185155252235,
+      -0.020171136027623958
+    ]
+  }
+}

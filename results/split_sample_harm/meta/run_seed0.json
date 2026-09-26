@@ -1,0 +1,42 @@
+{
+  "experiment": "split_sample_harm",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-24T01:56:58.717973+00:00",
+  "wall_clock_s": 56.363,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "floor": 0.5,
+      "split_seed": 0,
+      "n_boot": 8000,
+      "seed": 0,
+      "runs": [
+        "reference_decomposition",
+        "reference_decomposition_a3_c03",
+        "reference_decomposition_a3_c01",
+        "reference_decomposition_a3_c005"
+      ]
+    }
+  },
+  "summary": {
+    "runs": [
+      "reference_decomposition",
+      "reference_decomposition_a3_c03",
+      "reference_decomposition_a3_c01",
+      "reference_decomposition_a3_c005"
+    ],
+    "displacement_all_90_vs_Sxprime": -0.008888888888888889,
+    "displacement_all_90_ci": [
+      -0.09888888888888889,
+      0.08305555555555555
+    ],
+    "displacement_competent_on_A_vs_Sxprime": -0.12416666666666666,
+    "displacement_competent_on_A_ci": [
+      -0.21166666666666667,
+      -0.044145833333333634
+    ],
+    "displacement_competent_count": 60
+  }
+}

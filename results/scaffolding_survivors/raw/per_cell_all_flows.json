@@ -1,0 +1,2573 @@
+{
+ "A1_misdirection": [
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.07400793650793651,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.513,
+    "erasure_faithfulness": 0.527,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.455,
+    "pasa_std": 0.497,
+    "FUSED": 0.528
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.11964285714285713,
+   "per_signal": {
+    "certified_stability": 0.433,
+    "certified_stability_free": 0.434,
+    "cross_method_consensus": 0.484,
+    "erasure_faithfulness": 0.588,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.484,
+    "pasa_std": 0.458,
+    "FUSED": 0.454
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.014285714285714285,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.456,
+    "erasure_faithfulness": 0.515,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.517,
+    "pasa_std": 0.492,
+    "FUSED": 0.465
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.18363095238095237,
+   "per_signal": {
+    "certified_stability": 0.461,
+    "certified_stability_free": 0.438,
+    "cross_method_consensus": 0.565,
+    "erasure_faithfulness": 0.593,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.55,
+    "pasa_std": 0.429,
+    "FUSED": 0.624
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.05972222222222222,
+   "per_signal": {
+    "certified_stability": 0.463,
+    "certified_stability_free": 0.475,
+    "cross_method_consensus": 0.604,
+    "erasure_faithfulness": 0.501,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.459,
+    "pasa_std": 0.423,
+    "FUSED": 0.468
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.11130952380952382,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.496,
+    "erasure_faithfulness": 0.56,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.451,
+    "pasa_std": 0.411,
+    "FUSED": 0.507
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.37589285714285714,
+   "per_signal": {
+    "certified_stability": 0.412,
+    "certified_stability_free": 0.425,
+    "cross_method_consensus": 0.416,
+    "erasure_faithfulness": 0.748,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.398,
+    "pasa_std": 0.166,
+    "FUSED": 0.553
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.26339285714285715,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.461,
+    "cross_method_consensus": 0.612,
+    "erasure_faithfulness": 0.723,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.452,
+    "pasa_std": 0.393,
+    "FUSED": 0.649
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.12351190476190477,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.475,
+    "cross_method_consensus": 0.555,
+    "erasure_faithfulness": 0.612,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.542,
+    "pasa_std": 0.461,
+    "FUSED": 0.611
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.25535714285714284,
+   "per_signal": {
+    "certified_stability": 0.463,
+    "certified_stability_free": 0.463,
+    "cross_method_consensus": 0.599,
+    "erasure_faithfulness": 0.663,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.476,
+    "pasa_std": 0.195,
+    "FUSED": 0.552
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.544047619047619,
+   "per_signal": {
+    "certified_stability": 0.375,
+    "certified_stability_free": 0.212,
+    "cross_method_consensus": 0.775,
+    "erasure_faithfulness": 0.852,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.381,
+    "pasa_std": 0.201,
+    "FUSED": 0.854
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.025,
+   "per_signal": {
+    "certified_stability": 0.488,
+    "certified_stability_free": 0.514,
+    "cross_method_consensus": 0.53,
+    "erasure_faithfulness": 0.561,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.449,
+    "pasa_std": 0.531,
+    "FUSED": 0.599
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.2523809523809524,
+   "per_signal": {
+    "certified_stability": 0.405,
+    "certified_stability_free": 0.381,
+    "cross_method_consensus": 0.731,
+    "erasure_faithfulness": 0.796,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.42,
+    "pasa_std": 0.392,
+    "FUSED": 0.814
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.14732142857142855,
+   "per_signal": {
+    "certified_stability": 0.372,
+    "certified_stability_free": 0.346,
+    "cross_method_consensus": 0.613,
+    "erasure_faithfulness": 0.582,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.462,
+    "pasa_std": 0.379,
+    "FUSED": 0.56
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.06190476190476191,
+   "per_signal": {
+    "certified_stability": 0.458,
+    "certified_stability_free": 0.466,
+    "cross_method_consensus": 0.575,
+    "erasure_faithfulness": 0.502,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.489,
+    "pasa_std": 0.546,
+    "FUSED": 0.536
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.48144841269841265,
+   "per_signal": {
+    "certified_stability": 0.463,
+    "certified_stability_free": 0.461,
+    "cross_method_consensus": 0.684,
+    "erasure_faithfulness": 0.818,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.564,
+    "pasa_std": 0.419,
+    "FUSED": 0.753
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5462301587301587,
+   "per_signal": {
+    "certified_stability": 0.413,
+    "certified_stability_free": 0.437,
+    "cross_method_consensus": 0.656,
+    "erasure_faithfulness": 0.868,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.399,
+    "pasa_std": 0.447,
+    "FUSED": 0.785
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.38095238095238093,
+   "per_signal": {
+    "certified_stability": 0.45,
+    "certified_stability_free": 0.412,
+    "cross_method_consensus": 0.726,
+    "erasure_faithfulness": 0.679,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.449,
+    "pasa_std": 0.518,
+    "FUSED": 0.63
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5000992063492063,
+   "per_signal": {
+    "certified_stability": 0.438,
+    "certified_stability_free": 0.425,
+    "cross_method_consensus": 0.621,
+    "erasure_faithfulness": 0.76,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.481,
+    "pasa_std": 0.419,
+    "FUSED": 0.643
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.43690476190476185,
+   "per_signal": {
+    "certified_stability": 0.325,
+    "certified_stability_free": 0.388,
+    "cross_method_consensus": 0.596,
+    "erasure_faithfulness": 0.672,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.412,
+    "pasa_std": 0.387,
+    "FUSED": 0.537
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.484,
+    "erasure_faithfulness": 0.5,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.45,
+    "pasa_std": 0.452,
+    "FUSED": 0.492
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.434,
+    "certified_stability_free": 0.566,
+    "cross_method_consensus": 0.491,
+    "erasure_faithfulness": 0.5,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.454,
+    "pasa_std": 0.592,
+    "FUSED": 0.604
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.485,
+    "certified_stability_free": 0.499,
+    "cross_method_consensus": 0.638,
+    "erasure_faithfulness": 0.5,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.536,
+    "pasa_std": 0.512,
+    "FUSED": 0.552
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.519,
+    "erasure_faithfulness": 0.5,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.51,
+    "pasa_std": 0.415,
+    "FUSED": 0.409
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.501,
+    "certified_stability_free": 0.501,
+    "cross_method_consensus": 0.538,
+    "erasure_faithfulness": 0.5,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.419,
+    "pasa_std": 0.443,
+    "FUSED": 0.458
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5684523809523808,
+   "per_signal": {
+    "certified_stability": 0.321,
+    "certified_stability_free": 0.308,
+    "cross_method_consensus": 0.624,
+    "erasure_faithfulness": 0.904,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.515,
+    "pasa_std": 0.454,
+    "FUSED": 0.834
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5288690476190475,
+   "per_signal": {
+    "certified_stability": 0.4,
+    "certified_stability_free": 0.263,
+    "cross_method_consensus": 0.449,
+    "erasure_faithfulness": 0.798,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.427,
+    "pasa_std": 0.544,
+    "FUSED": 0.773
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5701388888888889,
+   "per_signal": {
+    "certified_stability": 0.441,
+    "certified_stability_free": 0.417,
+    "cross_method_consensus": 0.442,
+    "erasure_faithfulness": 0.807,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.549,
+    "pasa_std": 0.455,
+    "FUSED": 0.702
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5083333333333334,
+   "per_signal": {
+    "certified_stability": 0.388,
+    "certified_stability_free": 0.375,
+    "cross_method_consensus": 0.592,
+    "erasure_faithfulness": 0.926,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.556,
+    "pasa_std": 0.577,
+    "FUSED": 0.876
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5309523809523808,
+   "per_signal": {
+    "certified_stability": 0.314,
+    "certified_stability_free": 0.317,
+    "cross_method_consensus": 0.448,
+    "erasure_faithfulness": 0.849,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.56,
+    "pasa_std": 0.613,
+    "FUSED": 0.751
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7083333333333334,
+   "per_signal": {
+    "certified_stability": 0.362,
+    "certified_stability_free": 0.338,
+    "cross_method_consensus": 0.551,
+    "erasure_faithfulness": 0.829,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.335,
+    "pasa_std": 0.283,
+    "FUSED": 0.831
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7375992063492063,
+   "per_signal": {
+    "certified_stability": 0.4,
+    "certified_stability_free": 0.388,
+    "cross_method_consensus": 0.376,
+    "erasure_faithfulness": 0.937,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.43,
+    "pasa_std": 0.629,
+    "FUSED": 0.856
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5146825396825397,
+   "per_signal": {
+    "certified_stability": 0.499,
+    "certified_stability_free": 0.532,
+    "cross_method_consensus": 0.523,
+    "erasure_faithfulness": 0.922,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.295,
+    "pasa_std": 0.466,
+    "FUSED": 0.891
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7752976190476191,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.475,
+    "cross_method_consensus": 0.31,
+    "erasure_faithfulness": 0.841,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.497,
+    "pasa_std": 0.574,
+    "FUSED": 0.828
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7367063492063493,
+   "per_signal": {
+    "certified_stability": 0.269,
+    "certified_stability_free": 0.269,
+    "cross_method_consensus": 0.417,
+    "erasure_faithfulness": 0.888,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.334,
+    "pasa_std": 0.372,
+    "FUSED": 0.799
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.550297619047619,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.768,
+    "erasure_faithfulness": 0.773,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.422,
+    "pasa_std": 0.401,
+    "FUSED": 0.696
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.42351190476190476,
+   "per_signal": {
+    "certified_stability": 0.412,
+    "certified_stability_free": 0.412,
+    "cross_method_consensus": 0.443,
+    "erasure_faithfulness": 0.349,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.518,
+    "pasa_std": 0.483,
+    "FUSED": 0.429
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.55,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.475,
+    "cross_method_consensus": 0.425,
+    "erasure_faithfulness": 0.828,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.379,
+    "pasa_std": 0.441,
+    "FUSED": 0.755
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.6968253968253968,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.475,
+    "cross_method_consensus": 0.512,
+    "erasure_faithfulness": 0.822,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.431,
+    "pasa_std": 0.471,
+    "FUSED": 0.683
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5363095238095237,
+   "per_signal": {
+    "certified_stability": 0.462,
+    "certified_stability_free": 0.45,
+    "cross_method_consensus": 0.758,
+    "erasure_faithfulness": 0.641,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.518,
+    "pasa_std": 0.413,
+    "FUSED": 0.742
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.41875,
+   "per_signal": {
+    "certified_stability": 0.375,
+    "certified_stability_free": 0.36,
+    "cross_method_consensus": 0.687,
+    "erasure_faithfulness": 0.607,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.489,
+    "pasa_std": 0.338,
+    "FUSED": 0.63
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.615079365079365,
+   "per_signal": {
+    "certified_stability": 0.307,
+    "certified_stability_free": 0.31,
+    "cross_method_consensus": 0.642,
+    "erasure_faithfulness": 0.675,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.466,
+    "pasa_std": 0.327,
+    "FUSED": 0.515
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5291666666666666,
+   "per_signal": {
+    "certified_stability": 0.45,
+    "certified_stability_free": 0.488,
+    "cross_method_consensus": 0.644,
+    "erasure_faithfulness": 0.29,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.508,
+    "pasa_std": 0.471,
+    "FUSED": 0.586
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5707341269841268,
+   "per_signal": {
+    "certified_stability": 0.375,
+    "certified_stability_free": 0.362,
+    "cross_method_consensus": 0.63,
+    "erasure_faithfulness": 0.356,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.421,
+    "pasa_std": 0.473,
+    "FUSED": 0.564
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.43978174603174597,
+   "per_signal": {
+    "certified_stability": 0.461,
+    "certified_stability_free": 0.498,
+    "cross_method_consensus": 0.669,
+    "erasure_faithfulness": 0.634,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.453,
+    "pasa_std": 0.46,
+    "FUSED": 0.632
+   }
+  }
+ ],
+ "A1_displacement": [
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8080357142857142,
+   "per_signal": {
+    "certified_stability": 0.412,
+    "certified_stability_free": 0.412,
+    "cross_method_consensus": 0.385,
+    "erasure_faithfulness": 0.709,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.271,
+    "pasa_std": 0.232,
+    "FUSED": 0.33
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7708333333333333,
+   "per_signal": {
+    "certified_stability": 0.327,
+    "certified_stability_free": 0.316,
+    "cross_method_consensus": 0.432,
+    "erasure_faithfulness": 0.654,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.292,
+    "pasa_std": 0.122,
+    "FUSED": 0.36
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.748015873015873,
+   "per_signal": {
+    "certified_stability": 0.312,
+    "certified_stability_free": 0.3,
+    "cross_method_consensus": 0.219,
+    "erasure_faithfulness": 0.888,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.328,
+    "pasa_std": 0.257,
+    "FUSED": 0.487
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8229166666666666,
+   "per_signal": {
+    "certified_stability": 0.284,
+    "certified_stability_free": 0.301,
+    "cross_method_consensus": 0.505,
+    "erasure_faithfulness": 0.752,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.287,
+    "pasa_std": 0.134,
+    "FUSED": 0.576
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.829861111111111,
+   "per_signal": {
+    "certified_stability": 0.438,
+    "certified_stability_free": 0.412,
+    "cross_method_consensus": 0.351,
+    "erasure_faithfulness": 0.441,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.416,
+    "pasa_std": 0.231,
+    "FUSED": 0.25
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.45565476190476195,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.475,
+    "cross_method_consensus": 0.433,
+    "erasure_faithfulness": 0.332,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.258,
+    "pasa_std": 0.081,
+    "FUSED": 0.288
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5830357142857142,
+   "per_signal": {
+    "certified_stability": 0.4,
+    "certified_stability_free": 0.325,
+    "cross_method_consensus": 0.528,
+    "erasure_faithfulness": 0.532,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.247,
+    "pasa_std": 0.059,
+    "FUSED": 0.45
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5263888888888888,
+   "per_signal": {
+    "certified_stability": 0.269,
+    "certified_stability_free": 0.269,
+    "cross_method_consensus": 0.654,
+    "erasure_faithfulness": 0.589,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.246,
+    "pasa_std": 0.181,
+    "FUSED": 0.571
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.6369047619047619,
+   "per_signal": {
+    "certified_stability": 0.35,
+    "certified_stability_free": 0.325,
+    "cross_method_consensus": 0.689,
+    "erasure_faithfulness": 0.244,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.176,
+    "pasa_std": 0.065,
+    "FUSED": 0.571
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5993055555555555,
+   "per_signal": {
+    "certified_stability": 0.275,
+    "certified_stability_free": 0.188,
+    "cross_method_consensus": 0.537,
+    "erasure_faithfulness": 0.523,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.13,
+    "pasa_std": 0.052,
+    "FUSED": 0.382
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7098214285714285,
+   "per_signal": {
+    "certified_stability": 0.325,
+    "certified_stability_free": 0.275,
+    "cross_method_consensus": 0.45,
+    "erasure_faithfulness": 0.647,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.125,
+    "pasa_std": 0.049,
+    "FUSED": 0.484
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5714285714285714,
+   "per_signal": {
+    "certified_stability": 0.275,
+    "certified_stability_free": 0.299,
+    "cross_method_consensus": 0.863,
+    "erasure_faithfulness": 0.88,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.276,
+    "pasa_std": 0.138,
+    "FUSED": 0.911
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.6874999999999999,
+   "per_signal": {
+    "certified_stability": 0.124,
+    "certified_stability_free": 0.107,
+    "cross_method_consensus": 0.737,
+    "erasure_faithfulness": 0.965,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.3,
+    "pasa_std": 0.072,
+    "FUSED": 0.943
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.46428571428571425,
+   "per_signal": {
+    "certified_stability": 0.243,
+    "certified_stability_free": 0.247,
+    "cross_method_consensus": 0.847,
+    "erasure_faithfulness": 0.933,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.231,
+    "pasa_std": 0.093,
+    "FUSED": 0.864
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.6785714285714285,
+   "per_signal": {
+    "certified_stability": 0.174,
+    "certified_stability_free": 0.159,
+    "cross_method_consensus": 0.781,
+    "erasure_faithfulness": 0.968,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.308,
+    "pasa_std": 0.202,
+    "FUSED": 0.828
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8194444444444443,
+   "per_signal": {
+    "certified_stability": 0.376,
+    "certified_stability_free": 0.376,
+    "cross_method_consensus": 0.385,
+    "erasure_faithfulness": 0.426,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.074,
+    "pasa_std": 0.283,
+    "FUSED": 0.398
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8715277777777779,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.463,
+    "cross_method_consensus": 0.438,
+    "erasure_faithfulness": 0.738,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.31,
+    "pasa_std": 0.566,
+    "FUSED": 0.605
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8569444444444443,
+   "per_signal": {
+    "certified_stability": 0.375,
+    "certified_stability_free": 0.375,
+    "cross_method_consensus": 0.619,
+    "erasure_faithfulness": 0.362,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.108,
+    "pasa_std": 0.373,
+    "FUSED": 0.548
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.83234126984127,
+   "per_signal": {
+    "certified_stability": 0.325,
+    "certified_stability_free": 0.338,
+    "cross_method_consensus": 0.543,
+    "erasure_faithfulness": 0.487,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.153,
+    "pasa_std": 0.26,
+    "FUSED": 0.425
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8281746031746031,
+   "per_signal": {
+    "certified_stability": 0.489,
+    "certified_stability_free": 0.412,
+    "cross_method_consensus": 0.439,
+    "erasure_faithfulness": 0.414,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.183,
+    "pasa_std": 0.467,
+    "FUSED": 0.367
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5714285714285714,
+   "per_signal": {
+    "certified_stability": 0.537,
+    "certified_stability_free": 0.55,
+    "cross_method_consensus": 0.426,
+    "erasure_faithfulness": 0.986,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.262,
+    "pasa_std": 0.249,
+    "FUSED": 1.0
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7103174603174602,
+   "per_signal": {
+    "certified_stability": 0.626,
+    "certified_stability_free": 0.637,
+    "cross_method_consensus": 0.375,
+    "erasure_faithfulness": 0.97,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.379,
+    "pasa_std": 0.428,
+    "FUSED": 0.974
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5535714285714285,
+   "per_signal": {
+    "certified_stability": 0.676,
+    "certified_stability_free": 0.693,
+    "cross_method_consensus": 0.443,
+    "erasure_faithfulness": 0.028,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.213,
+    "pasa_std": 0.323,
+    "FUSED": 0.592
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.5714285714285714,
+   "per_signal": {
+    "certified_stability": 0.778,
+    "certified_stability_free": 0.794,
+    "cross_method_consensus": 0.431,
+    "erasure_faithfulness": 0.076,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.308,
+    "pasa_std": 0.592,
+    "FUSED": 0.781
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.4047619047619048,
+   "per_signal": {
+    "certified_stability": 0.527,
+    "certified_stability_free": 0.527,
+    "cross_method_consensus": 0.185,
+    "erasure_faithfulness": 0.084,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.45,
+    "pasa_std": 0.574,
+    "FUSED": 0.41
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7743055555555556,
+   "per_signal": {
+    "certified_stability": 0.232,
+    "certified_stability_free": 0.218,
+    "cross_method_consensus": 0.422,
+    "erasure_faithfulness": 0.886,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.39,
+    "pasa_std": 0.298,
+    "FUSED": 0.736
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7881944444444444,
+   "per_signal": {
+    "certified_stability": 0.312,
+    "certified_stability_free": 0.312,
+    "cross_method_consensus": 0.17,
+    "erasure_faithfulness": 0.836,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.116,
+    "pasa_std": 0.311,
+    "FUSED": 0.775
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.773313492063492,
+   "per_signal": {
+    "certified_stability": 0.354,
+    "certified_stability_free": 0.342,
+    "cross_method_consensus": 0.319,
+    "erasure_faithfulness": 0.646,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.353,
+    "pasa_std": 0.189,
+    "FUSED": 0.544
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7306547619047619,
+   "per_signal": {
+    "certified_stability": 0.325,
+    "certified_stability_free": 0.312,
+    "cross_method_consensus": 0.464,
+    "erasure_faithfulness": 0.868,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.306,
+    "pasa_std": 0.204,
+    "FUSED": 0.77
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7410714285714286,
+   "per_signal": {
+    "certified_stability": 0.326,
+    "certified_stability_free": 0.328,
+    "cross_method_consensus": 0.306,
+    "erasure_faithfulness": 0.869,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.389,
+    "pasa_std": 0.251,
+    "FUSED": 0.709
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.9472222222222222,
+   "per_signal": {
+    "certified_stability": 0.4,
+    "certified_stability_free": 0.388,
+    "cross_method_consensus": 0.281,
+    "erasure_faithfulness": 0.966,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.133,
+    "pasa_std": 0.399,
+    "FUSED": 0.955
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8402777777777779,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.303,
+    "erasure_faithfulness": 0.954,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.304,
+    "pasa_std": 0.606,
+    "FUSED": 0.845
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7445436507936508,
+   "per_signal": {
+    "certified_stability": 0.47,
+    "certified_stability_free": 0.51,
+    "cross_method_consensus": 0.219,
+    "erasure_faithfulness": 0.873,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.355,
+    "pasa_std": 0.571,
+    "FUSED": 0.774
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8784722222222221,
+   "per_signal": {
+    "certified_stability": 0.438,
+    "certified_stability_free": 0.45,
+    "cross_method_consensus": 0.22,
+    "erasure_faithfulness": 0.912,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.228,
+    "pasa_std": 0.339,
+    "FUSED": 0.835
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8847222222222222,
+   "per_signal": {
+    "certified_stability": 0.372,
+    "certified_stability_free": 0.372,
+    "cross_method_consensus": 0.377,
+    "erasure_faithfulness": 0.99,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.269,
+    "pasa_std": 0.576,
+    "FUSED": 0.936
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7504960317460319,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.45,
+    "cross_method_consensus": 0.289,
+    "erasure_faithfulness": 0.619,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.327,
+    "pasa_std": 0.363,
+    "FUSED": 0.5
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7410714285714286,
+   "per_signal": {
+    "certified_stability": 0.463,
+    "certified_stability_free": 0.463,
+    "cross_method_consensus": 0.376,
+    "erasure_faithfulness": 0.149,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.31,
+    "pasa_std": 0.353,
+    "FUSED": 0.286
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7549603174603174,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.213,
+    "erasure_faithfulness": 0.869,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.382,
+    "pasa_std": 0.424,
+    "FUSED": 0.818
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.857638888888889,
+   "per_signal": {
+    "certified_stability": 0.45,
+    "certified_stability_free": 0.45,
+    "cross_method_consensus": 0.537,
+    "erasure_faithfulness": 0.683,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.217,
+    "pasa_std": 0.325,
+    "FUSED": 0.482
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.71875,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.474,
+    "cross_method_consensus": 0.488,
+    "erasure_faithfulness": 0.91,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.396,
+    "pasa_std": 0.479,
+    "FUSED": 0.772
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.7008928571428571,
+   "per_signal": {
+    "certified_stability": 0.362,
+    "certified_stability_free": 0.334,
+    "cross_method_consensus": 0.497,
+    "erasure_faithfulness": 0.624,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.342,
+    "pasa_std": 0.387,
+    "FUSED": 0.608
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8402777777777777,
+   "per_signal": {
+    "certified_stability": 0.388,
+    "certified_stability_free": 0.402,
+    "cross_method_consensus": 0.309,
+    "erasure_faithfulness": 0.605,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.444,
+    "pasa_std": 0.269,
+    "FUSED": 0.479
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8546626984126984,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.444,
+    "erasure_faithfulness": 0.151,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.344,
+    "pasa_std": 0.376,
+    "FUSED": 0.249
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.8115079365079364,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.463,
+    "cross_method_consensus": 0.287,
+    "erasure_faithfulness": 0.294,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.34,
+    "pasa_std": 0.486,
+    "FUSED": 0.541
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.775297619047619,
+   "per_signal": {
+    "certified_stability": 0.473,
+    "certified_stability_free": 0.485,
+    "cross_method_consensus": 0.424,
+    "erasure_faithfulness": 0.451,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.299,
+    "pasa_std": 0.237,
+    "FUSED": 0.311
+   }
+  }
+ ],
+ "A3_scaffolding": [
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.76,
+    "erasure_faithfulness": 0.436,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.513,
+    "pasa_std": 0.519,
+    "FUSED": 0.716
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.499,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.643,
+    "erasure_faithfulness": 0.608,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.597,
+    "pasa_std": 0.564,
+    "FUSED": 0.613
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.743,
+    "erasure_faithfulness": 0.63,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.534,
+    "pasa_std": 0.55,
+    "FUSED": 0.727
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.512,
+    "certified_stability_free": 0.488,
+    "cross_method_consensus": 0.808,
+    "erasure_faithfulness": 0.808,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.828,
+    "pasa_std": 0.66,
+    "FUSED": 0.938
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "HTTPFlood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.628,
+    "erasure_faithfulness": 0.591,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.691,
+    "pasa_std": 0.614,
+    "FUSED": 0.752
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.897,
+    "erasure_faithfulness": 0.751,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.505,
+    "pasa_std": 0.443,
+    "FUSED": 0.888
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.767,
+    "erasure_faithfulness": 0.682,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.601,
+    "pasa_std": 0.457,
+    "FUSED": 0.797
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.512,
+    "certified_stability_free": 0.512,
+    "cross_method_consensus": 0.774,
+    "erasure_faithfulness": 0.385,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.534,
+    "pasa_std": 0.478,
+    "FUSED": 0.766
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.956,
+    "erasure_faithfulness": 0.77,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.499,
+    "pasa_std": 0.429,
+    "FUSED": 0.938
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "SlowrateDoS",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.475,
+    "certified_stability_free": 0.475,
+    "cross_method_consensus": 0.773,
+    "erasure_faithfulness": 0.658,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.511,
+    "pasa_std": 0.397,
+    "FUSED": 0.718
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.505,
+    "erasure_faithfulness": 0.5,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.543
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.529,
+    "certified_stability_free": 0.569,
+    "cross_method_consensus": 0.622,
+    "erasure_faithfulness": 0.555,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.65
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.497,
+    "certified_stability_free": 0.525,
+    "cross_method_consensus": 0.67,
+    "erasure_faithfulness": 0.62,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.667
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.47,
+    "certified_stability_free": 0.464,
+    "cross_method_consensus": 0.762,
+    "erasure_faithfulness": 0.911,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.878
+   }
+  },
+  {
+   "dataset": "fiveg_nidd",
+   "class": "UDPFlood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.478,
+    "certified_stability_free": 0.498,
+    "cross_method_consensus": 0.656,
+    "erasure_faithfulness": 0.67,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.573
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.512,
+    "cross_method_consensus": 0.497,
+    "erasure_faithfulness": 0.507,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.453
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.516,
+    "erasure_faithfulness": 0.483,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.503,
+    "FUSED": 0.539
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.441,
+    "erasure_faithfulness": 0.452,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.502,
+    "pasa_std": 0.496,
+    "FUSED": 0.504
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.591,
+    "erasure_faithfulness": 0.534,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.513,
+    "pasa_std": 0.493,
+    "FUSED": 0.553
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-UDP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.471,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.348,
+    "erasure_faithfulness": 0.518,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.444
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.421,
+    "erasure_faithfulness": 0.984,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.531,
+    "pasa_std": 0.578,
+    "FUSED": 0.973
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 0.975,
+   "corrupt": 0.01875,
+   "per_signal": {
+    "certified_stability": 0.516,
+    "certified_stability_free": 0.532,
+    "cross_method_consensus": 0.473,
+    "erasure_faithfulness": 1.0,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.533,
+    "pasa_std": 0.563,
+    "FUSED": 1.0
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.428,
+    "certified_stability_free": 0.486,
+    "cross_method_consensus": 0.546,
+    "erasure_faithfulness": 0.768,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.522,
+    "pasa_std": 0.54,
+    "FUSED": 0.667
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.969,
+    "certified_stability_free": 0.96,
+    "cross_method_consensus": 0.645,
+    "erasure_faithfulness": 0.848,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.542,
+    "pasa_std": 0.653,
+    "FUSED": 0.958
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-ICMP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.539,
+    "certified_stability_free": 0.539,
+    "cross_method_consensus": 0.387,
+    "erasure_faithfulness": 0.821,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.528,
+    "pasa_std": 0.581,
+    "FUSED": 0.698
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.498,
+    "erasure_faithfulness": 0.56,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.498,
+    "pasa_std": 0.507,
+    "FUSED": 0.525
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.506,
+    "erasure_faithfulness": 0.518,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.552
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.488,
+    "cross_method_consensus": 0.442,
+    "erasure_faithfulness": 0.555,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.512,
+    "pasa_std": 0.52,
+    "FUSED": 0.552
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.607,
+    "erasure_faithfulness": 0.598,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.629
+   }
+  },
+  {
+   "dataset": "ciciot2023",
+   "class": "DDoS-TCP_Flood",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.512,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.477,
+    "erasure_faithfulness": 0.56,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.507,
+    "FUSED": 0.522
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.497,
+    "erasure_faithfulness": 0.486,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.52,
+    "pasa_std": 0.536,
+    "FUSED": 0.524
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.515,
+    "erasure_faithfulness": 0.494,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.508,
+    "FUSED": 0.459
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.464,
+    "certified_stability_free": 0.502,
+    "cross_method_consensus": 0.567,
+    "erasure_faithfulness": 0.533,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.483,
+    "pasa_std": 0.491,
+    "FUSED": 0.577
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.611,
+    "erasure_faithfulness": 0.478,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.5,
+    "FUSED": 0.581
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-UDP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.536,
+    "erasure_faithfulness": 0.457,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.5,
+    "pasa_std": 0.503,
+    "FUSED": 0.483
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.938,
+    "erasure_faithfulness": 0.81,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.567,
+    "pasa_std": 0.753,
+    "FUSED": 0.879
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.487,
+    "cross_method_consensus": 0.991,
+    "erasure_faithfulness": 0.914,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.59,
+    "pasa_std": 0.645,
+    "FUSED": 0.913
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 0.975,
+   "corrupt": 0.01875,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.958,
+    "erasure_faithfulness": 0.979,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.597,
+    "pasa_std": 0.715,
+    "FUSED": 0.961
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 0.9,
+   "corrupt": 0.049702380952380956,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.936,
+    "erasure_faithfulness": 0.742,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.519,
+    "pasa_std": 0.62,
+    "FUSED": 0.922
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DDoS-ICMP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 1.0,
+   "corrupt": 0.0,
+   "per_signal": {
+    "certified_stability": 0.512,
+    "certified_stability_free": 0.512,
+    "cross_method_consensus": 0.918,
+    "erasure_faithfulness": 0.707,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.634,
+    "pasa_std": 0.597,
+    "FUSED": 0.884
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 0,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 0.525,
+   "corrupt": 0.22113095238095237,
+   "per_signal": {
+    "certified_stability": 0.487,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.798,
+    "erasure_faithfulness": 0.904,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.648,
+    "pasa_std": 0.666,
+    "FUSED": 0.93
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 1,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 0.675,
+   "corrupt": 0.13968253968253969,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.475,
+    "cross_method_consensus": 0.851,
+    "erasure_faithfulness": 0.942,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.525,
+    "pasa_std": 0.482,
+    "FUSED": 0.829
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 2,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 0.6,
+   "corrupt": 0.25892857142857145,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.512,
+    "cross_method_consensus": 0.796,
+    "erasure_faithfulness": 0.995,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.507,
+    "pasa_std": 0.554,
+    "FUSED": 0.911
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 3,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 0.925,
+   "corrupt": 0.039285714285714285,
+   "per_signal": {
+    "certified_stability": 0.5,
+    "certified_stability_free": 0.5,
+    "cross_method_consensus": 0.943,
+    "erasure_faithfulness": 0.738,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.628,
+    "pasa_std": 0.638,
+    "FUSED": 0.952
+   }
+  },
+  {
+   "dataset": "ciciomt2024",
+   "class": "TCP_IP-DoS-ICMP",
+   "seed": 4,
+   "n_flows": 40,
+   "n_all": 40,
+   "prediction_preserved": 0.825,
+   "corrupt": 0.1064484126984127,
+   "per_signal": {
+    "certified_stability": 0.512,
+    "certified_stability_free": 0.524,
+    "cross_method_consensus": 0.868,
+    "erasure_faithfulness": 0.782,
+    "feature_consistency": 0.5,
+    "pasa_range": 0.52,
+    "pasa_std": 0.639,
+    "FUSED": 0.808
+   }
+  }
+ ]
+}

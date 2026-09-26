@@ -1,0 +1,61 @@
+{
+  "experiment": "attacked_flows_export",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-23T04:21:37.289175+00:00",
+  "wall_clock_s": 6277.156,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "datasets": [
+        "fiveg_nidd",
+        "ciciot2023",
+        "ciciomt2024"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "attacks": [
+        "A1_displacement",
+        "A1_misdirection",
+        "A3_scaffolding"
+      ],
+      "reference": "mean",
+      "tau": 0.05,
+      "min_k": 3,
+      "scaffold_contamination": 0.3
+    }
+  },
+  "summary": {
+    "flows": 5400,
+    "shown_mismatch": 2,
+    "returned_unchanged": {
+      "A1_displacement": 12,
+      "A1_misdirection": 758,
+      "A3_scaffolding": 1800
+    },
+    "case_sets_per_attack": 1800,
+    "datasets": [
+      "fiveg_nidd",
+      "ciciot2023",
+      "ciciomt2024"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "attacks": [
+      "A1_displacement",
+      "A1_misdirection",
+      "A3_scaffolding"
+    ]
+  }
+}

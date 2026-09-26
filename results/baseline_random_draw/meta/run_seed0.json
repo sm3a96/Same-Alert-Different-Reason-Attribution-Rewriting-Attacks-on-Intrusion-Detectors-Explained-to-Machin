@@ -1,0 +1,48 @@
+{
+  "experiment": "baseline_random_draw",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-24T02:34:32.588482+00:00",
+  "wall_clock_s": 2413.914,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "datasets": [
+        "fiveg_nidd",
+        "ciciot2023",
+        "ciciomt2024"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "reference": "mean",
+      "tau": 0.05,
+      "min_k": 3,
+      "attacks": [
+        "A1_displacement"
+      ],
+      "scaffold_contamination": 0.3,
+      "first_valid_draw": true,
+      "decomposition_only": true,
+      "rescore_only": false
+    }
+  },
+  "summary": {
+    "instances": 1800,
+    "cells": 15,
+    "excluded_shown_mismatch": 1396,
+    "clean_causal_mismatch": 1,
+    "effects_vs_Sxprime": {},
+    "displacement_effect_vs_Sx": null,
+    "displacement_effect_vs_Sxprime": null,
+    "displacement_ci_vs_Sxprime": [
+      null,
+      null
+    ]
+  }
+}

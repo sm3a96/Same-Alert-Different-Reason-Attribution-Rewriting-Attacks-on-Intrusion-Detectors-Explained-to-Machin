@@ -1,0 +1,89 @@
+{
+ "white_box": {
+  "per_corpus": {
+   "ciciomt2024": {
+    "corrupt_preserved": 0.8515277777777776,
+    "ci_lo": 0.8028291732990566,
+    "ci_hi": 0.9002263822564985,
+    "class_survival": 1.0,
+    "n_preserved": 200
+   },
+   "ciciot2023": {
+    "corrupt_preserved": 0.8179365079365079,
+    "ci_lo": 0.7123618297054829,
+    "ci_hi": 0.9235111861675328,
+    "class_survival": 1.0,
+    "n_preserved": 200
+   },
+   "fiveg_nidd": {
+    "corrupt_preserved": 0.8258531746031746,
+    "ci_lo": 0.747803357300347,
+    "ci_hi": 0.9039029919060023,
+    "class_survival": 1.0,
+    "n_preserved": 200
+   }
+  },
+  "corrupt_preserved_lo": 0.8179365079365079,
+  "corrupt_preserved_hi": 0.8515277777777776,
+  "class_survival_lo": 1.0,
+  "class_survival_hi": 1.0
+ },
+ "cross_seed": {
+  "per_corpus": {
+   "ciciomt2024": {
+    "corrupt_preserved": 0.6055396068650378,
+    "ci_lo": 0.5168822965426689,
+    "ci_hi": 0.6941969171874067,
+    "class_survival": 0.72,
+    "n_preserved": 144
+   },
+   "ciciot2023": {
+    "corrupt_preserved": 0.6069761667061944,
+    "ci_lo": 0.47554352204164824,
+    "ci_hi": 0.7384088113707405,
+    "class_survival": 0.44499999999999995,
+    "n_preserved": 89
+   },
+   "fiveg_nidd": {
+    "corrupt_preserved": 0.6363926887959486,
+    "ci_lo": 0.5869816983137126,
+    "ci_hi": 0.6858036792781845,
+    "class_survival": 0.8,
+    "n_preserved": 160
+   }
+  },
+  "corrupt_preserved_lo": 0.6055396068650378,
+  "corrupt_preserved_hi": 0.6363926887959486,
+  "class_survival_lo": 0.44499999999999995,
+  "class_survival_hi": 0.8
+ },
+ "cross_arch": {
+  "per_corpus": {
+   "ciciomt2024": {
+    "corrupt_preserved": 0.13518512668225185,
+    "ci_lo": -0.0027517544517477177,
+    "ci_hi": 0.2731220078162514,
+    "class_survival": 0.9,
+    "n_preserved": 180
+   },
+   "ciciot2023": {
+    "corrupt_preserved": 0.214507073700351,
+    "ci_lo": 0.1622731999942613,
+    "ci_hi": 0.26674094740644066,
+    "class_survival": 0.835,
+    "n_preserved": 167
+   },
+   "fiveg_nidd": {
+    "corrupt_preserved": 0.3686487322201608,
+    "ci_lo": 0.32106484213891856,
+    "ci_hi": 0.41623262230140307,
+    "class_survival": 0.7,
+    "n_preserved": 140
+   }
+  },
+  "corrupt_preserved_lo": 0.13518512668225185,
+  "corrupt_preserved_hi": 0.3686487322201608,
+  "class_survival_lo": 0.7,
+  "class_survival_hi": 0.9
+ }
+}

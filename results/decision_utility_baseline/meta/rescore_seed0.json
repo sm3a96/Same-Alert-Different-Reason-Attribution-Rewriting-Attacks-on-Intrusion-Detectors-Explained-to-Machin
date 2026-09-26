@@ -1,0 +1,25 @@
+{
+  "experiment": "decision_utility_baseline",
+  "seed": 0,
+  "git_commit": "private-history",
+  "timestamp_utc": "2026-09-26T00:58:39.654746+00:00",
+  "wall_clock_s": 21.494,
+  "python": "3.10.12",
+  "platform": "Linux-6.8.0-106-generic-x86_64-with-glibc2.35",
+  "config": {
+    "args": {
+      "floor": 0.5,
+      "split_seed": 0,
+      "n_boot": 8000,
+      "seed": 0
+    }
+  },
+  "summary": {
+    "case_sets_common": 1800,
+    "attack_minus_random_all_vs_Sxprime": -0.023055555555555555,
+    "ci": [
+      -0.06305555555555556,
+      0.016944444444444446
+    ]
+  }
+}

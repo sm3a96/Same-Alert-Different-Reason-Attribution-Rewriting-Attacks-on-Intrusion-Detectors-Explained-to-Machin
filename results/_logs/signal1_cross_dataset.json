@@ -1,0 +1,200 @@
+[
+ {
+  "dataset": "ciciomt2024",
+  "condition": "clean",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [],
+  "frac_zero": 0.79,
+  "frac_at_ceiling": 0.0,
+  "frac_informative": 0.21,
+  "mean_radius": 0.00532,
+  "auroc": null
+ },
+ {
+  "dataset": "ciciomt2024",
+  "condition": "A1_misdirection",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.2583,
+   0.2667,
+   0.4978,
+   0.4744,
+   0.2806
+  ],
+  "frac_zero": 0.5533,
+  "frac_at_ceiling": 0.1333,
+  "frac_informative": 0.3133,
+  "mean_radius": 0.02223,
+  "auroc": 0.3663
+ },
+ {
+  "dataset": "ciciomt2024",
+  "condition": "A1_displacement",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.2417,
+   0.3667,
+   0.5676,
+   0.39,
+   0.3974
+  ],
+  "frac_zero": 0.5967,
+  "frac_at_ceiling": 0.05,
+  "frac_informative": 0.3533,
+  "mean_radius": 0.01482,
+  "auroc": 0.397
+ },
+ {
+  "dataset": "ciciomt2024",
+  "condition": "A3_scaffolding",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.5,
+   0.5,
+   0.4797,
+   0.5083,
+   0.5153
+  ],
+  "frac_zero": 0.7833,
+  "frac_at_ceiling": 0.0,
+  "frac_informative": 0.2167,
+  "mean_radius": 0.00537,
+  "auroc": 0.4976
+ },
+ {
+  "dataset": "ciciot2023",
+  "condition": "clean",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [],
+  "frac_zero": 0.9833,
+  "frac_at_ceiling": 0.0033,
+  "frac_informative": 0.0133,
+  "mean_radius": 0.00049,
+  "auroc": null
+ },
+ {
+  "dataset": "ciciot2023",
+  "condition": "A1_misdirection",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.4658,
+   0.4508,
+   0.4417,
+   0.4574,
+   0.4667
+  ],
+  "frac_zero": 0.8967,
+  "frac_at_ceiling": 0.01,
+  "frac_informative": 0.0933,
+  "mean_radius": 0.00326,
+  "auroc": 0.4565
+ },
+ {
+  "dataset": "ciciot2023",
+  "condition": "A1_displacement",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.3654,
+   0.3608,
+   0.2583,
+   0.2089,
+   0.3
+  ],
+  "frac_zero": 0.5833,
+  "frac_at_ceiling": 0.0333,
+  "frac_informative": 0.3833,
+  "mean_radius": 0.01365,
+  "auroc": 0.2993
+ },
+ {
+  "dataset": "ciciot2023",
+  "condition": "A3_scaffolding",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.4997,
+   0.5,
+   0.5,
+   0.5167,
+   0.5
+  ],
+  "frac_zero": 0.99,
+  "frac_at_ceiling": 0.0033,
+  "frac_informative": 0.0067,
+  "mean_radius": 0.00049,
+  "auroc": 0.5033
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "condition": "clean",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [],
+  "frac_zero": 0.9533,
+  "frac_at_ceiling": 0.0,
+  "frac_informative": 0.0467,
+  "mean_radius": 0.00132,
+  "auroc": null
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "condition": "A1_misdirection",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.4833,
+   0.4142,
+   0.5081,
+   0.4475,
+   0.4833
+  ],
+  "frac_zero": 0.89,
+  "frac_at_ceiling": 0.03,
+  "frac_informative": 0.08,
+  "mean_radius": 0.00543,
+  "auroc": 0.4675
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "condition": "A1_displacement",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.3833,
+   0.2037,
+   0.2399,
+   0.2439,
+   0.35
+  ],
+  "frac_zero": 0.53,
+  "frac_at_ceiling": 0.0567,
+  "frac_informative": 0.4133,
+  "mean_radius": 0.02135,
+  "auroc": 0.2851
+ },
+ {
+  "dataset": "fiveg_nidd",
+  "condition": "A3_scaffolding",
+  "n": 300,
+  "ceiling": 0.09829472345071172,
+  "auroc_per_seed": [
+   0.5,
+   0.5,
+   0.5165,
+   0.5254,
+   0.5
+  ],
+  "frac_zero": 0.97,
+  "frac_at_ceiling": 0.0,
+  "frac_informative": 0.03,
+  "mean_radius": 0.00077,
+  "auroc": 0.5084
+ }
+]
