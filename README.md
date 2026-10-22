@@ -1,4 +1,4 @@
-# Same Alert, Different Reason: Attribution Rewriting Attacks on Intrusion Detectors Explained to Machines
+# Same Alert, Different Reason: Benchmarking Attribution Attacks Against Machine Readers of Intrusion Detectors
 
 Code, experiments and results for the paper (I. Bibers and M. Abdallah, under review at IEEE
 TIFS). The paper calls this benchmark the Explanation Integrity Benchmark (EIB); the source keeps
